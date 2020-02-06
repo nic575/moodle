@@ -1,0 +1,562 @@
+[13-Jan-2020 16:02:24 Africa/Johannesburg] instantiating backup controller 93c770e3057e7fc01052cdc0b3a13862
+[13-Jan-2020 16:02:24 Africa/Johannesburg] setting controller status to 100
+[13-Jan-2020 16:02:24 Africa/Johannesburg] loading controller plan
+[13-Jan-2020 16:02:24 Africa/Johannesburg] setting controller status to 300
+[13-Jan-2020 16:02:24 Africa/Johannesburg] applying plan defaults
+[13-Jan-2020 16:02:24 Africa/Johannesburg] setting controller status to 400
+[13-Jan-2020 16:02:24 Africa/Johannesburg] setting file inclusion to 
+[13-Jan-2020 16:02:24 Africa/Johannesburg] checking plan security
+[13-Jan-2020 16:02:24 Africa/Johannesburg] setting controller status to 700
+[13-Jan-2020 16:02:24 Africa/Johannesburg] saving controller to db
+[13-Jan-2020 16:02:24 Africa/Johannesburg] calculating controller checksum eb7bfd45990d1653658cbf67eab0f73f
+[13-Jan-2020 16:02:24 Africa/Johannesburg] loading controller from db
+[13-Jan-2020 16:02:24 Africa/Johannesburg] setting file inclusion to 1
+[13-Jan-2020 16:02:24 Africa/Johannesburg] setting controller status to 800
+[13-Jan-2020 16:02:24 Africa/Johannesburg] saving controller to db
+[13-Jan-2020 16:02:24 Africa/Johannesburg] calculating controller checksum d33f6ecd5e4fe9e1690597110b0fba87
+[13-Jan-2020 16:02:24 Africa/Johannesburg] loading controller from db
+[13-Jan-2020 16:02:25 Africa/Johannesburg] setting controller status to 1000
+[13-Jan-2020 16:02:25 Africa/Johannesburg] saving controller to db
+[13-Jan-2020 17:02:07 Africa/Johannesburg] instantiating backup controller 5de993ca3aca9043f1f14e884e71f780
+[13-Jan-2020 17:02:07 Africa/Johannesburg] setting controller status to 100
+[13-Jan-2020 17:02:07 Africa/Johannesburg] loading controller plan
+[13-Jan-2020 17:02:07 Africa/Johannesburg] setting controller status to 300
+[13-Jan-2020 17:02:07 Africa/Johannesburg] applying plan defaults
+[13-Jan-2020 17:02:07 Africa/Johannesburg] setting controller status to 400
+[13-Jan-2020 17:02:07 Africa/Johannesburg] setting file inclusion to 
+[13-Jan-2020 17:02:07 Africa/Johannesburg] checking plan security
+[13-Jan-2020 17:02:07 Africa/Johannesburg] setting controller status to 700
+[13-Jan-2020 17:02:07 Africa/Johannesburg] saving controller to db
+[13-Jan-2020 17:02:07 Africa/Johannesburg] calculating controller checksum 5941451bf565f0d88c058e5e6a46d9c6
+[13-Jan-2020 17:02:07 Africa/Johannesburg] loading controller from db
+[13-Jan-2020 17:02:07 Africa/Johannesburg] setting file inclusion to 1
+[13-Jan-2020 17:02:07 Africa/Johannesburg] setting controller status to 800
+[13-Jan-2020 17:02:07 Africa/Johannesburg] saving controller to db
+[13-Jan-2020 17:02:07 Africa/Johannesburg] calculating controller checksum 2e74bcbcc30c61f6dd7b9bd6bce22e10
+[13-Jan-2020 17:02:07 Africa/Johannesburg] loading controller from db
+[13-Jan-2020 17:02:10 Africa/Johannesburg] setting controller status to 1000
+[13-Jan-2020 17:02:10 Africa/Johannesburg] saving controller to db
+[13-Jan-2020 17:02:10 Africa/Johannesburg] instantiating backup controller a9dda7bee786c0860f4d7817f4702814
+[13-Jan-2020 17:02:10 Africa/Johannesburg] setting controller status to 100
+[13-Jan-2020 17:02:10 Africa/Johannesburg] loading controller plan
+[13-Jan-2020 17:02:10 Africa/Johannesburg] setting controller status to 300
+[13-Jan-2020 17:02:10 Africa/Johannesburg] applying plan defaults
+[13-Jan-2020 17:02:10 Africa/Johannesburg] setting controller status to 400
+[13-Jan-2020 17:02:10 Africa/Johannesburg] setting file inclusion to 
+[13-Jan-2020 17:02:10 Africa/Johannesburg] checking plan security
+[13-Jan-2020 17:02:10 Africa/Johannesburg] setting controller status to 700
+[13-Jan-2020 17:02:10 Africa/Johannesburg] saving controller to db
+[13-Jan-2020 17:02:10 Africa/Johannesburg] calculating controller checksum 7570b628a7dc5370914ec94010418c33
+[13-Jan-2020 17:02:10 Africa/Johannesburg] loading controller from db
+[13-Jan-2020 17:02:10 Africa/Johannesburg] setting file inclusion to 1
+[13-Jan-2020 17:02:10 Africa/Johannesburg] setting controller status to 800
+[13-Jan-2020 17:02:10 Africa/Johannesburg] saving controller to db
+[13-Jan-2020 17:02:10 Africa/Johannesburg] calculating controller checksum b932392282d704a91df6f0751ae51b3e
+[13-Jan-2020 17:02:10 Africa/Johannesburg] loading controller from db
+[13-Jan-2020 17:02:10 Africa/Johannesburg] setting controller status to 1000
+[13-Jan-2020 17:02:10 Africa/Johannesburg] saving controller to db
+[14-Jan-2020 11:02:06 Africa/Johannesburg] instantiating backup controller 504c0b3421fd0c4beb674c367efcc84f
+[14-Jan-2020 11:02:06 Africa/Johannesburg] setting controller status to 100
+[14-Jan-2020 11:02:06 Africa/Johannesburg] loading controller plan
+[14-Jan-2020 11:02:06 Africa/Johannesburg] setting controller status to 300
+[14-Jan-2020 11:02:06 Africa/Johannesburg] applying plan defaults
+[14-Jan-2020 11:02:06 Africa/Johannesburg] setting controller status to 400
+[14-Jan-2020 11:02:06 Africa/Johannesburg] setting file inclusion to 
+[14-Jan-2020 11:02:06 Africa/Johannesburg] checking plan security
+[14-Jan-2020 11:02:06 Africa/Johannesburg] setting controller status to 700
+[14-Jan-2020 11:02:06 Africa/Johannesburg] saving controller to db
+[14-Jan-2020 11:02:06 Africa/Johannesburg] calculating controller checksum e2757ec453721aa8a8074fb5fe6c31a5
+[14-Jan-2020 11:02:06 Africa/Johannesburg] loading controller from db
+[14-Jan-2020 11:02:06 Africa/Johannesburg] setting file inclusion to 1
+[14-Jan-2020 11:02:06 Africa/Johannesburg] setting controller status to 800
+[14-Jan-2020 11:02:06 Africa/Johannesburg] saving controller to db
+[14-Jan-2020 11:02:06 Africa/Johannesburg] calculating controller checksum 0d5f91af3e3b6146a62bb3f7f9796de4
+[14-Jan-2020 11:02:06 Africa/Johannesburg] loading controller from db
+[14-Jan-2020 11:04:06 Africa/Johannesburg] setting controller status to 1000
+[14-Jan-2020 11:04:07 Africa/Johannesburg] saving controller to db
+[14-Jan-2020 11:04:07 Africa/Johannesburg] instantiating backup controller 43a08419848acc435e61edce1598b7c8
+[14-Jan-2020 11:04:07 Africa/Johannesburg] setting controller status to 100
+[14-Jan-2020 11:04:07 Africa/Johannesburg] loading controller plan
+[14-Jan-2020 11:04:07 Africa/Johannesburg] setting controller status to 300
+[14-Jan-2020 11:04:07 Africa/Johannesburg] applying plan defaults
+[14-Jan-2020 11:04:07 Africa/Johannesburg] setting controller status to 400
+[14-Jan-2020 11:04:07 Africa/Johannesburg] setting file inclusion to 
+[14-Jan-2020 11:04:07 Africa/Johannesburg] checking plan security
+[14-Jan-2020 11:04:07 Africa/Johannesburg] setting controller status to 700
+[14-Jan-2020 11:04:07 Africa/Johannesburg] saving controller to db
+[14-Jan-2020 11:04:07 Africa/Johannesburg] calculating controller checksum fae71b8e8fabf6410caafc2a5f38bd80
+[14-Jan-2020 11:04:07 Africa/Johannesburg] loading controller from db
+[14-Jan-2020 11:04:07 Africa/Johannesburg] setting file inclusion to 1
+[14-Jan-2020 11:04:07 Africa/Johannesburg] setting controller status to 800
+[14-Jan-2020 11:04:07 Africa/Johannesburg] saving controller to db
+[14-Jan-2020 11:04:07 Africa/Johannesburg] calculating controller checksum 151fcbd051880b39b4641471eee9889c
+[14-Jan-2020 11:04:07 Africa/Johannesburg] loading controller from db
+[14-Jan-2020 11:04:07 Africa/Johannesburg] setting controller status to 1000
+[14-Jan-2020 11:04:07 Africa/Johannesburg] saving controller to db
+[14-Jan-2020 11:04:07 Africa/Johannesburg] instantiating backup controller fda33f308357537ffc5067f464c44d6c
+[14-Jan-2020 11:04:07 Africa/Johannesburg] setting controller status to 100
+[14-Jan-2020 11:04:07 Africa/Johannesburg] loading controller plan
+[14-Jan-2020 11:04:07 Africa/Johannesburg] setting controller status to 300
+[14-Jan-2020 11:04:07 Africa/Johannesburg] applying plan defaults
+[14-Jan-2020 11:04:07 Africa/Johannesburg] setting controller status to 400
+[14-Jan-2020 11:04:07 Africa/Johannesburg] setting file inclusion to 
+[14-Jan-2020 11:04:07 Africa/Johannesburg] checking plan security
+[14-Jan-2020 11:04:07 Africa/Johannesburg] setting controller status to 700
+[14-Jan-2020 11:04:07 Africa/Johannesburg] saving controller to db
+[14-Jan-2020 11:04:07 Africa/Johannesburg] calculating controller checksum 7a9e79376a60d2b6e4c732b655702449
+[14-Jan-2020 11:04:07 Africa/Johannesburg] loading controller from db
+[14-Jan-2020 11:04:07 Africa/Johannesburg] setting file inclusion to 1
+[14-Jan-2020 11:04:07 Africa/Johannesburg] setting controller status to 800
+[14-Jan-2020 11:04:07 Africa/Johannesburg] saving controller to db
+[14-Jan-2020 11:04:07 Africa/Johannesburg] calculating controller checksum bd0a39f9647cbe95a873134a648bd7fe
+[14-Jan-2020 11:04:07 Africa/Johannesburg] loading controller from db
+[14-Jan-2020 11:04:07 Africa/Johannesburg] setting controller status to 1000
+[14-Jan-2020 11:04:07 Africa/Johannesburg] saving controller to db
+[14-Jan-2020 11:04:07 Africa/Johannesburg] instantiating backup controller 020f66528c5a2f307eee9ced508a5a57
+[14-Jan-2020 11:04:07 Africa/Johannesburg] setting controller status to 100
+[14-Jan-2020 11:04:07 Africa/Johannesburg] loading controller plan
+[14-Jan-2020 11:04:07 Africa/Johannesburg] setting controller status to 300
+[14-Jan-2020 11:04:07 Africa/Johannesburg] applying plan defaults
+[14-Jan-2020 11:04:07 Africa/Johannesburg] setting controller status to 400
+[14-Jan-2020 11:04:07 Africa/Johannesburg] setting file inclusion to 
+[14-Jan-2020 11:04:07 Africa/Johannesburg] checking plan security
+[14-Jan-2020 11:04:07 Africa/Johannesburg] setting controller status to 700
+[14-Jan-2020 11:04:07 Africa/Johannesburg] saving controller to db
+[14-Jan-2020 11:04:07 Africa/Johannesburg] calculating controller checksum 01dd014aeba35cf957f1262c6b3d709f
+[14-Jan-2020 11:04:07 Africa/Johannesburg] loading controller from db
+[14-Jan-2020 11:04:07 Africa/Johannesburg] setting file inclusion to 1
+[14-Jan-2020 11:04:07 Africa/Johannesburg] setting controller status to 800
+[14-Jan-2020 11:04:07 Africa/Johannesburg] saving controller to db
+[14-Jan-2020 11:04:07 Africa/Johannesburg] calculating controller checksum 310c081d960cf5f46f4be9cc1b3d1eba
+[14-Jan-2020 11:04:07 Africa/Johannesburg] loading controller from db
+[14-Jan-2020 11:04:38 Africa/Johannesburg] setting controller status to 1000
+[14-Jan-2020 11:04:38 Africa/Johannesburg] saving controller to db
+[14-Jan-2020 11:04:38 Africa/Johannesburg] instantiating backup controller d3ef1c8aece1d4253f9fb65e6bd72d06
+[14-Jan-2020 11:04:38 Africa/Johannesburg] setting controller status to 100
+[14-Jan-2020 11:04:38 Africa/Johannesburg] loading controller plan
+[14-Jan-2020 11:04:38 Africa/Johannesburg] setting controller status to 300
+[14-Jan-2020 11:04:38 Africa/Johannesburg] applying plan defaults
+[14-Jan-2020 11:04:38 Africa/Johannesburg] setting controller status to 400
+[14-Jan-2020 11:04:38 Africa/Johannesburg] setting file inclusion to 
+[14-Jan-2020 11:04:38 Africa/Johannesburg] checking plan security
+[14-Jan-2020 11:04:38 Africa/Johannesburg] setting controller status to 700
+[14-Jan-2020 11:04:38 Africa/Johannesburg] saving controller to db
+[14-Jan-2020 11:04:38 Africa/Johannesburg] calculating controller checksum a0f1bea743d640b2d560443cbf6cd612
+[14-Jan-2020 11:04:38 Africa/Johannesburg] loading controller from db
+[14-Jan-2020 11:04:38 Africa/Johannesburg] setting file inclusion to 1
+[14-Jan-2020 11:04:38 Africa/Johannesburg] setting controller status to 800
+[14-Jan-2020 11:04:38 Africa/Johannesburg] saving controller to db
+[14-Jan-2020 11:04:38 Africa/Johannesburg] calculating controller checksum 713c0ba4e1d406143a87e4525b0362ab
+[14-Jan-2020 11:04:38 Africa/Johannesburg] loading controller from db
+[14-Jan-2020 11:04:50 Africa/Johannesburg] setting controller status to 1000
+[14-Jan-2020 11:04:50 Africa/Johannesburg] saving controller to db
+[14-Jan-2020 12:02:03 Africa/Johannesburg] instantiating backup controller 0628551c6c757a5b2443716856a987cd
+[14-Jan-2020 12:02:03 Africa/Johannesburg] setting controller status to 100
+[14-Jan-2020 12:02:03 Africa/Johannesburg] loading controller plan
+[14-Jan-2020 12:02:03 Africa/Johannesburg] setting controller status to 300
+[14-Jan-2020 12:02:03 Africa/Johannesburg] applying plan defaults
+[14-Jan-2020 12:02:03 Africa/Johannesburg] setting controller status to 400
+[14-Jan-2020 12:02:03 Africa/Johannesburg] setting file inclusion to 
+[14-Jan-2020 12:02:03 Africa/Johannesburg] checking plan security
+[14-Jan-2020 12:02:03 Africa/Johannesburg] setting controller status to 700
+[14-Jan-2020 12:02:03 Africa/Johannesburg] saving controller to db
+[14-Jan-2020 12:02:03 Africa/Johannesburg] calculating controller checksum 79e7fb2301d643db75099a541e2064ce
+[14-Jan-2020 12:02:03 Africa/Johannesburg] loading controller from db
+[14-Jan-2020 12:02:03 Africa/Johannesburg] setting file inclusion to 1
+[14-Jan-2020 12:02:03 Africa/Johannesburg] setting controller status to 800
+[14-Jan-2020 12:02:03 Africa/Johannesburg] saving controller to db
+[14-Jan-2020 12:02:03 Africa/Johannesburg] calculating controller checksum bd50d615be8aeedccafa4a8ffea4eced
+[14-Jan-2020 12:02:03 Africa/Johannesburg] loading controller from db
+[14-Jan-2020 12:02:03 Africa/Johannesburg] setting controller status to 1000
+[14-Jan-2020 12:02:03 Africa/Johannesburg] saving controller to db
+[16-Jan-2020 12:00:24 Africa/Johannesburg] instantiating backup controller 7550ec6adccb212c49c99ceea15f075c
+[16-Jan-2020 12:00:24 Africa/Johannesburg] setting controller status to 100
+[16-Jan-2020 12:00:24 Africa/Johannesburg] loading controller plan
+[16-Jan-2020 12:00:24 Africa/Johannesburg] setting controller status to 300
+[16-Jan-2020 12:00:24 Africa/Johannesburg] applying plan defaults
+[16-Jan-2020 12:00:24 Africa/Johannesburg] setting controller status to 400
+[16-Jan-2020 12:00:24 Africa/Johannesburg] setting file inclusion to 
+[16-Jan-2020 12:00:24 Africa/Johannesburg] checking plan security
+[16-Jan-2020 12:00:24 Africa/Johannesburg] setting controller status to 700
+[16-Jan-2020 12:00:24 Africa/Johannesburg] saving controller to db
+[16-Jan-2020 12:00:24 Africa/Johannesburg] calculating controller checksum 084b3849a3fe89856a56d1bb4f8913d6
+[16-Jan-2020 12:00:24 Africa/Johannesburg] loading controller from db
+[16-Jan-2020 12:00:24 Africa/Johannesburg] setting file inclusion to 1
+[16-Jan-2020 12:00:24 Africa/Johannesburg] setting controller status to 800
+[16-Jan-2020 12:00:24 Africa/Johannesburg] saving controller to db
+[16-Jan-2020 12:00:24 Africa/Johannesburg] calculating controller checksum fffd3cd74ce8d2dbdd4bfc77ea116858
+[16-Jan-2020 12:00:24 Africa/Johannesburg] loading controller from db
+[16-Jan-2020 12:00:24 Africa/Johannesburg] setting controller status to 1000
+[16-Jan-2020 12:00:24 Africa/Johannesburg] saving controller to db
+[16-Jan-2020 12:00:24 Africa/Johannesburg] instantiating backup controller bd264d757f9206fdfd5031166f004973
+[16-Jan-2020 12:00:24 Africa/Johannesburg] setting controller status to 100
+[16-Jan-2020 12:00:24 Africa/Johannesburg] loading controller plan
+[16-Jan-2020 12:00:24 Africa/Johannesburg] setting controller status to 300
+[16-Jan-2020 12:00:24 Africa/Johannesburg] applying plan defaults
+[16-Jan-2020 12:00:24 Africa/Johannesburg] setting controller status to 400
+[16-Jan-2020 12:00:24 Africa/Johannesburg] setting file inclusion to 
+[16-Jan-2020 12:00:24 Africa/Johannesburg] checking plan security
+[16-Jan-2020 12:00:24 Africa/Johannesburg] setting controller status to 700
+[16-Jan-2020 12:00:24 Africa/Johannesburg] saving controller to db
+[16-Jan-2020 12:00:24 Africa/Johannesburg] calculating controller checksum 863a773ecf7953aafc59a3da8b9104bb
+[16-Jan-2020 12:00:24 Africa/Johannesburg] loading controller from db
+[16-Jan-2020 12:00:24 Africa/Johannesburg] setting file inclusion to 1
+[16-Jan-2020 12:00:24 Africa/Johannesburg] setting controller status to 800
+[16-Jan-2020 12:00:24 Africa/Johannesburg] saving controller to db
+[16-Jan-2020 12:00:24 Africa/Johannesburg] calculating controller checksum 19a97eb33d3341e06cd5596c1a12a5da
+[16-Jan-2020 12:00:24 Africa/Johannesburg] loading controller from db
+[16-Jan-2020 12:00:24 Africa/Johannesburg] setting controller status to 1000
+[16-Jan-2020 12:00:24 Africa/Johannesburg] saving controller to db
+[16-Jan-2020 12:00:25 Africa/Johannesburg] instantiating backup controller 5536cf3b5da724da72dabb83b901d5a9
+[16-Jan-2020 12:00:25 Africa/Johannesburg] setting controller status to 100
+[16-Jan-2020 12:00:25 Africa/Johannesburg] loading controller plan
+[16-Jan-2020 12:00:25 Africa/Johannesburg] setting controller status to 300
+[16-Jan-2020 12:00:25 Africa/Johannesburg] applying plan defaults
+[16-Jan-2020 12:00:25 Africa/Johannesburg] setting controller status to 400
+[16-Jan-2020 12:00:25 Africa/Johannesburg] setting file inclusion to 
+[16-Jan-2020 12:00:25 Africa/Johannesburg] checking plan security
+[16-Jan-2020 12:00:25 Africa/Johannesburg] setting controller status to 700
+[16-Jan-2020 12:00:25 Africa/Johannesburg] saving controller to db
+[16-Jan-2020 12:00:25 Africa/Johannesburg] calculating controller checksum afc7cc4dfda8b0b504529318d6d7c17d
+[16-Jan-2020 12:00:25 Africa/Johannesburg] loading controller from db
+[16-Jan-2020 12:00:25 Africa/Johannesburg] setting file inclusion to 1
+[16-Jan-2020 12:00:25 Africa/Johannesburg] setting controller status to 800
+[16-Jan-2020 12:00:25 Africa/Johannesburg] saving controller to db
+[16-Jan-2020 12:00:25 Africa/Johannesburg] calculating controller checksum 044410b05cac8799ddd38e1ce89edf7f
+[16-Jan-2020 12:00:25 Africa/Johannesburg] loading controller from db
+[16-Jan-2020 12:00:25 Africa/Johannesburg] setting controller status to 1000
+[16-Jan-2020 12:00:25 Africa/Johannesburg] saving controller to db
+[16-Jan-2020 12:00:25 Africa/Johannesburg] instantiating backup controller 4f41d1a4147841105a616a2c1fc46e07
+[16-Jan-2020 12:00:25 Africa/Johannesburg] setting controller status to 100
+[16-Jan-2020 12:00:25 Africa/Johannesburg] loading controller plan
+[16-Jan-2020 12:00:25 Africa/Johannesburg] setting controller status to 300
+[16-Jan-2020 12:00:25 Africa/Johannesburg] applying plan defaults
+[16-Jan-2020 12:00:25 Africa/Johannesburg] setting controller status to 400
+[16-Jan-2020 12:00:25 Africa/Johannesburg] setting file inclusion to 
+[16-Jan-2020 12:00:25 Africa/Johannesburg] checking plan security
+[16-Jan-2020 12:00:25 Africa/Johannesburg] setting controller status to 700
+[16-Jan-2020 12:00:25 Africa/Johannesburg] saving controller to db
+[16-Jan-2020 12:00:25 Africa/Johannesburg] calculating controller checksum 63c732f769b1fa511c096c8de8157b17
+[16-Jan-2020 12:00:25 Africa/Johannesburg] loading controller from db
+[16-Jan-2020 12:00:25 Africa/Johannesburg] setting file inclusion to 1
+[16-Jan-2020 12:00:25 Africa/Johannesburg] setting controller status to 800
+[16-Jan-2020 12:00:25 Africa/Johannesburg] saving controller to db
+[16-Jan-2020 12:00:25 Africa/Johannesburg] calculating controller checksum c9de41103a52ec8710d2b504dd65ce3f
+[16-Jan-2020 12:00:25 Africa/Johannesburg] loading controller from db
+[16-Jan-2020 12:00:25 Africa/Johannesburg] setting controller status to 1000
+[16-Jan-2020 12:00:25 Africa/Johannesburg] saving controller to db
+[16-Jan-2020 12:00:25 Africa/Johannesburg] instantiating backup controller 00e671875e6ea09603e2b543a91a2522
+[16-Jan-2020 12:00:25 Africa/Johannesburg] setting controller status to 100
+[16-Jan-2020 12:00:25 Africa/Johannesburg] loading controller plan
+[16-Jan-2020 12:00:25 Africa/Johannesburg] setting controller status to 300
+[16-Jan-2020 12:00:25 Africa/Johannesburg] applying plan defaults
+[16-Jan-2020 12:00:25 Africa/Johannesburg] setting controller status to 400
+[16-Jan-2020 12:00:25 Africa/Johannesburg] setting file inclusion to 
+[16-Jan-2020 12:00:25 Africa/Johannesburg] checking plan security
+[16-Jan-2020 12:00:25 Africa/Johannesburg] setting controller status to 700
+[16-Jan-2020 12:00:25 Africa/Johannesburg] saving controller to db
+[16-Jan-2020 12:00:25 Africa/Johannesburg] calculating controller checksum a774133b63cb2f8b31cf657cd3407bdc
+[16-Jan-2020 12:00:25 Africa/Johannesburg] loading controller from db
+[16-Jan-2020 12:00:25 Africa/Johannesburg] setting file inclusion to 1
+[16-Jan-2020 12:00:25 Africa/Johannesburg] setting controller status to 800
+[16-Jan-2020 12:00:25 Africa/Johannesburg] saving controller to db
+[16-Jan-2020 12:00:25 Africa/Johannesburg] calculating controller checksum b360c74d96e05d249b5df0e6d7602779
+[16-Jan-2020 12:00:25 Africa/Johannesburg] loading controller from db
+[16-Jan-2020 12:00:25 Africa/Johannesburg] setting controller status to 1000
+[16-Jan-2020 12:00:25 Africa/Johannesburg] saving controller to db
+[16-Jan-2020 12:00:25 Africa/Johannesburg] instantiating backup controller d8213a85310888c9c83eabd0acbd7138
+[16-Jan-2020 12:00:25 Africa/Johannesburg] setting controller status to 100
+[16-Jan-2020 12:00:25 Africa/Johannesburg] loading controller plan
+[16-Jan-2020 12:00:25 Africa/Johannesburg] setting controller status to 300
+[16-Jan-2020 12:00:25 Africa/Johannesburg] applying plan defaults
+[16-Jan-2020 12:00:25 Africa/Johannesburg] setting controller status to 400
+[16-Jan-2020 12:00:25 Africa/Johannesburg] setting file inclusion to 
+[16-Jan-2020 12:00:25 Africa/Johannesburg] checking plan security
+[16-Jan-2020 12:00:25 Africa/Johannesburg] setting controller status to 700
+[16-Jan-2020 12:00:25 Africa/Johannesburg] saving controller to db
+[16-Jan-2020 12:00:25 Africa/Johannesburg] calculating controller checksum 7fcdc60b6c5a91c1324f08b1d3329903
+[16-Jan-2020 12:00:25 Africa/Johannesburg] loading controller from db
+[16-Jan-2020 12:00:25 Africa/Johannesburg] setting file inclusion to 1
+[16-Jan-2020 12:00:25 Africa/Johannesburg] setting controller status to 800
+[16-Jan-2020 12:00:25 Africa/Johannesburg] saving controller to db
+[16-Jan-2020 12:00:25 Africa/Johannesburg] calculating controller checksum 95bb00a4b3030f7350a61b7a33c685b2
+[16-Jan-2020 12:00:25 Africa/Johannesburg] loading controller from db
+[16-Jan-2020 12:00:25 Africa/Johannesburg] setting controller status to 1000
+[16-Jan-2020 12:00:25 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 12:00:19 Africa/Johannesburg] instantiating backup controller 9f7f59720e8ab59e1cbb4ed9531a069f
+[20-Jan-2020 12:00:19 Africa/Johannesburg] setting controller status to 100
+[20-Jan-2020 12:00:19 Africa/Johannesburg] loading controller plan
+[20-Jan-2020 12:00:19 Africa/Johannesburg] setting controller status to 300
+[20-Jan-2020 12:00:19 Africa/Johannesburg] applying plan defaults
+[20-Jan-2020 12:00:19 Africa/Johannesburg] setting controller status to 400
+[20-Jan-2020 12:00:19 Africa/Johannesburg] setting file inclusion to 
+[20-Jan-2020 12:00:19 Africa/Johannesburg] checking plan security
+[20-Jan-2020 12:00:19 Africa/Johannesburg] setting controller status to 700
+[20-Jan-2020 12:00:19 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 12:00:19 Africa/Johannesburg] calculating controller checksum a427d99b8a48a7072a5185ede180a94c
+[20-Jan-2020 12:00:19 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 12:00:19 Africa/Johannesburg] setting file inclusion to 1
+[20-Jan-2020 12:00:19 Africa/Johannesburg] setting controller status to 800
+[20-Jan-2020 12:00:19 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 12:00:19 Africa/Johannesburg] calculating controller checksum 3a6aa15cd4fb5b1e5bafb043958a5bf4
+[20-Jan-2020 12:00:19 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 12:00:19 Africa/Johannesburg] setting controller status to 1000
+[20-Jan-2020 12:00:19 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 12:00:20 Africa/Johannesburg] instantiating backup controller e6a26a72317a7d62600c4a90490cf208
+[20-Jan-2020 12:00:20 Africa/Johannesburg] setting controller status to 100
+[20-Jan-2020 12:00:20 Africa/Johannesburg] loading controller plan
+[20-Jan-2020 12:00:20 Africa/Johannesburg] setting controller status to 300
+[20-Jan-2020 12:00:20 Africa/Johannesburg] applying plan defaults
+[20-Jan-2020 12:00:20 Africa/Johannesburg] setting controller status to 400
+[20-Jan-2020 12:00:20 Africa/Johannesburg] setting file inclusion to 
+[20-Jan-2020 12:00:20 Africa/Johannesburg] checking plan security
+[20-Jan-2020 12:00:20 Africa/Johannesburg] setting controller status to 700
+[20-Jan-2020 12:00:20 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 12:00:20 Africa/Johannesburg] calculating controller checksum 9a9909706c7c3b3a7ea77bfa70f4c722
+[20-Jan-2020 12:00:20 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 12:00:20 Africa/Johannesburg] setting file inclusion to 1
+[20-Jan-2020 12:00:20 Africa/Johannesburg] setting controller status to 800
+[20-Jan-2020 12:00:20 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 12:00:20 Africa/Johannesburg] calculating controller checksum 9eb35476080c5dc752ed2bf38676b7c3
+[20-Jan-2020 12:00:20 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 12:00:20 Africa/Johannesburg] setting controller status to 1000
+[20-Jan-2020 12:00:20 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 12:00:20 Africa/Johannesburg] instantiating backup controller 01997089ceecd9e5e3d1b2bd56cc504d
+[20-Jan-2020 12:00:20 Africa/Johannesburg] setting controller status to 100
+[20-Jan-2020 12:00:20 Africa/Johannesburg] loading controller plan
+[20-Jan-2020 12:00:20 Africa/Johannesburg] setting controller status to 300
+[20-Jan-2020 12:00:20 Africa/Johannesburg] applying plan defaults
+[20-Jan-2020 12:00:20 Africa/Johannesburg] setting controller status to 400
+[20-Jan-2020 12:00:20 Africa/Johannesburg] setting file inclusion to 
+[20-Jan-2020 12:00:20 Africa/Johannesburg] checking plan security
+[20-Jan-2020 12:00:20 Africa/Johannesburg] setting controller status to 700
+[20-Jan-2020 12:00:20 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 12:00:20 Africa/Johannesburg] calculating controller checksum fc3319ac0482b60d2691cc94ec439938
+[20-Jan-2020 12:00:20 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 12:00:20 Africa/Johannesburg] setting file inclusion to 1
+[20-Jan-2020 12:00:20 Africa/Johannesburg] setting controller status to 800
+[20-Jan-2020 12:00:20 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 12:00:20 Africa/Johannesburg] calculating controller checksum 164444c60b20596299e79fa387539eae
+[20-Jan-2020 12:00:20 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 12:00:20 Africa/Johannesburg] setting controller status to 1000
+[20-Jan-2020 12:00:20 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 12:00:20 Africa/Johannesburg] instantiating backup controller fbc9da137bf784bbb1fd2194585e47a9
+[20-Jan-2020 12:00:20 Africa/Johannesburg] setting controller status to 100
+[20-Jan-2020 12:00:20 Africa/Johannesburg] loading controller plan
+[20-Jan-2020 12:00:20 Africa/Johannesburg] setting controller status to 300
+[20-Jan-2020 12:00:20 Africa/Johannesburg] applying plan defaults
+[20-Jan-2020 12:00:20 Africa/Johannesburg] setting controller status to 400
+[20-Jan-2020 12:00:20 Africa/Johannesburg] setting file inclusion to 
+[20-Jan-2020 12:00:20 Africa/Johannesburg] checking plan security
+[20-Jan-2020 12:00:20 Africa/Johannesburg] setting controller status to 700
+[20-Jan-2020 12:00:20 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 12:00:20 Africa/Johannesburg] calculating controller checksum 26eb06ed5bed81ca5cd0e0da1e46a130
+[20-Jan-2020 12:00:20 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 12:00:20 Africa/Johannesburg] setting file inclusion to 1
+[20-Jan-2020 12:00:20 Africa/Johannesburg] setting controller status to 800
+[20-Jan-2020 12:00:20 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 12:00:20 Africa/Johannesburg] calculating controller checksum 614ef6e33de6d00a94bfc06d2262c72b
+[20-Jan-2020 12:00:20 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 12:00:21 Africa/Johannesburg] setting controller status to 1000
+[20-Jan-2020 12:00:21 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 12:00:21 Africa/Johannesburg] instantiating backup controller 1901d3f87234081802d02bbc24c82a85
+[20-Jan-2020 12:00:21 Africa/Johannesburg] setting controller status to 100
+[20-Jan-2020 12:00:21 Africa/Johannesburg] loading controller plan
+[20-Jan-2020 12:00:21 Africa/Johannesburg] setting controller status to 300
+[20-Jan-2020 12:00:21 Africa/Johannesburg] applying plan defaults
+[20-Jan-2020 12:00:21 Africa/Johannesburg] setting controller status to 400
+[20-Jan-2020 12:00:21 Africa/Johannesburg] setting file inclusion to 
+[20-Jan-2020 12:00:21 Africa/Johannesburg] checking plan security
+[20-Jan-2020 12:00:21 Africa/Johannesburg] setting controller status to 700
+[20-Jan-2020 12:00:21 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 12:00:21 Africa/Johannesburg] calculating controller checksum e908fa570c8f25c7ebcfb5c08a8fe07e
+[20-Jan-2020 12:00:21 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 12:00:21 Africa/Johannesburg] setting file inclusion to 1
+[20-Jan-2020 12:00:21 Africa/Johannesburg] setting controller status to 800
+[20-Jan-2020 12:00:21 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 12:00:21 Africa/Johannesburg] calculating controller checksum 3d267cea58fb087209bfe6064e2d9a52
+[20-Jan-2020 12:00:21 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 12:00:22 Africa/Johannesburg] setting controller status to 1000
+[20-Jan-2020 12:00:22 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 14:46:02 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[20-Jan-2020 14:47:02 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 03:39:05 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 03:40:05 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 03:41:04 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 03:42:05 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 03:43:04 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 03:44:04 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 03:45:05 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 03:46:04 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 03:47:05 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 03:48:04 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 03:49:03 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 03:50:05 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 03:51:04 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 03:52:03 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 03:53:03 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 03:54:03 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 03:55:04 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 03:56:03 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 03:57:04 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 03:58:03 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 03:59:04 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 04:00:06 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 04:01:04 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 04:02:04 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 04:03:04 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 04:04:04 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 04:05:04 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 04:06:04 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 04:07:03 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 04:08:03 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 04:09:04 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 04:10:04 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 04:11:03 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 04:12:05 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 04:13:04 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 04:14:04 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 04:15:05 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 04:16:04 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 04:17:03 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 04:18:04 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 04:19:04 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 04:20:05 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 04:21:04 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[23-Jan-2020 04:22:03 Africa/Johannesburg] PHP Notice:  Could not create and mail new user password! in /home/insuran3/public_html/training/lib/classes/task/send_new_user_passwords_task.php on line 71
+[26-Jan-2020 00:24:01 Africa/Johannesburg] PHP Warning:  include(/home/insuran3/public_html/training/theme/zenith/version.php): failed to open stream: No such file or directory in /home/insuran3/public_html/training/lib/classes/component.php on line 1125
+[26-Jan-2020 00:24:01 Africa/Johannesburg] PHP Warning:  include(/home/insuran3/public_html/training/theme/zenith/version.php): failed to open stream: No such file or directory in /home/insuran3/public_html/training/lib/classes/component.php on line 1125
+[26-Jan-2020 00:24:01 Africa/Johannesburg] PHP Warning:  include(): Failed opening '/home/insuran3/public_html/training/theme/zenith/version.php' for inclusion (include_path='/home/insuran3/public_html/training/lib/pear:.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/insuran3/public_html/training/lib/classes/component.php on line 1125
+[27-Jan-2020 16:11:05 Africa/Johannesburg] instantiating backup controller 76c86d3a732eb4a70e24164f72076b96
+[27-Jan-2020 16:11:06 Africa/Johannesburg] setting controller status to 100
+[27-Jan-2020 16:11:06 Africa/Johannesburg] loading controller plan
+[27-Jan-2020 16:11:06 Africa/Johannesburg] setting controller status to 300
+[27-Jan-2020 16:11:06 Africa/Johannesburg] applying plan defaults
+[27-Jan-2020 16:11:06 Africa/Johannesburg] setting controller status to 400
+[27-Jan-2020 16:11:06 Africa/Johannesburg] setting file inclusion to 
+[27-Jan-2020 16:11:07 Africa/Johannesburg] checking plan security
+[27-Jan-2020 16:11:07 Africa/Johannesburg] setting controller status to 700
+[27-Jan-2020 16:11:07 Africa/Johannesburg] saving controller to db
+[27-Jan-2020 16:11:07 Africa/Johannesburg] calculating controller checksum 9880eaeeb3254148886723bb6f8ca960
+[27-Jan-2020 16:11:07 Africa/Johannesburg] loading controller from db
+[27-Jan-2020 16:11:07 Africa/Johannesburg] setting file inclusion to 1
+[27-Jan-2020 16:11:07 Africa/Johannesburg] setting controller status to 800
+[27-Jan-2020 16:11:07 Africa/Johannesburg] saving controller to db
+[27-Jan-2020 16:11:07 Africa/Johannesburg] calculating controller checksum 04fd2e69f209d030e98dafd2c85179b5
+[27-Jan-2020 16:11:07 Africa/Johannesburg] loading controller from db
+[27-Jan-2020 16:11:07 Africa/Johannesburg] setting controller status to 1000
+[27-Jan-2020 16:11:07 Africa/Johannesburg] saving controller to db
+[27-Jan-2020 16:34:03 Africa/Johannesburg] instantiating backup controller ce0e71f9f48eecfd3fda894287a4ab25
+[27-Jan-2020 16:34:03 Africa/Johannesburg] setting controller status to 100
+[27-Jan-2020 16:34:03 Africa/Johannesburg] loading controller plan
+[27-Jan-2020 16:34:03 Africa/Johannesburg] setting controller status to 300
+[27-Jan-2020 16:34:03 Africa/Johannesburg] applying plan defaults
+[27-Jan-2020 16:34:03 Africa/Johannesburg] setting controller status to 400
+[27-Jan-2020 16:34:03 Africa/Johannesburg] setting file inclusion to 
+[27-Jan-2020 16:34:03 Africa/Johannesburg] checking plan security
+[27-Jan-2020 16:34:03 Africa/Johannesburg] setting controller status to 700
+[27-Jan-2020 16:34:03 Africa/Johannesburg] saving controller to db
+[27-Jan-2020 16:34:03 Africa/Johannesburg] calculating controller checksum 62ca67925586fa12f79c81250b0b0f21
+[27-Jan-2020 16:34:03 Africa/Johannesburg] loading controller from db
+[27-Jan-2020 16:34:03 Africa/Johannesburg] setting file inclusion to 1
+[27-Jan-2020 16:34:03 Africa/Johannesburg] setting controller status to 800
+[27-Jan-2020 16:34:03 Africa/Johannesburg] saving controller to db
+[27-Jan-2020 16:34:03 Africa/Johannesburg] calculating controller checksum 69d1158548b17648c597b7968ba6b6fb
+[27-Jan-2020 16:34:03 Africa/Johannesburg] loading controller from db
+[27-Jan-2020 16:34:05 Africa/Johannesburg] setting controller status to 1000
+[27-Jan-2020 16:34:05 Africa/Johannesburg] saving controller to db
+[29-Jan-2020 14:43:03 Africa/Johannesburg] instantiating backup controller 4d8ad53fcb57b94e2aec4a17f73fdd42
+[29-Jan-2020 14:43:03 Africa/Johannesburg] setting controller status to 100
+[29-Jan-2020 14:43:03 Africa/Johannesburg] loading controller plan
+[29-Jan-2020 14:43:03 Africa/Johannesburg] setting controller status to 300
+[29-Jan-2020 14:43:03 Africa/Johannesburg] applying plan defaults
+[29-Jan-2020 14:43:03 Africa/Johannesburg] setting controller status to 400
+[29-Jan-2020 14:43:03 Africa/Johannesburg] setting file inclusion to 
+[29-Jan-2020 14:43:03 Africa/Johannesburg] checking plan security
+[29-Jan-2020 14:43:03 Africa/Johannesburg] setting controller status to 700
+[29-Jan-2020 14:43:03 Africa/Johannesburg] saving controller to db
+[29-Jan-2020 14:43:03 Africa/Johannesburg] calculating controller checksum 4a05790bdb4b07ed80dfb99064c91861
+[29-Jan-2020 14:43:03 Africa/Johannesburg] loading controller from db
+[29-Jan-2020 14:43:03 Africa/Johannesburg] setting file inclusion to 1
+[29-Jan-2020 14:43:03 Africa/Johannesburg] setting controller status to 800
+[29-Jan-2020 14:43:03 Africa/Johannesburg] saving controller to db
+[29-Jan-2020 14:43:03 Africa/Johannesburg] calculating controller checksum 8fac20c152e76734f91e065cb5946f86
+[29-Jan-2020 14:43:03 Africa/Johannesburg] loading controller from db
+[29-Jan-2020 14:43:06 Africa/Johannesburg] setting controller status to 1000
+[29-Jan-2020 14:43:06 Africa/Johannesburg] saving controller to db
+[30-Jan-2020 21:48:03 Africa/Johannesburg] instantiating backup controller 13bea1d785b002887a1bd68ca04f6e45
+[30-Jan-2020 21:48:03 Africa/Johannesburg] setting controller status to 100
+[30-Jan-2020 21:48:03 Africa/Johannesburg] loading controller plan
+[30-Jan-2020 21:48:03 Africa/Johannesburg] setting controller status to 300
+[30-Jan-2020 21:48:03 Africa/Johannesburg] applying plan defaults
+[30-Jan-2020 21:48:03 Africa/Johannesburg] setting controller status to 400
+[30-Jan-2020 21:48:03 Africa/Johannesburg] setting file inclusion to 
+[30-Jan-2020 21:48:03 Africa/Johannesburg] checking plan security
+[30-Jan-2020 21:48:03 Africa/Johannesburg] setting controller status to 700
+[30-Jan-2020 21:48:03 Africa/Johannesburg] saving controller to db
+[30-Jan-2020 21:48:03 Africa/Johannesburg] calculating controller checksum ffedb3582e82b1cb5065c57485f30706
+[30-Jan-2020 21:48:03 Africa/Johannesburg] loading controller from db
+[30-Jan-2020 21:48:03 Africa/Johannesburg] setting file inclusion to 1
+[30-Jan-2020 21:48:03 Africa/Johannesburg] setting controller status to 800
+[30-Jan-2020 21:48:03 Africa/Johannesburg] saving controller to db
+[30-Jan-2020 21:48:03 Africa/Johannesburg] calculating controller checksum 1b63d9e5b3b49d98b18068326a2eb6b6
+[30-Jan-2020 21:48:03 Africa/Johannesburg] loading controller from db
+[30-Jan-2020 21:48:03 Africa/Johannesburg] setting controller status to 1000
+[30-Jan-2020 21:48:03 Africa/Johannesburg] saving controller to db
+[31-Jan-2020 01:55:04 Africa/Johannesburg] instantiating backup controller fa01ebad63d2f0a52465ea51b2283845
+[31-Jan-2020 01:55:04 Africa/Johannesburg] setting controller status to 100
+[31-Jan-2020 01:55:04 Africa/Johannesburg] loading controller plan
+[31-Jan-2020 01:55:04 Africa/Johannesburg] setting controller status to 300
+[31-Jan-2020 01:55:04 Africa/Johannesburg] applying plan defaults
+[31-Jan-2020 01:55:04 Africa/Johannesburg] setting controller status to 400
+[31-Jan-2020 01:55:04 Africa/Johannesburg] setting file inclusion to 
+[31-Jan-2020 01:55:04 Africa/Johannesburg] checking plan security
+[31-Jan-2020 01:55:04 Africa/Johannesburg] setting controller status to 700
+[31-Jan-2020 01:55:04 Africa/Johannesburg] saving controller to db
+[31-Jan-2020 01:55:04 Africa/Johannesburg] calculating controller checksum d3def929ec56b7691f69b0b9a022dc93
+[31-Jan-2020 01:55:04 Africa/Johannesburg] loading controller from db
+[31-Jan-2020 01:55:04 Africa/Johannesburg] setting file inclusion to 1
+[31-Jan-2020 01:55:04 Africa/Johannesburg] setting controller status to 800
+[31-Jan-2020 01:55:04 Africa/Johannesburg] saving controller to db
+[31-Jan-2020 01:55:04 Africa/Johannesburg] calculating controller checksum 49b6009d926a7cee4871fe62b507a2c5
+[31-Jan-2020 01:55:04 Africa/Johannesburg] loading controller from db
+[31-Jan-2020 01:55:11 Africa/Johannesburg] setting controller status to 1000
+[31-Jan-2020 01:55:11 Africa/Johannesburg] saving controller to db
+[31-Jan-2020 02:30:04 Africa/Johannesburg] instantiating backup controller ac098d1114de1b32821afb722797df73
+[31-Jan-2020 02:30:04 Africa/Johannesburg] setting controller status to 100
+[31-Jan-2020 02:30:04 Africa/Johannesburg] loading controller plan
+[31-Jan-2020 02:30:04 Africa/Johannesburg] setting controller status to 300
+[31-Jan-2020 02:30:04 Africa/Johannesburg] applying plan defaults
+[31-Jan-2020 02:30:06 Africa/Johannesburg] setting controller status to 400
+[31-Jan-2020 02:30:06 Africa/Johannesburg] setting file inclusion to 
+[31-Jan-2020 02:30:06 Africa/Johannesburg] checking plan security
+[31-Jan-2020 02:30:06 Africa/Johannesburg] setting controller status to 700
+[31-Jan-2020 02:30:06 Africa/Johannesburg] saving controller to db
+[31-Jan-2020 02:30:06 Africa/Johannesburg] calculating controller checksum da40a5f7251823f47bc9653243c5e1c0
+[31-Jan-2020 02:30:06 Africa/Johannesburg] loading controller from db
+[31-Jan-2020 02:30:06 Africa/Johannesburg] setting file inclusion to 1
+[31-Jan-2020 02:30:06 Africa/Johannesburg] setting controller status to 800
+[31-Jan-2020 02:30:06 Africa/Johannesburg] saving controller to db
+[31-Jan-2020 02:30:06 Africa/Johannesburg] calculating controller checksum 58c97fd3a7ffa25210602650ee63e42f
+[31-Jan-2020 02:30:06 Africa/Johannesburg] loading controller from db
+[31-Jan-2020 02:30:11 Africa/Johannesburg] setting controller status to 1000
+[31-Jan-2020 02:30:11 Africa/Johannesburg] saving controller to db
+[31-Jan-2020 03:00:04 Africa/Johannesburg] instantiating backup controller d27e2c9ceca986ecab8cbf78f85a08dd
+[31-Jan-2020 03:00:04 Africa/Johannesburg] setting controller status to 100
+[31-Jan-2020 03:00:04 Africa/Johannesburg] loading controller plan
+[31-Jan-2020 03:00:04 Africa/Johannesburg] setting controller status to 300
+[31-Jan-2020 03:00:04 Africa/Johannesburg] applying plan defaults
+[31-Jan-2020 03:00:04 Africa/Johannesburg] setting controller status to 400
+[31-Jan-2020 03:00:04 Africa/Johannesburg] setting file inclusion to 
+[31-Jan-2020 03:00:04 Africa/Johannesburg] checking plan security
+[31-Jan-2020 03:00:04 Africa/Johannesburg] setting controller status to 700
+[31-Jan-2020 03:00:04 Africa/Johannesburg] saving controller to db
+[31-Jan-2020 03:00:04 Africa/Johannesburg] calculating controller checksum 0722ced23dbe63db91f0b822da08d801
+[31-Jan-2020 03:00:04 Africa/Johannesburg] loading controller from db
+[31-Jan-2020 03:00:04 Africa/Johannesburg] setting file inclusion to 1
+[31-Jan-2020 03:00:04 Africa/Johannesburg] setting controller status to 800
+[31-Jan-2020 03:00:04 Africa/Johannesburg] saving controller to db
+[31-Jan-2020 03:00:04 Africa/Johannesburg] calculating controller checksum 49d45e47474ca974c035ea47352b8b8f
+[31-Jan-2020 03:00:04 Africa/Johannesburg] loading controller from db
+[31-Jan-2020 03:00:04 Africa/Johannesburg] setting controller status to 1000
+[31-Jan-2020 03:00:04 Africa/Johannesburg] saving controller to db

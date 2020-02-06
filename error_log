@@ -1,0 +1,90 @@
+[02-Jan-2020 20:56:12 UTC] Resetting core_component cache after core upgrade to version 2019111800.06
+[13-Jan-2020 19:40:15 Africa/Johannesburg] Default exception handler: Course or activity not accessible. Debug: You are not logged in
+Error code: requireloginerror
+* line 2711 of /lib/moodlelib.php: require_login_exception thrown
+* line 3157 of /lib/moodlelib.php: call to require_login()
+* line 367 of /mod/resource/lib.php: call to require_course_login()
+* line 4947 of /lib/filelib.php: call to resource_pluginfile()
+* line 44 of /pluginfile.php: call to file_pluginfile()
+
+[13-Jan-2020 19:42:14 Africa/Johannesburg] Default exception handler: Course or activity not accessible. Debug: You are not logged in
+Error code: requireloginerror
+* line 2711 of /lib/moodlelib.php: require_login_exception thrown
+* line 3157 of /lib/moodlelib.php: call to require_login()
+* line 367 of /mod/resource/lib.php: call to require_course_login()
+* line 4947 of /lib/filelib.php: call to resource_pluginfile()
+* line 44 of /pluginfile.php: call to file_pluginfile()
+
+[14-Jan-2020 22:34:15 Africa/Johannesburg] PHP Warning:  readfile(/home/insuran3/public_html/moodledata/filedir/9e/d3/9ed3a569bd898d018abb848b639175327312d83e): failed to open stream: No such file or directory in /home/insuran3/public_html/training/lib/filelib.php on line 2103
+[16-Jan-2020 16:11:22 Africa/Johannesburg] Default exception handler: Course or activity not accessible. Debug: You are not logged in
+Error code: requireloginerror
+* line 2711 of /lib/moodlelib.php: require_login_exception thrown
+* line 3157 of /lib/moodlelib.php: call to require_login()
+* line 367 of /mod/resource/lib.php: call to require_course_login()
+* line 4947 of /lib/filelib.php: call to resource_pluginfile()
+* line 44 of /pluginfile.php: call to file_pluginfile()
+
+[16-Jan-2020 16:11:51 Africa/Johannesburg] Default exception handler: Course or activity not accessible. Debug: You are not logged in
+Error code: requireloginerror
+* line 2711 of /lib/moodlelib.php: require_login_exception thrown
+* line 3157 of /lib/moodlelib.php: call to require_login()
+* line 367 of /mod/resource/lib.php: call to require_course_login()
+* line 4947 of /lib/filelib.php: call to resource_pluginfile()
+* line 44 of /pluginfile.php: call to file_pluginfile()
+
+[16-Jan-2020 21:11:54 Africa/Johannesburg] Default exception handler: Course or activity not accessible. Debug: You are not logged in
+Error code: requireloginerror
+* line 2711 of /lib/moodlelib.php: require_login_exception thrown
+* line 3157 of /lib/moodlelib.php: call to require_login()
+* line 367 of /mod/resource/lib.php: call to require_course_login()
+* line 4947 of /lib/filelib.php: call to resource_pluginfile()
+* line 44 of /pluginfile.php: call to file_pluginfile()
+
+[31-Jan-2020 02:25:28 Africa/Johannesburg] Default exception handler: Can't find data record in database table context. Debug: SELECT * FROM {context} WHERE id = ?
+[array (
+  0 => 118,
+)]
+Error code: invalidrecord
+* line 1562 of /lib/dml/moodle_database.php: dml_missing_record_exception thrown
+* line 1538 of /lib/dml/moodle_database.php: call to moodle_database->get_record_select()
+* line 5213 of /lib/accesslib.php: call to moodle_database->get_record()
+* line 1217 of /lib/accesslib.php: call to context::instance_by_id()
+* line 4156 of /lib/filelib.php: call to get_context_info_array()
+* line 44 of /pluginfile.php: call to file_pluginfile()
+
+[31-Jan-2020 02:27:43 Africa/Johannesburg] Default exception handler: Can't find data record in database table context. Debug: SELECT * FROM {context} WHERE id = ?
+[array (
+  0 => 118,
+)]
+Error code: invalidrecord
+* line 1562 of /lib/dml/moodle_database.php: dml_missing_record_exception thrown
+* line 1538 of /lib/dml/moodle_database.php: call to moodle_database->get_record_select()
+* line 5213 of /lib/accesslib.php: call to moodle_database->get_record()
+* line 1217 of /lib/accesslib.php: call to context::instance_by_id()
+* line 4156 of /lib/filelib.php: call to get_context_info_array()
+* line 44 of /pluginfile.php: call to file_pluginfile()
+
+[31-Jan-2020 02:28:16 Africa/Johannesburg] Default exception handler: Can't find data record in database table context. Debug: SELECT * FROM {context} WHERE id = ?
+[array (
+  0 => 118,
+)]
+Error code: invalidrecord
+* line 1562 of /lib/dml/moodle_database.php: dml_missing_record_exception thrown
+* line 1538 of /lib/dml/moodle_database.php: call to moodle_database->get_record_select()
+* line 5213 of /lib/accesslib.php: call to moodle_database->get_record()
+* line 1217 of /lib/accesslib.php: call to context::instance_by_id()
+* line 4156 of /lib/filelib.php: call to get_context_info_array()
+* line 44 of /pluginfile.php: call to file_pluginfile()
+
+[31-Jan-2020 02:29:32 Africa/Johannesburg] Default exception handler: Can't find data record in database table context. Debug: SELECT * FROM {context} WHERE id = ?
+[array (
+  0 => 118,
+)]
+Error code: invalidrecord
+* line 1562 of /lib/dml/moodle_database.php: dml_missing_record_exception thrown
+* line 1538 of /lib/dml/moodle_database.php: call to moodle_database->get_record_select()
+* line 5213 of /lib/accesslib.php: call to moodle_database->get_record()
+* line 1217 of /lib/accesslib.php: call to context::instance_by_id()
+* line 4156 of /lib/filelib.php: call to get_context_info_array()
+* line 44 of /pluginfile.php: call to file_pluginfile()
+

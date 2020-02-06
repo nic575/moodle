@@ -1,5 +1,27 @@
 <?php
 /*
+<<<<<<< OURS
+ @version   v5.20.14  06-Jan-2019
+ @copyright (c) 2000-2013 John Lim (jlim#natsoft.com). All rights reserved.
+ @copyright (c) 2014      Damien Regad, Mark Newnham and the ADOdb community
+  Released under both BSD license and Lesser GPL library license.
+  Whenever there is any discrepancy between the two licenses,
+  the BSD license will take precedence.
+  Set tabs to 4.
+
+  Postgres8 support.
+*/
+
+// security - hide paths
+if (!defined('ADODB_DIR')) die();
+
+include_once(ADODB_DIR."/drivers/adodb-postgres7.inc.php");
+
+class ADODB_postgres8 extends ADODB_postgres7
+{
+	var $databaseType = 'postgres8';
+
+=======
  @version   v5.20.15  24-Nov-2019
  @copyright (c) 2000-2013 John Lim (jlim#natsoft.com). All rights reserved.
  @copyright (c) 2014      Damien Regad, Mark Newnham and the ADOdb community
@@ -26,6 +48,7 @@ class ADODB_postgres8 extends ADODB_postgres7
 		FROM pg_attrdef d, pg_class c 
 		WHERE d.adrelid=c.oid AND c.relname='%s' 
 		ORDER BY d.adnum";
+>>>>>>> THEIRS
 
 	/**
 	 * Retrieve last inserted ID

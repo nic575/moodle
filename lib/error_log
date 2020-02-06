@@ -1,0 +1,1 @@
+[02-Jan-2020 20:59:06 UTC] PHP Warning:  fopen(/home/surveypo/public_html/moodledata/cache/cachestore_file/default_application/core_config/46d-cache/46dd485ff15c668c5c86d41df5e9bf65e5254abc.cache): failed to open stream: No such file or directory in /home/surveypo/public_html/training/cache/stores/file/lib.php on line 358

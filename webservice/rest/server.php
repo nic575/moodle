@@ -44,6 +44,8 @@ $server = new webservice_rest_server(WEBSERVICE_AUTHMETHOD_PERMANENT_TOKEN);
 $server->run();
 die;
 
+<<<<<<< OURS
+=======
 /**
  * Raises Early WS Exception in REST format.
  *
@@ -56,3 +58,4 @@ function raise_early_ws_exception(Exception $ex): void {
     $server->set_rest_format();
     $server->exception_handler($ex);
 }
+>>>>>>> THEIRS

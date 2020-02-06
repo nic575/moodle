@@ -23,7 +23,11 @@ namespace PHPMailer\PHPMailer;
 /**
  * PHPMailer exception handler.
  *
+<<<<<<< OURS
+ * @author  Marcus Bointon <phpmailer@synchromedia.co.uk>
+=======
  * @author Marcus Bointon <phpmailer@synchromedia.co.uk>
+>>>>>>> THEIRS
  */
 class Exception extends \Exception
 {

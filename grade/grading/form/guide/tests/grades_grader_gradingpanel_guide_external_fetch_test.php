@@ -123,6 +123,177 @@ class fetch_test extends advanced_testcase {
 
         $this->assertEquals('gradingform_guide/grades/grader/gradingpanel', $result['templatename']);
 
+<<<<<<< OURS
+        $this->assertArrayHasKey('grade', $result);
+        $this->assertIsArray($result['grade']);
+
+        $this->assertIsInt($result['grade']['timecreated']);
+        $this->assertArrayHasKey('timemodified', $result['grade']);
+        $this->assertIsInt($result['grade']['timemodified']);
+
+        $this->assertArrayHasKey('warnings', $result);
+        $this->assertIsArray($result['warnings']);
+        $this->assertEmpty($result['warnings']);
+
+        $this->assertArrayHasKey('criterion', $result['grade']);
+        $criteria = $result['grade']['criterion'];
+        $this->assertCount(count($definition->guide_criteria), $criteria);
+        foreach ($criteria as $criterion) {
+            $this->assertArrayHasKey('id', $criterion);
+            $criterionid = $criterion['id'];
+            $sourcecriterion = $definition->guide_criteria[$criterionid];
+
+            $this->assertArrayHasKey('name', $criterion);
+            $this->assertEquals($sourcecriterion['shortname'], $criterion['name']);
+
+            $this->assertArrayHasKey('maxscore', $criterion);
+            $this->assertEquals($sourcecriterion['maxscore'], $criterion['maxscore']);
+
+            $this->assertArrayHasKey('description', $criterion);
+            $this->assertEquals($sourcecriterion['description'], $criterion['description']);
+
+            $this->assertArrayHasKey('descriptionmarkers', $criterion);
+            $this->assertEquals($sourcecriterion['descriptionmarkers'], $criterion['descriptionmarkers']);
+
+            $this->assertArrayHasKey('score', $criterion);
+            $this->assertEmpty($criterion['score']);
+
+            $this->assertArrayHasKey('remark', $criterion);
+            $this->assertEmpty($criterion['remark']);
+        }
+    }
+
+    /**
+     * Ensure that an execute against the correct grading method returns the current state of the user.
+     */
+    public function test_execute_fetch_graded(): void {
+        $this->resetAfterTest();
+        $generator = \testing_util::get_data_generator();
+        $guidegenerator = $generator->get_plugin_generator('gradingform_guide');
+
+        [
+            'forum' => $forum,
+            'controller' => $controller,
+            'definition' => $definition,
+            'student' => $student,
+            'teacher' => $teacher,
+        ] = $this->get_test_data();
+
+        $this->setUser($teacher);
+
+        $gradeitem = component_gradeitem::instance('mod_forum', $forum->get_context(), 'forum');
+        $grade = $gradeitem->get_grade_for_user($student, $teacher);
+        $instance = $gradeitem->get_advanced_grading_instance($teacher, $grade);
+
+        $submissiondata = $guidegenerator->get_test_form_data($controller, (int) $student->id,
+            10, 'Propper good speling',
+            0, 'ASCII art is not a picture'
+        );
+
+        $gradeitem->store_grade_from_formdata($student, $teacher, (object) [
+            'instanceid' => $instance->get_id(),
+            'advancedgrading' => $submissiondata,
+        ]);
+
+        $result = fetch::execute('mod_forum', (int) $forum->get_context()->id, 'forum', (int) $student->id);
+        $result = external_api::clean_returnvalue(fetch::execute_returns(), $result);
+
+        $this->assertIsArray($result);
+        $this->assertArrayHasKey('templatename', $result);
+
+        $this->assertEquals('gradingform_guide/grades/grader/gradingpanel', $result['templatename']);
+
+        $this->assertArrayHasKey('grade', $result);
+        $this->assertIsArray($result['grade']);
+
+        $this->assertIsInt($result['grade']['timecreated']);
+        $this->assertArrayHasKey('timemodified', $result['grade']);
+        $this->assertIsInt($result['grade']['timemodified']);
+
+        $this->assertArrayHasKey('warnings', $result);
+        $this->assertIsArray($result['warnings']);
+        $this->assertEmpty($result['warnings']);
+
+        $this->assertArrayHasKey('criterion', $result['grade']);
+        $criteria = $result['grade']['criterion'];
+        $this->assertCount(count($definition->guide_criteria), $criteria);
+        foreach ($criteria as $criterion) {
+            $this->assertArrayHasKey('id', $criterion);
+            $criterionid = $criterion['id'];
+            $sourcecriterion = $definition->guide_criteria[$criterionid];
+
+            $this->assertArrayHasKey('name', $criterion);
+            $this->assertEquals($sourcecriterion['shortname'], $criterion['name']);
+
+            $this->assertArrayHasKey('maxscore', $criterion);
+            $this->assertEquals($sourcecriterion['maxscore'], $criterion['maxscore']);
+
+            $this->assertArrayHasKey('description', $criterion);
+            $this->assertEquals($sourcecriterion['description'], $criterion['description']);
+
+            $this->assertArrayHasKey('descriptionmarkers', $criterion);
+            $this->assertEquals($sourcecriterion['descriptionmarkers'], $criterion['descriptionmarkers']);
+
+            $this->assertArrayHasKey('score', $criterion);
+            $this->assertArrayHasKey('remark', $criterion);
+        }
+
+        $this->assertEquals(10, $criteria[0]['score']);
+        $this->assertEquals('Propper good speling', $criteria[0]['remark']);
+        $this->assertEquals(0, $criteria[1]['score']);
+        $this->assertEquals('ASCII art is not a picture', $criteria[1]['remark']);
+    }
+
+    /**
+     * Get a forum instance.
+     *
+     * @param array $config
+     * @return forum_entity
+     */
+    protected function get_forum_instance(array $config = []): forum_entity {
+        $this->resetAfterTest();
+
+        $datagenerator = $this->getDataGenerator();
+        $course = $datagenerator->create_course();
+        $forum = $datagenerator->create_module('forum', array_merge($config, ['course' => $course->id]));
+
+        $vaultfactory = \mod_forum\local\container::get_vault_factory();
+        $vault = $vaultfactory->get_forum_vault();
+
+        return $vault->get_from_id((int) $forum->id);
+    }
+
+    /**
+     * Get test data for forums graded using a marking guide.
+     *
+     * @return array
+     */
+    protected function get_test_data(): array {
+        global $DB;
+
+        $this->resetAfterTest();
+
+        $generator = \testing_util::get_data_generator();
+        $guidegenerator = $generator->get_plugin_generator('gradingform_guide');
+
+        $forum = $this->get_forum_instance();
+        $course = $forum->get_course_record();
+        $teacher = $this->getDataGenerator()->create_and_enrol($course, 'teacher');
+        $student = $this->getDataGenerator()->create_and_enrol($course, 'student');
+
+        $this->setUser($teacher);
+        $controller = $guidegenerator->get_test_guide($forum->get_context(), 'forum', 'forum');
+        $definition = $controller->get_definition();
+
+        $DB->set_field('forum', 'grade_forum', count($definition->guide_criteria), ['id' => $forum->get_id()]);
+        return [
+            'forum' => $forum,
+            'controller' => $controller,
+            'definition' => $definition,
+            'student' => $student,
+            'teacher' => $teacher,
+        ];
+=======
         $this->assertArrayHasKey('warnings', $result);
         $this->assertIsArray($result['warnings']);
         $this->assertEmpty($result['warnings']);
@@ -359,5 +530,6 @@ class fetch_test extends advanced_testcase {
             $picturescore,
             $pictureremark
         );
+>>>>>>> THEIRS
     }
 }

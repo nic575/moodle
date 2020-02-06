@@ -1,0 +1,6 @@
+[28-Jan-2020 13:06:13 Africa/Johannesburg] Default exception handler: error/You are not allowed to view these certificates Debug: 
+Error code: You are not allowed to view these certificates
+$a contents: 
+* line 494 of /lib/setuplib.php: moodle_exception thrown
+* line 52 of /mod/customcert/my_certificates.php: call to print_error()
+

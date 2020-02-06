@@ -5,6 +5,10 @@ myfilesmanage,core
 mypreferences,core_grades
 myprofile,core
 viewallmyentries,core_blog
+<<<<<<< OURS
+virusfounduser,core_antivirus
+=======
+>>>>>>> THEIRS
 formattexttype,core
 currentlyselectedusers,core
 emailuserhasnone,core

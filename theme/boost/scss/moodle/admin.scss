@@ -88,8 +88,12 @@
 
 #page-admin-report-backups-index .backup-skipped,
 #page-admin-report-backups-index .backup-ok,
+<<<<<<< OURS
+#page-admin-report-backups-index .backup-notyetrun {
+=======
 #page-admin-report-backups-index .backup-notyetrun,
 #page-admin-report-backups-index .backup-queued {
+>>>>>>> THEIRS
     @extend .tag-success;
 }
 

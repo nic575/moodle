@@ -43,6 +43,8 @@ $server = new webservice_soap_server(WEBSERVICE_AUTHMETHOD_PERMANENT_TOKEN);
 $server->run();
 die;
 
+<<<<<<< OURS
+=======
 /**
  * Raises Early WS Exception in SOAP format.
  *
@@ -54,3 +56,4 @@ function raise_early_ws_exception(Exception $ex): void {
     $server = new webservice_soap_server(WEBSERVICE_AUTHMETHOD_PERMANENT_TOKEN);
     $server->exception_handler($ex);
 }
+>>>>>>> THEIRS

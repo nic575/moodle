@@ -1,0 +1,3 @@
+[23-Jan-2020 03:52:16 Africa/Johannesburg] PHP Warning:  passthru() has been disabled for security reasons in /home/insuran3/public_html/training/admin/tool/task/classes/run_from_cli.php on line 90
+[27-Jan-2020 22:12:33 Africa/Johannesburg] PHP Warning:  passthru() has been disabled for security reasons in /home/insuran3/public_html/training/admin/tool/task/classes/run_from_cli.php on line 90
+[27-Jan-2020 22:54:34 Africa/Johannesburg] PHP Warning:  passthru() has been disabled for security reasons in /home/insuran3/public_html/training/admin/tool/task/classes/run_from_cli.php on line 90

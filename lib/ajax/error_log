@@ -1,0 +1,614 @@
+[06-Jan-2020 10:51:05 Africa/Johannesburg] Default exception handler: Coding error detected, it must be fixed by a programmer: Invalid json in request: Syntax error Debug: 
+Error code: codingerror
+* line 61 of /lib/ajax/service.php: coding_exception thrown
+
+[06-Jan-2020 11:48:26 Africa/Johannesburg] Default exception handler: Coding error detected, it must be fixed by a programmer: Invalid json in request: Syntax error Debug: 
+Error code: codingerror
+* line 61 of /lib/ajax/service.php: coding_exception thrown
+
+[07-Jan-2020 16:09:06 Africa/Johannesburg] Default exception handler: Coding error detected, it must be fixed by a programmer: Invalid json in request: Syntax error Debug: 
+Error code: codingerror
+* line 61 of /lib/ajax/service.php: coding_exception thrown
+
+[10-Jan-2020 13:57:05 Africa/Johannesburg] Default exception handler: Your session has most likely timed out. Please log in again. Debug: 
+Error code: invalidsesskey
+* line 494 of /lib/setuplib.php: moodle_exception thrown
+* line 33 of /lib/ajax/setuserpref.php: call to print_error()
+
+[10-Jan-2020 13:57:09 Africa/Johannesburg] Default exception handler: Your session has most likely timed out. Please log in again. Debug: 
+Error code: invalidsesskey
+* line 494 of /lib/setuplib.php: moodle_exception thrown
+* line 33 of /lib/ajax/setuserpref.php: call to print_error()
+
+[10-Jan-2020 15:00:30 Africa/Johannesburg] Default exception handler: Coding error detected, it must be fixed by a programmer: Invalid json in request: Syntax error Debug: 
+Error code: codingerror
+* line 61 of /lib/ajax/service.php: coding_exception thrown
+
+[14-Jan-2020 08:56:26 Africa/Johannesburg] Default exception handler: Coding error detected, it must be fixed by a programmer: Invalid json in request: Syntax error Debug: 
+Error code: codingerror
+* line 61 of /lib/ajax/service.php: coding_exception thrown
+
+[14-Jan-2020 10:34:22 Africa/Johannesburg] instantiating backup controller e11cec6553328ce4016aa88e30d965c5
+[14-Jan-2020 10:34:22 Africa/Johannesburg] setting controller status to 100
+[14-Jan-2020 10:34:22 Africa/Johannesburg] loading controller plan
+[14-Jan-2020 10:34:22 Africa/Johannesburg] setting controller status to 300
+[14-Jan-2020 10:34:22 Africa/Johannesburg] applying plan defaults
+[14-Jan-2020 10:34:22 Africa/Johannesburg] setting controller status to 400
+[14-Jan-2020 10:34:22 Africa/Johannesburg] setting file inclusion to 
+[14-Jan-2020 10:34:22 Africa/Johannesburg] checking plan security
+[14-Jan-2020 10:34:22 Africa/Johannesburg] setting controller status to 700
+[14-Jan-2020 10:34:22 Africa/Johannesburg] saving controller to db
+[14-Jan-2020 10:34:22 Africa/Johannesburg] calculating controller checksum e8190782b9ab141d5c0a48632c5ffd88
+[14-Jan-2020 10:34:22 Africa/Johannesburg] loading controller from db
+[14-Jan-2020 10:34:22 Africa/Johannesburg] setting controller status to 800
+[14-Jan-2020 10:34:22 Africa/Johannesburg] saving controller to db
+[14-Jan-2020 10:34:22 Africa/Johannesburg] calculating controller checksum ae7fefb47964a4201639d045bff4a6d1
+[14-Jan-2020 10:34:22 Africa/Johannesburg] loading controller from db
+[14-Jan-2020 10:34:23 Africa/Johannesburg] setting controller status to 1000
+[14-Jan-2020 10:34:23 Africa/Johannesburg] saving controller to db
+[14-Jan-2020 10:34:23 Africa/Johannesburg] instantiating restore controller 1722be285be38477c2c72554c108c4ab
+[14-Jan-2020 10:34:23 Africa/Johannesburg] setting controller status to 100
+[14-Jan-2020 10:34:23 Africa/Johannesburg] loading backup info
+[14-Jan-2020 10:34:23 Africa/Johannesburg] loading controller plan
+[14-Jan-2020 10:34:23 Africa/Johannesburg] setting controller status to 300
+[14-Jan-2020 10:34:23 Africa/Johannesburg] applying restore defaults
+[14-Jan-2020 10:34:23 Africa/Johannesburg] Unknown setting: questionbank
+[14-Jan-2020 10:34:23 Africa/Johannesburg] Unknown setting: overwrite_conf
+[14-Jan-2020 10:34:23 Africa/Johannesburg] Unknown setting: course_fullname
+[14-Jan-2020 10:34:23 Africa/Johannesburg] Unknown setting: course_shortname
+[14-Jan-2020 10:34:23 Africa/Johannesburg] Unknown setting: course_startdate
+[14-Jan-2020 10:34:23 Africa/Johannesburg] Unknown setting: questionbank
+[14-Jan-2020 10:34:23 Africa/Johannesburg] setting controller status to 400
+[14-Jan-2020 10:34:23 Africa/Johannesburg] checking plan security
+[14-Jan-2020 10:34:23 Africa/Johannesburg] setting controller status to 600
+[14-Jan-2020 10:34:23 Africa/Johannesburg] saving controller to db
+[14-Jan-2020 10:34:23 Africa/Johannesburg] calculating controller checksum 93124a3aab98d45a7e3703d2f69f3ff4
+[14-Jan-2020 10:34:23 Africa/Johannesburg] loading controller from db
+[14-Jan-2020 10:34:23 Africa/Johannesburg] setting controller status to 700
+[14-Jan-2020 10:34:23 Africa/Johannesburg] saving controller to db
+[14-Jan-2020 10:34:23 Africa/Johannesburg] calculating controller checksum 49af68ac1ef0947639e63c031e2660b0
+[14-Jan-2020 10:34:23 Africa/Johannesburg] loading controller from db
+[14-Jan-2020 10:34:23 Africa/Johannesburg] setting controller status to 800
+[14-Jan-2020 10:34:23 Africa/Johannesburg] saving controller to db
+[14-Jan-2020 10:34:23 Africa/Johannesburg] calculating controller checksum 3e3d0ca6f7e555d94caab17098c31ae9
+[14-Jan-2020 10:34:23 Africa/Johannesburg] loading controller from db
+[14-Jan-2020 10:34:24 Africa/Johannesburg] processing file aliases queue
+[14-Jan-2020 10:34:24 Africa/Johannesburg] setting controller status to 1000
+[14-Jan-2020 10:34:24 Africa/Johannesburg] saving controller to db
+[14-Jan-2020 13:17:18 Africa/Johannesburg] Default exception handler: Coding error detected, it must be fixed by a programmer: Invalid json in request: Syntax error Debug: 
+Error code: codingerror
+* line 61 of /lib/ajax/service.php: coding_exception thrown
+
+[14-Jan-2020 19:55:47 Africa/Johannesburg] Default exception handler: Your session has most likely timed out. Please log in again. Debug: 
+Error code: invalidsesskey
+* line 494 of /lib/setuplib.php: moodle_exception thrown
+* line 33 of /lib/ajax/setuserpref.php: call to print_error()
+
+[15-Jan-2020 12:08:10 Africa/Johannesburg] Default exception handler: Coding error detected, it must be fixed by a programmer: Invalid json in request: Syntax error Debug: 
+Error code: codingerror
+* line 61 of /lib/ajax/service.php: coding_exception thrown
+
+[15-Jan-2020 13:04:04 Africa/Johannesburg] Default exception handler: Coding error detected, it must be fixed by a programmer: Invalid json in request: Syntax error Debug: 
+Error code: codingerror
+* line 61 of /lib/ajax/service.php: coding_exception thrown
+
+[16-Jan-2020 11:30:50 Africa/Johannesburg] Default exception handler: Your session has most likely timed out. Please log in again. Debug: 
+Error code: invalidsesskey
+* line 494 of /lib/setuplib.php: moodle_exception thrown
+* line 33 of /lib/ajax/setuserpref.php: call to print_error()
+
+[16-Jan-2020 14:25:13 Africa/Johannesburg] Default exception handler: Coding error detected, it must be fixed by a programmer: Invalid json in request: Syntax error Debug: 
+Error code: codingerror
+* line 61 of /lib/ajax/service.php: coding_exception thrown
+
+[17-Jan-2020 13:00:56 Africa/Johannesburg] Default exception handler: Coding error detected, it must be fixed by a programmer: Invalid json in request: Syntax error Debug: 
+Error code: codingerror
+* line 61 of /lib/ajax/service.php: coding_exception thrown
+
+[17-Jan-2020 15:11:39 Africa/Johannesburg] Default exception handler: Your session has most likely timed out. Please log in again. Debug: 
+Error code: invalidsesskey
+* line 494 of /lib/setuplib.php: moodle_exception thrown
+* line 33 of /lib/ajax/setuserpref.php: call to print_error()
+
+[20-Jan-2020 09:50:43 Africa/Johannesburg] instantiating backup controller 8aa6aad5f139fb04fa194db998b8ac2f
+[20-Jan-2020 09:50:43 Africa/Johannesburg] setting controller status to 100
+[20-Jan-2020 09:50:43 Africa/Johannesburg] loading controller plan
+[20-Jan-2020 09:50:43 Africa/Johannesburg] setting controller status to 300
+[20-Jan-2020 09:50:43 Africa/Johannesburg] applying plan defaults
+[20-Jan-2020 09:50:43 Africa/Johannesburg] setting controller status to 400
+[20-Jan-2020 09:50:43 Africa/Johannesburg] setting file inclusion to 
+[20-Jan-2020 09:50:43 Africa/Johannesburg] checking plan security
+[20-Jan-2020 09:50:43 Africa/Johannesburg] setting controller status to 700
+[20-Jan-2020 09:50:43 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:50:43 Africa/Johannesburg] calculating controller checksum 50eb86a15dbb79bc0a50a7696b3c9793
+[20-Jan-2020 09:50:43 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:50:43 Africa/Johannesburg] setting controller status to 800
+[20-Jan-2020 09:50:43 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:50:43 Africa/Johannesburg] calculating controller checksum d384290df6c441ac3a48ac4b748a020e
+[20-Jan-2020 09:50:43 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:50:44 Africa/Johannesburg] setting controller status to 1000
+[20-Jan-2020 09:50:44 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:50:44 Africa/Johannesburg] instantiating restore controller bc9dd1e702b55fc4a8266d951a5c0940
+[20-Jan-2020 09:50:44 Africa/Johannesburg] setting controller status to 100
+[20-Jan-2020 09:50:44 Africa/Johannesburg] loading backup info
+[20-Jan-2020 09:50:44 Africa/Johannesburg] loading controller plan
+[20-Jan-2020 09:50:44 Africa/Johannesburg] setting controller status to 300
+[20-Jan-2020 09:50:44 Africa/Johannesburg] applying restore defaults
+[20-Jan-2020 09:50:44 Africa/Johannesburg] Unknown setting: questionbank
+[20-Jan-2020 09:50:44 Africa/Johannesburg] Unknown setting: overwrite_conf
+[20-Jan-2020 09:50:44 Africa/Johannesburg] Unknown setting: course_fullname
+[20-Jan-2020 09:50:44 Africa/Johannesburg] Unknown setting: course_shortname
+[20-Jan-2020 09:50:44 Africa/Johannesburg] Unknown setting: course_startdate
+[20-Jan-2020 09:50:44 Africa/Johannesburg] Unknown setting: questionbank
+[20-Jan-2020 09:50:44 Africa/Johannesburg] setting controller status to 400
+[20-Jan-2020 09:50:44 Africa/Johannesburg] checking plan security
+[20-Jan-2020 09:50:44 Africa/Johannesburg] setting controller status to 600
+[20-Jan-2020 09:50:44 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:50:44 Africa/Johannesburg] calculating controller checksum 68324a8d436a2666fcfe2158dab6c6dd
+[20-Jan-2020 09:50:44 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:50:44 Africa/Johannesburg] setting controller status to 700
+[20-Jan-2020 09:50:44 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:50:44 Africa/Johannesburg] calculating controller checksum 175c40700898e560832795422aa78924
+[20-Jan-2020 09:50:44 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:50:44 Africa/Johannesburg] setting controller status to 800
+[20-Jan-2020 09:50:44 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:50:44 Africa/Johannesburg] calculating controller checksum dce2189459f2f40e2fdfb8f263171df4
+[20-Jan-2020 09:50:44 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:50:44 Africa/Johannesburg] processing file aliases queue
+[20-Jan-2020 09:50:44 Africa/Johannesburg] setting controller status to 1000
+[20-Jan-2020 09:50:44 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:51:54 Africa/Johannesburg] instantiating backup controller 9b1f5406d3812429caa2fd2ed848b526
+[20-Jan-2020 09:51:54 Africa/Johannesburg] setting controller status to 100
+[20-Jan-2020 09:51:54 Africa/Johannesburg] loading controller plan
+[20-Jan-2020 09:51:54 Africa/Johannesburg] setting controller status to 300
+[20-Jan-2020 09:51:54 Africa/Johannesburg] applying plan defaults
+[20-Jan-2020 09:51:54 Africa/Johannesburg] setting controller status to 400
+[20-Jan-2020 09:51:54 Africa/Johannesburg] setting file inclusion to 
+[20-Jan-2020 09:51:54 Africa/Johannesburg] checking plan security
+[20-Jan-2020 09:51:54 Africa/Johannesburg] setting controller status to 700
+[20-Jan-2020 09:51:54 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:51:54 Africa/Johannesburg] calculating controller checksum 01624452eedc62876b8aa935d158b1d0
+[20-Jan-2020 09:51:54 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:51:54 Africa/Johannesburg] setting controller status to 800
+[20-Jan-2020 09:51:54 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:51:54 Africa/Johannesburg] calculating controller checksum 7f2d97c1c3b3f2e5d3bbde774f043723
+[20-Jan-2020 09:51:54 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:51:54 Africa/Johannesburg] setting controller status to 1000
+[20-Jan-2020 09:51:54 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:51:54 Africa/Johannesburg] instantiating restore controller db480e4807a2fe9e2489afd0bfecc307
+[20-Jan-2020 09:51:54 Africa/Johannesburg] setting controller status to 100
+[20-Jan-2020 09:51:54 Africa/Johannesburg] loading backup info
+[20-Jan-2020 09:51:54 Africa/Johannesburg] loading controller plan
+[20-Jan-2020 09:51:54 Africa/Johannesburg] setting controller status to 300
+[20-Jan-2020 09:51:54 Africa/Johannesburg] applying restore defaults
+[20-Jan-2020 09:51:54 Africa/Johannesburg] Unknown setting: questionbank
+[20-Jan-2020 09:51:54 Africa/Johannesburg] Unknown setting: overwrite_conf
+[20-Jan-2020 09:51:54 Africa/Johannesburg] Unknown setting: course_fullname
+[20-Jan-2020 09:51:54 Africa/Johannesburg] Unknown setting: course_shortname
+[20-Jan-2020 09:51:54 Africa/Johannesburg] Unknown setting: course_startdate
+[20-Jan-2020 09:51:54 Africa/Johannesburg] Unknown setting: questionbank
+[20-Jan-2020 09:51:54 Africa/Johannesburg] setting controller status to 400
+[20-Jan-2020 09:51:54 Africa/Johannesburg] checking plan security
+[20-Jan-2020 09:51:54 Africa/Johannesburg] setting controller status to 600
+[20-Jan-2020 09:51:54 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:51:54 Africa/Johannesburg] calculating controller checksum c410634ac868e9a879dac286edd43265
+[20-Jan-2020 09:51:54 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:51:54 Africa/Johannesburg] setting controller status to 700
+[20-Jan-2020 09:51:54 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:51:54 Africa/Johannesburg] calculating controller checksum ac8438ff1b141c1961bcdc834badc1f9
+[20-Jan-2020 09:51:54 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:51:54 Africa/Johannesburg] setting controller status to 800
+[20-Jan-2020 09:51:54 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:51:54 Africa/Johannesburg] calculating controller checksum 5111e463b3798a79c57599e168722abe
+[20-Jan-2020 09:51:54 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:51:54 Africa/Johannesburg] processing file aliases queue
+[20-Jan-2020 09:51:54 Africa/Johannesburg] setting controller status to 1000
+[20-Jan-2020 09:51:54 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:13 Africa/Johannesburg] instantiating backup controller b545de95a9a1bbcc607a71094a4b01c9
+[20-Jan-2020 09:54:13 Africa/Johannesburg] setting controller status to 100
+[20-Jan-2020 09:54:13 Africa/Johannesburg] loading controller plan
+[20-Jan-2020 09:54:13 Africa/Johannesburg] setting controller status to 300
+[20-Jan-2020 09:54:13 Africa/Johannesburg] applying plan defaults
+[20-Jan-2020 09:54:13 Africa/Johannesburg] setting controller status to 400
+[20-Jan-2020 09:54:13 Africa/Johannesburg] setting file inclusion to 
+[20-Jan-2020 09:54:13 Africa/Johannesburg] checking plan security
+[20-Jan-2020 09:54:13 Africa/Johannesburg] setting controller status to 700
+[20-Jan-2020 09:54:13 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:13 Africa/Johannesburg] calculating controller checksum 190d037697c2a9eb8a95b0c1deba646e
+[20-Jan-2020 09:54:13 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:54:13 Africa/Johannesburg] setting controller status to 800
+[20-Jan-2020 09:54:13 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:13 Africa/Johannesburg] calculating controller checksum 3e61bb04240147fa389dcaf0ae9ad0f2
+[20-Jan-2020 09:54:13 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:54:14 Africa/Johannesburg] setting controller status to 1000
+[20-Jan-2020 09:54:14 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:14 Africa/Johannesburg] instantiating restore controller cba48d98ec3e2f792708dbc7d40d23bf
+[20-Jan-2020 09:54:14 Africa/Johannesburg] setting controller status to 100
+[20-Jan-2020 09:54:14 Africa/Johannesburg] loading backup info
+[20-Jan-2020 09:54:14 Africa/Johannesburg] loading controller plan
+[20-Jan-2020 09:54:14 Africa/Johannesburg] setting controller status to 300
+[20-Jan-2020 09:54:14 Africa/Johannesburg] applying restore defaults
+[20-Jan-2020 09:54:14 Africa/Johannesburg] Unknown setting: questionbank
+[20-Jan-2020 09:54:14 Africa/Johannesburg] Unknown setting: overwrite_conf
+[20-Jan-2020 09:54:14 Africa/Johannesburg] Unknown setting: course_fullname
+[20-Jan-2020 09:54:14 Africa/Johannesburg] Unknown setting: course_shortname
+[20-Jan-2020 09:54:14 Africa/Johannesburg] Unknown setting: course_startdate
+[20-Jan-2020 09:54:14 Africa/Johannesburg] Unknown setting: questionbank
+[20-Jan-2020 09:54:14 Africa/Johannesburg] setting controller status to 400
+[20-Jan-2020 09:54:14 Africa/Johannesburg] checking plan security
+[20-Jan-2020 09:54:14 Africa/Johannesburg] setting controller status to 600
+[20-Jan-2020 09:54:14 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:14 Africa/Johannesburg] calculating controller checksum ad73b8d0615489f71bb36be3f3625948
+[20-Jan-2020 09:54:14 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:54:14 Africa/Johannesburg] setting controller status to 700
+[20-Jan-2020 09:54:14 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:14 Africa/Johannesburg] calculating controller checksum fca3274349cadce5951b708e8fc6bb70
+[20-Jan-2020 09:54:14 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:54:14 Africa/Johannesburg] setting controller status to 800
+[20-Jan-2020 09:54:14 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:14 Africa/Johannesburg] calculating controller checksum c4a90c851229580e7c79084dea9a94b2
+[20-Jan-2020 09:54:14 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:54:14 Africa/Johannesburg] processing file aliases queue
+[20-Jan-2020 09:54:14 Africa/Johannesburg] setting controller status to 1000
+[20-Jan-2020 09:54:14 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:26 Africa/Johannesburg] instantiating backup controller eebb3654a5c248589000ea65d6e1ddd1
+[20-Jan-2020 09:54:26 Africa/Johannesburg] setting controller status to 100
+[20-Jan-2020 09:54:26 Africa/Johannesburg] loading controller plan
+[20-Jan-2020 09:54:26 Africa/Johannesburg] setting controller status to 300
+[20-Jan-2020 09:54:26 Africa/Johannesburg] applying plan defaults
+[20-Jan-2020 09:54:26 Africa/Johannesburg] setting controller status to 400
+[20-Jan-2020 09:54:26 Africa/Johannesburg] setting file inclusion to 
+[20-Jan-2020 09:54:26 Africa/Johannesburg] checking plan security
+[20-Jan-2020 09:54:26 Africa/Johannesburg] setting controller status to 700
+[20-Jan-2020 09:54:26 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:26 Africa/Johannesburg] calculating controller checksum 91043122cfe3ab9d6a6892ebbe24a4ed
+[20-Jan-2020 09:54:26 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:54:26 Africa/Johannesburg] setting controller status to 800
+[20-Jan-2020 09:54:26 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:26 Africa/Johannesburg] calculating controller checksum 6458c3301e3b3184da96a6d9bad4fa30
+[20-Jan-2020 09:54:26 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:54:26 Africa/Johannesburg] setting controller status to 1000
+[20-Jan-2020 09:54:26 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:26 Africa/Johannesburg] instantiating restore controller 32d99eae6ad6979f5f450a95756465ec
+[20-Jan-2020 09:54:26 Africa/Johannesburg] setting controller status to 100
+[20-Jan-2020 09:54:26 Africa/Johannesburg] loading backup info
+[20-Jan-2020 09:54:26 Africa/Johannesburg] loading controller plan
+[20-Jan-2020 09:54:26 Africa/Johannesburg] setting controller status to 300
+[20-Jan-2020 09:54:26 Africa/Johannesburg] applying restore defaults
+[20-Jan-2020 09:54:26 Africa/Johannesburg] Unknown setting: questionbank
+[20-Jan-2020 09:54:26 Africa/Johannesburg] Unknown setting: overwrite_conf
+[20-Jan-2020 09:54:26 Africa/Johannesburg] Unknown setting: course_fullname
+[20-Jan-2020 09:54:26 Africa/Johannesburg] Unknown setting: course_shortname
+[20-Jan-2020 09:54:26 Africa/Johannesburg] Unknown setting: course_startdate
+[20-Jan-2020 09:54:26 Africa/Johannesburg] Unknown setting: questionbank
+[20-Jan-2020 09:54:26 Africa/Johannesburg] setting controller status to 400
+[20-Jan-2020 09:54:26 Africa/Johannesburg] checking plan security
+[20-Jan-2020 09:54:26 Africa/Johannesburg] setting controller status to 600
+[20-Jan-2020 09:54:26 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:26 Africa/Johannesburg] calculating controller checksum 75ba69fa0bd9be82032d979f4b37d124
+[20-Jan-2020 09:54:26 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:54:26 Africa/Johannesburg] setting controller status to 700
+[20-Jan-2020 09:54:26 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:26 Africa/Johannesburg] calculating controller checksum ea18263022ba03bb687fb57de0423d19
+[20-Jan-2020 09:54:26 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:54:26 Africa/Johannesburg] setting controller status to 800
+[20-Jan-2020 09:54:26 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:26 Africa/Johannesburg] calculating controller checksum 17a3b2aed68b10ff636e49a8df30dc12
+[20-Jan-2020 09:54:26 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:54:26 Africa/Johannesburg] processing file aliases queue
+[20-Jan-2020 09:54:26 Africa/Johannesburg] setting controller status to 1000
+[20-Jan-2020 09:54:26 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:36 Africa/Johannesburg] instantiating backup controller 4cb82da9286466229e0a65987b5815f0
+[20-Jan-2020 09:54:36 Africa/Johannesburg] setting controller status to 100
+[20-Jan-2020 09:54:36 Africa/Johannesburg] loading controller plan
+[20-Jan-2020 09:54:36 Africa/Johannesburg] setting controller status to 300
+[20-Jan-2020 09:54:36 Africa/Johannesburg] applying plan defaults
+[20-Jan-2020 09:54:36 Africa/Johannesburg] setting controller status to 400
+[20-Jan-2020 09:54:36 Africa/Johannesburg] setting file inclusion to 
+[20-Jan-2020 09:54:36 Africa/Johannesburg] checking plan security
+[20-Jan-2020 09:54:36 Africa/Johannesburg] setting controller status to 700
+[20-Jan-2020 09:54:36 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:36 Africa/Johannesburg] calculating controller checksum 9750220c02f849acaddd07d45a208934
+[20-Jan-2020 09:54:36 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:54:36 Africa/Johannesburg] setting controller status to 800
+[20-Jan-2020 09:54:36 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:36 Africa/Johannesburg] calculating controller checksum f3f7ebca874b8c4b79dc616d48047132
+[20-Jan-2020 09:54:36 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:54:36 Africa/Johannesburg] setting controller status to 1000
+[20-Jan-2020 09:54:36 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:36 Africa/Johannesburg] instantiating restore controller 0aa39547c2643503d0b8f62afe72f87b
+[20-Jan-2020 09:54:36 Africa/Johannesburg] setting controller status to 100
+[20-Jan-2020 09:54:36 Africa/Johannesburg] loading backup info
+[20-Jan-2020 09:54:36 Africa/Johannesburg] loading controller plan
+[20-Jan-2020 09:54:36 Africa/Johannesburg] setting controller status to 300
+[20-Jan-2020 09:54:36 Africa/Johannesburg] applying restore defaults
+[20-Jan-2020 09:54:36 Africa/Johannesburg] Unknown setting: questionbank
+[20-Jan-2020 09:54:36 Africa/Johannesburg] Unknown setting: overwrite_conf
+[20-Jan-2020 09:54:36 Africa/Johannesburg] Unknown setting: course_fullname
+[20-Jan-2020 09:54:36 Africa/Johannesburg] Unknown setting: course_shortname
+[20-Jan-2020 09:54:36 Africa/Johannesburg] Unknown setting: course_startdate
+[20-Jan-2020 09:54:36 Africa/Johannesburg] Unknown setting: questionbank
+[20-Jan-2020 09:54:36 Africa/Johannesburg] setting controller status to 400
+[20-Jan-2020 09:54:36 Africa/Johannesburg] checking plan security
+[20-Jan-2020 09:54:36 Africa/Johannesburg] setting controller status to 600
+[20-Jan-2020 09:54:36 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:36 Africa/Johannesburg] calculating controller checksum 10b0e12403f931c70a8c1b892a4a6319
+[20-Jan-2020 09:54:36 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:54:36 Africa/Johannesburg] setting controller status to 700
+[20-Jan-2020 09:54:36 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:36 Africa/Johannesburg] calculating controller checksum f69b2e763c7ba0fcb257ba95a5f55b92
+[20-Jan-2020 09:54:36 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:54:36 Africa/Johannesburg] setting controller status to 800
+[20-Jan-2020 09:54:36 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:36 Africa/Johannesburg] calculating controller checksum 985d1a1dda2ee4041a3fae00eb5c6f23
+[20-Jan-2020 09:54:36 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:54:36 Africa/Johannesburg] processing file aliases queue
+[20-Jan-2020 09:54:36 Africa/Johannesburg] setting controller status to 1000
+[20-Jan-2020 09:54:36 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:42 Africa/Johannesburg] instantiating backup controller 059885eb6b6fff8f0a6cc37d81416ec1
+[20-Jan-2020 09:54:42 Africa/Johannesburg] setting controller status to 100
+[20-Jan-2020 09:54:42 Africa/Johannesburg] loading controller plan
+[20-Jan-2020 09:54:42 Africa/Johannesburg] setting controller status to 300
+[20-Jan-2020 09:54:42 Africa/Johannesburg] applying plan defaults
+[20-Jan-2020 09:54:42 Africa/Johannesburg] setting controller status to 400
+[20-Jan-2020 09:54:42 Africa/Johannesburg] setting file inclusion to 
+[20-Jan-2020 09:54:42 Africa/Johannesburg] checking plan security
+[20-Jan-2020 09:54:42 Africa/Johannesburg] setting controller status to 700
+[20-Jan-2020 09:54:42 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:42 Africa/Johannesburg] calculating controller checksum e25d8e40012eabbff7a1d7beba7ba5b9
+[20-Jan-2020 09:54:42 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:54:42 Africa/Johannesburg] setting controller status to 800
+[20-Jan-2020 09:54:42 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:42 Africa/Johannesburg] calculating controller checksum 553097ca6618dd47773614860f7571cf
+[20-Jan-2020 09:54:42 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:54:43 Africa/Johannesburg] setting controller status to 1000
+[20-Jan-2020 09:54:43 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:43 Africa/Johannesburg] instantiating restore controller c6c1d325e37cce91c84550d6c7b941ad
+[20-Jan-2020 09:54:43 Africa/Johannesburg] setting controller status to 100
+[20-Jan-2020 09:54:43 Africa/Johannesburg] loading backup info
+[20-Jan-2020 09:54:43 Africa/Johannesburg] loading controller plan
+[20-Jan-2020 09:54:43 Africa/Johannesburg] setting controller status to 300
+[20-Jan-2020 09:54:43 Africa/Johannesburg] applying restore defaults
+[20-Jan-2020 09:54:43 Africa/Johannesburg] Unknown setting: questionbank
+[20-Jan-2020 09:54:43 Africa/Johannesburg] Unknown setting: overwrite_conf
+[20-Jan-2020 09:54:43 Africa/Johannesburg] Unknown setting: course_fullname
+[20-Jan-2020 09:54:43 Africa/Johannesburg] Unknown setting: course_shortname
+[20-Jan-2020 09:54:43 Africa/Johannesburg] Unknown setting: course_startdate
+[20-Jan-2020 09:54:43 Africa/Johannesburg] Unknown setting: questionbank
+[20-Jan-2020 09:54:43 Africa/Johannesburg] setting controller status to 400
+[20-Jan-2020 09:54:43 Africa/Johannesburg] checking plan security
+[20-Jan-2020 09:54:43 Africa/Johannesburg] setting controller status to 600
+[20-Jan-2020 09:54:43 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:43 Africa/Johannesburg] calculating controller checksum 2a6abd4414e06a81a5b8d6b51d4101ca
+[20-Jan-2020 09:54:43 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:54:43 Africa/Johannesburg] setting controller status to 700
+[20-Jan-2020 09:54:43 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:43 Africa/Johannesburg] calculating controller checksum 9b696603a6348ecc264c4ae55df64483
+[20-Jan-2020 09:54:43 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:54:43 Africa/Johannesburg] setting controller status to 800
+[20-Jan-2020 09:54:43 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:43 Africa/Johannesburg] calculating controller checksum 42e4d56fb5547c88a92fe5408f86b685
+[20-Jan-2020 09:54:43 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:54:43 Africa/Johannesburg] processing file aliases queue
+[20-Jan-2020 09:54:43 Africa/Johannesburg] setting controller status to 1000
+[20-Jan-2020 09:54:43 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:51 Africa/Johannesburg] instantiating backup controller eaa1a9b6247b8f94df867f1c30db8779
+[20-Jan-2020 09:54:51 Africa/Johannesburg] setting controller status to 100
+[20-Jan-2020 09:54:51 Africa/Johannesburg] loading controller plan
+[20-Jan-2020 09:54:51 Africa/Johannesburg] setting controller status to 300
+[20-Jan-2020 09:54:51 Africa/Johannesburg] applying plan defaults
+[20-Jan-2020 09:54:51 Africa/Johannesburg] setting controller status to 400
+[20-Jan-2020 09:54:51 Africa/Johannesburg] setting file inclusion to 
+[20-Jan-2020 09:54:51 Africa/Johannesburg] checking plan security
+[20-Jan-2020 09:54:51 Africa/Johannesburg] setting controller status to 700
+[20-Jan-2020 09:54:51 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:51 Africa/Johannesburg] calculating controller checksum 70ca4fcb3bd53705b049737d99d0c4ca
+[20-Jan-2020 09:54:51 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:54:51 Africa/Johannesburg] setting controller status to 800
+[20-Jan-2020 09:54:51 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:51 Africa/Johannesburg] calculating controller checksum 9bfa28fc7cf6e9aeceef63ece4e3b0ce
+[20-Jan-2020 09:54:51 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:54:51 Africa/Johannesburg] setting controller status to 1000
+[20-Jan-2020 09:54:51 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:51 Africa/Johannesburg] instantiating restore controller 72858d6da519298bbe62d2773a6039c8
+[20-Jan-2020 09:54:51 Africa/Johannesburg] setting controller status to 100
+[20-Jan-2020 09:54:51 Africa/Johannesburg] loading backup info
+[20-Jan-2020 09:54:51 Africa/Johannesburg] loading controller plan
+[20-Jan-2020 09:54:51 Africa/Johannesburg] setting controller status to 300
+[20-Jan-2020 09:54:51 Africa/Johannesburg] applying restore defaults
+[20-Jan-2020 09:54:51 Africa/Johannesburg] Unknown setting: questionbank
+[20-Jan-2020 09:54:51 Africa/Johannesburg] Unknown setting: overwrite_conf
+[20-Jan-2020 09:54:51 Africa/Johannesburg] Unknown setting: course_fullname
+[20-Jan-2020 09:54:51 Africa/Johannesburg] Unknown setting: course_shortname
+[20-Jan-2020 09:54:51 Africa/Johannesburg] Unknown setting: course_startdate
+[20-Jan-2020 09:54:51 Africa/Johannesburg] Unknown setting: questionbank
+[20-Jan-2020 09:54:51 Africa/Johannesburg] setting controller status to 400
+[20-Jan-2020 09:54:51 Africa/Johannesburg] checking plan security
+[20-Jan-2020 09:54:51 Africa/Johannesburg] setting controller status to 600
+[20-Jan-2020 09:54:51 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:51 Africa/Johannesburg] calculating controller checksum eff29d9e6efbf42886c4f6b37b6a8bc5
+[20-Jan-2020 09:54:51 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:54:51 Africa/Johannesburg] setting controller status to 700
+[20-Jan-2020 09:54:51 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:51 Africa/Johannesburg] calculating controller checksum 102d87e8f1e4f9bb335ea4dcdb03c18e
+[20-Jan-2020 09:54:51 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:54:51 Africa/Johannesburg] setting controller status to 800
+[20-Jan-2020 09:54:51 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:51 Africa/Johannesburg] calculating controller checksum a5a5d004ef42c25035b1dede75a486ec
+[20-Jan-2020 09:54:51 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:54:51 Africa/Johannesburg] processing file aliases queue
+[20-Jan-2020 09:54:51 Africa/Johannesburg] setting controller status to 1000
+[20-Jan-2020 09:54:51 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:59 Africa/Johannesburg] instantiating backup controller e6908a998bebed348496d5b81bac4a5a
+[20-Jan-2020 09:54:59 Africa/Johannesburg] setting controller status to 100
+[20-Jan-2020 09:54:59 Africa/Johannesburg] loading controller plan
+[20-Jan-2020 09:54:59 Africa/Johannesburg] setting controller status to 300
+[20-Jan-2020 09:54:59 Africa/Johannesburg] applying plan defaults
+[20-Jan-2020 09:54:59 Africa/Johannesburg] setting controller status to 400
+[20-Jan-2020 09:54:59 Africa/Johannesburg] setting file inclusion to 
+[20-Jan-2020 09:54:59 Africa/Johannesburg] checking plan security
+[20-Jan-2020 09:54:59 Africa/Johannesburg] setting controller status to 700
+[20-Jan-2020 09:54:59 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:59 Africa/Johannesburg] calculating controller checksum dd2b85a2531b313b9252011dd80e2a35
+[20-Jan-2020 09:54:59 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:54:59 Africa/Johannesburg] setting controller status to 800
+[20-Jan-2020 09:54:59 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:54:59 Africa/Johannesburg] calculating controller checksum ad04868875ddfff4c4388d2b93929446
+[20-Jan-2020 09:54:59 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:55:00 Africa/Johannesburg] setting controller status to 1000
+[20-Jan-2020 09:55:00 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:55:00 Africa/Johannesburg] instantiating restore controller ac2a459b525e0dbff7f2e6d7c6e0d79f
+[20-Jan-2020 09:55:00 Africa/Johannesburg] setting controller status to 100
+[20-Jan-2020 09:55:00 Africa/Johannesburg] loading backup info
+[20-Jan-2020 09:55:00 Africa/Johannesburg] loading controller plan
+[20-Jan-2020 09:55:00 Africa/Johannesburg] setting controller status to 300
+[20-Jan-2020 09:55:00 Africa/Johannesburg] applying restore defaults
+[20-Jan-2020 09:55:00 Africa/Johannesburg] Unknown setting: questionbank
+[20-Jan-2020 09:55:00 Africa/Johannesburg] Unknown setting: overwrite_conf
+[20-Jan-2020 09:55:00 Africa/Johannesburg] Unknown setting: course_fullname
+[20-Jan-2020 09:55:00 Africa/Johannesburg] Unknown setting: course_shortname
+[20-Jan-2020 09:55:00 Africa/Johannesburg] Unknown setting: course_startdate
+[20-Jan-2020 09:55:00 Africa/Johannesburg] Unknown setting: questionbank
+[20-Jan-2020 09:55:00 Africa/Johannesburg] setting controller status to 400
+[20-Jan-2020 09:55:00 Africa/Johannesburg] checking plan security
+[20-Jan-2020 09:55:00 Africa/Johannesburg] setting controller status to 600
+[20-Jan-2020 09:55:00 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:55:00 Africa/Johannesburg] calculating controller checksum ea89c718e42e14777343d1d14ace8c6b
+[20-Jan-2020 09:55:00 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:55:00 Africa/Johannesburg] setting controller status to 700
+[20-Jan-2020 09:55:00 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:55:00 Africa/Johannesburg] calculating controller checksum afd0d18011a6854c514b17e7740ce433
+[20-Jan-2020 09:55:00 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:55:00 Africa/Johannesburg] setting controller status to 800
+[20-Jan-2020 09:55:00 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:55:00 Africa/Johannesburg] calculating controller checksum a7107ffe41359b5138f8cb9811463f5f
+[20-Jan-2020 09:55:00 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:55:00 Africa/Johannesburg] processing file aliases queue
+[20-Jan-2020 09:55:00 Africa/Johannesburg] setting controller status to 1000
+[20-Jan-2020 09:55:00 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:55:23 Africa/Johannesburg] instantiating backup controller fe7423d2536d13bc3a3a9d2e688fc3c6
+[20-Jan-2020 09:55:23 Africa/Johannesburg] setting controller status to 100
+[20-Jan-2020 09:55:23 Africa/Johannesburg] loading controller plan
+[20-Jan-2020 09:55:23 Africa/Johannesburg] setting controller status to 300
+[20-Jan-2020 09:55:23 Africa/Johannesburg] applying plan defaults
+[20-Jan-2020 09:55:23 Africa/Johannesburg] setting controller status to 400
+[20-Jan-2020 09:55:23 Africa/Johannesburg] setting file inclusion to 
+[20-Jan-2020 09:55:23 Africa/Johannesburg] checking plan security
+[20-Jan-2020 09:55:23 Africa/Johannesburg] setting controller status to 700
+[20-Jan-2020 09:55:23 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:55:23 Africa/Johannesburg] calculating controller checksum c97450064feff28cd1555f63b48ecb3e
+[20-Jan-2020 09:55:23 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:55:23 Africa/Johannesburg] setting controller status to 800
+[20-Jan-2020 09:55:23 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:55:23 Africa/Johannesburg] calculating controller checksum ed6f9bda912f50277dd649676f003b2c
+[20-Jan-2020 09:55:23 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:55:23 Africa/Johannesburg] setting controller status to 1000
+[20-Jan-2020 09:55:23 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:55:23 Africa/Johannesburg] instantiating restore controller 2b71fbc09f091d6fc520ed2cfd5c72fc
+[20-Jan-2020 09:55:23 Africa/Johannesburg] setting controller status to 100
+[20-Jan-2020 09:55:23 Africa/Johannesburg] loading backup info
+[20-Jan-2020 09:55:23 Africa/Johannesburg] loading controller plan
+[20-Jan-2020 09:55:23 Africa/Johannesburg] setting controller status to 300
+[20-Jan-2020 09:55:23 Africa/Johannesburg] applying restore defaults
+[20-Jan-2020 09:55:23 Africa/Johannesburg] Unknown setting: questionbank
+[20-Jan-2020 09:55:23 Africa/Johannesburg] Unknown setting: overwrite_conf
+[20-Jan-2020 09:55:23 Africa/Johannesburg] Unknown setting: course_fullname
+[20-Jan-2020 09:55:23 Africa/Johannesburg] Unknown setting: course_shortname
+[20-Jan-2020 09:55:23 Africa/Johannesburg] Unknown setting: course_startdate
+[20-Jan-2020 09:55:23 Africa/Johannesburg] Unknown setting: questionbank
+[20-Jan-2020 09:55:23 Africa/Johannesburg] setting controller status to 400
+[20-Jan-2020 09:55:23 Africa/Johannesburg] checking plan security
+[20-Jan-2020 09:55:23 Africa/Johannesburg] setting controller status to 600
+[20-Jan-2020 09:55:23 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:55:23 Africa/Johannesburg] calculating controller checksum d5282e075ddf8c68987f65ef308bc881
+[20-Jan-2020 09:55:23 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:55:23 Africa/Johannesburg] setting controller status to 700
+[20-Jan-2020 09:55:23 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:55:23 Africa/Johannesburg] calculating controller checksum 78533a9c6d527b91044e6ee88d325ee0
+[20-Jan-2020 09:55:23 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:55:23 Africa/Johannesburg] setting controller status to 800
+[20-Jan-2020 09:55:23 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:55:23 Africa/Johannesburg] calculating controller checksum d850ae37835430802d23da32b127d600
+[20-Jan-2020 09:55:23 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:55:23 Africa/Johannesburg] processing file aliases queue
+[20-Jan-2020 09:55:24 Africa/Johannesburg] setting controller status to 1000
+[20-Jan-2020 09:55:24 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:55:46 Africa/Johannesburg] instantiating backup controller dbbc0f423fb90b6ce6d08c50e9723b43
+[20-Jan-2020 09:55:46 Africa/Johannesburg] setting controller status to 100
+[20-Jan-2020 09:55:46 Africa/Johannesburg] loading controller plan
+[20-Jan-2020 09:55:46 Africa/Johannesburg] setting controller status to 300
+[20-Jan-2020 09:55:46 Africa/Johannesburg] applying plan defaults
+[20-Jan-2020 09:55:46 Africa/Johannesburg] setting controller status to 400
+[20-Jan-2020 09:55:46 Africa/Johannesburg] setting file inclusion to 
+[20-Jan-2020 09:55:46 Africa/Johannesburg] checking plan security
+[20-Jan-2020 09:55:46 Africa/Johannesburg] setting controller status to 700
+[20-Jan-2020 09:55:46 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:55:46 Africa/Johannesburg] calculating controller checksum 1e2021a1b331787fd64ec3fb94264ea4
+[20-Jan-2020 09:55:46 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:55:46 Africa/Johannesburg] setting controller status to 800
+[20-Jan-2020 09:55:46 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:55:46 Africa/Johannesburg] calculating controller checksum 4c4bb2c92354660b052a6844b5bae54b
+[20-Jan-2020 09:55:46 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:55:46 Africa/Johannesburg] setting controller status to 1000
+[20-Jan-2020 09:55:46 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:55:46 Africa/Johannesburg] instantiating restore controller 96f3cbb6f408e138db855ff07c0bf832
+[20-Jan-2020 09:55:46 Africa/Johannesburg] setting controller status to 100
+[20-Jan-2020 09:55:46 Africa/Johannesburg] loading backup info
+[20-Jan-2020 09:55:46 Africa/Johannesburg] loading controller plan
+[20-Jan-2020 09:55:46 Africa/Johannesburg] setting controller status to 300
+[20-Jan-2020 09:55:46 Africa/Johannesburg] applying restore defaults
+[20-Jan-2020 09:55:46 Africa/Johannesburg] Unknown setting: questionbank
+[20-Jan-2020 09:55:46 Africa/Johannesburg] Unknown setting: overwrite_conf
+[20-Jan-2020 09:55:46 Africa/Johannesburg] Unknown setting: course_fullname
+[20-Jan-2020 09:55:46 Africa/Johannesburg] Unknown setting: course_shortname
+[20-Jan-2020 09:55:46 Africa/Johannesburg] Unknown setting: course_startdate
+[20-Jan-2020 09:55:46 Africa/Johannesburg] Unknown setting: questionbank
+[20-Jan-2020 09:55:46 Africa/Johannesburg] setting controller status to 400
+[20-Jan-2020 09:55:46 Africa/Johannesburg] checking plan security
+[20-Jan-2020 09:55:46 Africa/Johannesburg] setting controller status to 600
+[20-Jan-2020 09:55:46 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:55:46 Africa/Johannesburg] calculating controller checksum 4ddd27e9e2f196f7f6747442f4911e5f
+[20-Jan-2020 09:55:46 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:55:46 Africa/Johannesburg] setting controller status to 700
+[20-Jan-2020 09:55:46 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:55:46 Africa/Johannesburg] calculating controller checksum c2b6ecddd7c305cdfdebe1b43d6d11f0
+[20-Jan-2020 09:55:46 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:55:46 Africa/Johannesburg] setting controller status to 800
+[20-Jan-2020 09:55:46 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 09:55:46 Africa/Johannesburg] calculating controller checksum 9c3d19cf7b4355c08120b497efdf2295
+[20-Jan-2020 09:55:46 Africa/Johannesburg] loading controller from db
+[20-Jan-2020 09:55:46 Africa/Johannesburg] processing file aliases queue
+[20-Jan-2020 09:55:46 Africa/Johannesburg] setting controller status to 1000
+[20-Jan-2020 09:55:46 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 11:58:40 Africa/Johannesburg] Default exception handler: Coding error detected, it must be fixed by a programmer: Invalid json in request: Syntax error Debug: 
+Error code: codingerror
+* line 61 of /lib/ajax/service.php: coding_exception thrown
+
+[20-Jan-2020 12:32:06 Africa/Johannesburg] Default exception handler: Coding error detected, it must be fixed by a programmer: Invalid json in request: Syntax error Debug: 
+Error code: codingerror
+* line 61 of /lib/ajax/service.php: coding_exception thrown
+
+[20-Jan-2020 15:24:18 Africa/Johannesburg] Default exception handler: Coding error detected, it must be fixed by a programmer: Invalid json in request: Syntax error Debug: 
+Error code: codingerror
+* line 61 of /lib/ajax/service.php: coding_exception thrown
+
+[21-Jan-2020 09:19:42 Africa/Johannesburg] Default exception handler: Coding error detected, it must be fixed by a programmer: Invalid json in request: Syntax error Debug: 
+Error code: codingerror
+* line 61 of /lib/ajax/service.php: coding_exception thrown
+
+[22-Jan-2020 10:55:16 Africa/Johannesburg] Default exception handler: Coding error detected, it must be fixed by a programmer: Invalid json in request: Syntax error Debug: 
+Error code: codingerror
+* line 61 of /lib/ajax/service.php: coding_exception thrown
+
+[23-Jan-2020 09:08:33 Africa/Johannesburg] Default exception handler: Coding error detected, it must be fixed by a programmer: Invalid json in request: Syntax error Debug: 
+Error code: codingerror
+* line 61 of /lib/ajax/service.php: coding_exception thrown
+
+[27-Jan-2020 10:02:30 Africa/Johannesburg] Default exception handler: Coding error detected, it must be fixed by a programmer: Invalid json in request: Syntax error Debug: 
+Error code: codingerror
+* line 61 of /lib/ajax/service.php: coding_exception thrown
+
+[28-Jan-2020 10:05:47 Africa/Johannesburg] Default exception handler: Coding error detected, it must be fixed by a programmer: Invalid json in request: Syntax error Debug: 
+Error code: codingerror
+* line 61 of /lib/ajax/service.php: coding_exception thrown
+

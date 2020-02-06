@@ -1,0 +1,93 @@
+[13-Jan-2020 09:57:22 Africa/Johannesburg] instantiating backup controller cd3b208f1be12171029c30f5d1afbcd0
+[13-Jan-2020 09:57:22 Africa/Johannesburg] setting controller status to 100
+[13-Jan-2020 09:57:22 Africa/Johannesburg] loading controller plan
+[13-Jan-2020 09:57:22 Africa/Johannesburg] setting controller status to 300
+[13-Jan-2020 09:57:22 Africa/Johannesburg] applying plan defaults
+[13-Jan-2020 09:57:22 Africa/Johannesburg] setting controller status to 400
+[13-Jan-2020 09:57:22 Africa/Johannesburg] setting file inclusion to 
+[13-Jan-2020 09:57:22 Africa/Johannesburg] checking plan security
+[13-Jan-2020 09:57:22 Africa/Johannesburg] setting controller status to 700
+[13-Jan-2020 09:57:22 Africa/Johannesburg] saving controller to db
+[13-Jan-2020 09:57:22 Africa/Johannesburg] calculating controller checksum e7097867bf3063845aec1809cf7649b6
+[13-Jan-2020 09:57:22 Africa/Johannesburg] loading controller from db
+[13-Jan-2020 09:57:22 Africa/Johannesburg] setting file inclusion to 1
+[13-Jan-2020 09:57:22 Africa/Johannesburg] setting controller status to 800
+[13-Jan-2020 09:57:22 Africa/Johannesburg] saving controller to db
+[13-Jan-2020 09:57:22 Africa/Johannesburg] calculating controller checksum ddbc2f77e1ca1d79e898afd89e0dcdaa
+[13-Jan-2020 09:57:22 Africa/Johannesburg] loading controller from db
+[13-Jan-2020 09:57:23 Africa/Johannesburg] setting controller status to 1000
+[13-Jan-2020 09:57:23 Africa/Johannesburg] saving controller to db
+[14-Jan-2020 10:56:20 Africa/Johannesburg] Default exception handler: A required parameter (jump) was missing Debug: 
+Error code: missingparam
+* line 494 of /lib/setuplib.php: moodle_exception thrown
+* line 562 of /lib/moodlelib.php: call to print_error()
+* line 29 of /course/jumpto.php: call to required_param()
+
+[16-Jan-2020 05:48:23 Africa/Johannesburg] instantiating backup controller 0504d2cacbef78127c61307d227447fb
+[16-Jan-2020 05:48:23 Africa/Johannesburg] setting controller status to 100
+[16-Jan-2020 05:48:23 Africa/Johannesburg] loading controller plan
+[16-Jan-2020 05:48:23 Africa/Johannesburg] setting controller status to 300
+[16-Jan-2020 05:48:23 Africa/Johannesburg] applying plan defaults
+[16-Jan-2020 05:48:23 Africa/Johannesburg] setting controller status to 400
+[16-Jan-2020 05:48:23 Africa/Johannesburg] setting file inclusion to 
+[16-Jan-2020 05:48:23 Africa/Johannesburg] checking plan security
+[16-Jan-2020 05:48:23 Africa/Johannesburg] setting controller status to 700
+[16-Jan-2020 05:48:23 Africa/Johannesburg] saving controller to db
+[16-Jan-2020 05:48:23 Africa/Johannesburg] calculating controller checksum ff7e3ee813d5049c5629ecf9840a65ce
+[16-Jan-2020 05:48:23 Africa/Johannesburg] loading controller from db
+[16-Jan-2020 05:48:23 Africa/Johannesburg] setting file inclusion to 1
+[16-Jan-2020 05:48:23 Africa/Johannesburg] setting controller status to 800
+[16-Jan-2020 05:48:23 Africa/Johannesburg] saving controller to db
+[16-Jan-2020 05:48:23 Africa/Johannesburg] calculating controller checksum d807507e0a258e64e38fb7dcb62725c7
+[16-Jan-2020 05:48:23 Africa/Johannesburg] loading controller from db
+[16-Jan-2020 05:48:23 Africa/Johannesburg] setting controller status to 1000
+[16-Jan-2020 05:48:23 Africa/Johannesburg] saving controller to db
+[16-Jan-2020 05:48:34 Africa/Johannesburg] instantiating backup controller d5dc34b26200b35a58ee131b0a6ce71d
+[16-Jan-2020 05:48:34 Africa/Johannesburg] setting controller status to 100
+[16-Jan-2020 05:48:34 Africa/Johannesburg] loading controller plan
+[16-Jan-2020 05:48:34 Africa/Johannesburg] setting controller status to 300
+[16-Jan-2020 05:48:34 Africa/Johannesburg] applying plan defaults
+[16-Jan-2020 05:48:34 Africa/Johannesburg] setting controller status to 400
+[16-Jan-2020 05:48:34 Africa/Johannesburg] setting file inclusion to 
+[16-Jan-2020 05:48:34 Africa/Johannesburg] checking plan security
+[16-Jan-2020 05:48:34 Africa/Johannesburg] setting controller status to 700
+[16-Jan-2020 05:48:34 Africa/Johannesburg] saving controller to db
+[16-Jan-2020 05:48:34 Africa/Johannesburg] calculating controller checksum 3dec1497992df309e730ab2c8588fa52
+[16-Jan-2020 05:48:34 Africa/Johannesburg] loading controller from db
+[16-Jan-2020 05:48:34 Africa/Johannesburg] setting file inclusion to 1
+[16-Jan-2020 05:48:34 Africa/Johannesburg] setting controller status to 800
+[16-Jan-2020 05:48:34 Africa/Johannesburg] saving controller to db
+[16-Jan-2020 05:48:34 Africa/Johannesburg] calculating controller checksum 86cd2141c907a99a16b104f88bf8dfc9
+[16-Jan-2020 05:48:34 Africa/Johannesburg] loading controller from db
+[16-Jan-2020 05:48:34 Africa/Johannesburg] setting controller status to 1000
+[16-Jan-2020 05:48:34 Africa/Johannesburg] saving controller to db
+[20-Jan-2020 11:18:54 Africa/Johannesburg] PHP Notice:  Undefined property: stdClass::$profile in /home/insuran3/public_html/training/user/lib.php on line 906
+[20-Jan-2020 11:20:22 Africa/Johannesburg] PHP Notice:  Undefined property: stdClass::$profile in /home/insuran3/public_html/training/user/lib.php on line 906
+[20-Jan-2020 11:21:58 Africa/Johannesburg] PHP Notice:  Undefined property: stdClass::$profile in /home/insuran3/public_html/training/user/lib.php on line 906
+[20-Jan-2020 11:22:42 Africa/Johannesburg] PHP Notice:  Undefined property: stdClass::$profile in /home/insuran3/public_html/training/user/lib.php on line 906
+[20-Jan-2020 11:27:41 Africa/Johannesburg] PHP Notice:  Undefined property: stdClass::$profile in /home/insuran3/public_html/training/user/lib.php on line 906
+[20-Jan-2020 11:34:20 Africa/Johannesburg] PHP Notice:  Undefined property: stdClass::$profile in /home/insuran3/public_html/training/user/lib.php on line 906
+[20-Jan-2020 11:35:16 Africa/Johannesburg] PHP Notice:  Undefined property: stdClass::$profile in /home/insuran3/public_html/training/user/lib.php on line 906
+[20-Jan-2020 11:37:29 Africa/Johannesburg] PHP Notice:  Undefined property: stdClass::$profile in /home/insuran3/public_html/training/user/lib.php on line 906
+[20-Jan-2020 11:39:30 Africa/Johannesburg] PHP Notice:  Undefined property: stdClass::$profile in /home/insuran3/public_html/training/user/lib.php on line 906
+[20-Jan-2020 11:39:38 Africa/Johannesburg] PHP Notice:  Undefined property: stdClass::$profile in /home/insuran3/public_html/training/user/lib.php on line 906
+[21-Jan-2020 10:08:28 Africa/Johannesburg] instantiating backup controller 794bac269d8c1972e3d9ae30771825fd
+[21-Jan-2020 10:08:29 Africa/Johannesburg] setting controller status to 100
+[21-Jan-2020 10:08:29 Africa/Johannesburg] loading controller plan
+[21-Jan-2020 10:08:29 Africa/Johannesburg] setting controller status to 300
+[21-Jan-2020 10:08:29 Africa/Johannesburg] applying plan defaults
+[21-Jan-2020 10:08:29 Africa/Johannesburg] setting controller status to 400
+[21-Jan-2020 10:08:29 Africa/Johannesburg] setting file inclusion to 
+[21-Jan-2020 10:08:29 Africa/Johannesburg] checking plan security
+[21-Jan-2020 10:08:29 Africa/Johannesburg] setting controller status to 700
+[21-Jan-2020 10:08:29 Africa/Johannesburg] saving controller to db
+[21-Jan-2020 10:08:29 Africa/Johannesburg] calculating controller checksum b17745be965f3b5af5db35b4dbd7db79
+[21-Jan-2020 10:08:29 Africa/Johannesburg] loading controller from db
+[21-Jan-2020 10:08:29 Africa/Johannesburg] setting file inclusion to 1
+[21-Jan-2020 10:08:29 Africa/Johannesburg] setting controller status to 800
+[21-Jan-2020 10:08:29 Africa/Johannesburg] saving controller to db
+[21-Jan-2020 10:08:29 Africa/Johannesburg] calculating controller checksum 5c40258d9bcdb0825be34499411edc04
+[21-Jan-2020 10:08:29 Africa/Johannesburg] loading controller from db
+[21-Jan-2020 10:08:29 Africa/Johannesburg] setting controller status to 1000
+[21-Jan-2020 10:08:29 Africa/Johannesburg] saving controller to db
+[27-Jan-2020 09:00:37 Africa/Johannesburg] PHP Notice:  Undefined property: stdClass::$profile in /home/insuran3/public_html/training/user/lib.php on line 906

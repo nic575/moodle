@@ -1,0 +1,12 @@
+[20-Jan-2020 14:42:09 Africa/Johannesburg] ERROR:User 9208065064081 found in ext db
+[20-Jan-2020 14:42:09 Africa/Johannesburg] Default exception handler: Failed to update user data on external auth: db. See the server logs for more details. Debug: 
+Error code: cannotupdateuseronexauth
+* line 494 of /lib/setuplib.php: moodle_exception thrown
+* line 216 of /user/editadvanced.php: call to print_error()
+
+[20-Jan-2020 14:43:35 Africa/Johannesburg] ERROR:User 9208065064081 found in ext db
+[20-Jan-2020 14:43:35 Africa/Johannesburg] Default exception handler: Failed to update user data on external auth: db. See the server logs for more details. Debug: 
+Error code: cannotupdateuseronexauth
+* line 494 of /lib/setuplib.php: moodle_exception thrown
+* line 216 of /user/editadvanced.php: call to print_error()
+

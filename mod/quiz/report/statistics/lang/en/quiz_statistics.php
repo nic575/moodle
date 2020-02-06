@@ -112,6 +112,10 @@ $string['standarddeviation'] = 'Standard deviation (for {$a})';
 $string['standarddeviationq'] = 'Standard deviation';
 $string['standarderror'] = 'Standard error (for {$a})';
 $string['statistics'] = 'Statistics';
+<<<<<<< OURS
+$string['statistics:componentname'] = 'Quiz statistics report';
+=======
+>>>>>>> THEIRS
 $string['statisticsreport'] = 'Statistics report';
 $string['statisticsreportgraph'] = 'Statistics for question positions';
 $string['statistics:view'] = 'View statistics report';

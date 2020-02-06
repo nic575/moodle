@@ -1,0 +1,40 @@
+[14-Jan-2020 11:01:55 Africa/Johannesburg] Default exception handler: Could not find lesson pages Debug: 
+Error code: cannotfindpages
+* line 494 of /lib/setuplib.php: moodle_exception thrown
+* line 5177 of /mod/lesson/locallib.php: call to print_error()
+* line 2335 of /mod/lesson/locallib.php: call to lesson_page_type_manager->load_page()
+* line 3284 of /mod/lesson/locallib.php: call to lesson->load_page()
+* line 217 of /mod/lesson/view.php: call to lesson->prepare_page_and_contents()
+
+[14-Jan-2020 11:02:29 Africa/Johannesburg] Default exception handler: Could not find lesson pages Debug: 
+Error code: cannotfindpages
+* line 494 of /lib/setuplib.php: moodle_exception thrown
+* line 5177 of /mod/lesson/locallib.php: call to print_error()
+* line 2335 of /mod/lesson/locallib.php: call to lesson_page_type_manager->load_page()
+* line 3284 of /mod/lesson/locallib.php: call to lesson->load_page()
+* line 217 of /mod/lesson/view.php: call to lesson->prepare_page_and_contents()
+
+[14-Jan-2020 11:03:54 Africa/Johannesburg] Default exception handler: Could not find lesson pages Debug: 
+Error code: cannotfindpages
+* line 494 of /lib/setuplib.php: moodle_exception thrown
+* line 5177 of /mod/lesson/locallib.php: call to print_error()
+* line 2335 of /mod/lesson/locallib.php: call to lesson_page_type_manager->load_page()
+* line 3284 of /mod/lesson/locallib.php: call to lesson->load_page()
+* line 217 of /mod/lesson/view.php: call to lesson->prepare_page_and_contents()
+
+[14-Jan-2020 11:04:03 Africa/Johannesburg] Default exception handler: Could not find lesson pages Debug: 
+Error code: cannotfindpages
+* line 494 of /lib/setuplib.php: moodle_exception thrown
+* line 5177 of /mod/lesson/locallib.php: call to print_error()
+* line 2335 of /mod/lesson/locallib.php: call to lesson_page_type_manager->load_page()
+* line 3284 of /mod/lesson/locallib.php: call to lesson->load_page()
+* line 217 of /mod/lesson/view.php: call to lesson->prepare_page_and_contents()
+
+[14-Jan-2020 11:04:26 Africa/Johannesburg] Default exception handler: Could not find lesson pages Debug: 
+Error code: cannotfindpages
+* line 494 of /lib/setuplib.php: moodle_exception thrown
+* line 5177 of /mod/lesson/locallib.php: call to print_error()
+* line 2335 of /mod/lesson/locallib.php: call to lesson_page_type_manager->load_page()
+* line 3284 of /mod/lesson/locallib.php: call to lesson->load_page()
+* line 217 of /mod/lesson/view.php: call to lesson->prepare_page_and_contents()
+

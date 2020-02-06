@@ -93,6 +93,192 @@ class fetch extends external_api {
      * @since Moodle 3.8
      */
     public static function execute(string $component, int $contextid, string $itemname, int $gradeduserid): array {
+<<<<<<< OURS
+        [
+            'component' => $component,
+            'contextid' => $contextid,
+            'itemname' => $itemname,
+            'gradeduserid' => $gradeduserid,
+        ] = self::validate_parameters(self::execute_parameters(), [
+            'component' => $component,
+            'contextid' => $contextid,
+            'itemname' => $itemname,
+            'gradeduserid' => $gradeduserid,
+        ]);
+
+        // Validate the context.
+        $context = context::instance_by_id($contextid);
+        self::validate_context($context);
+
+        // Validate that the supplied itemname is a gradable item.
+        if (!component_gradeitems::is_valid_itemname($component, $itemname)) {
+            throw new coding_exception("The '{$itemname}' item is not valid for the '{$component}' component");
+        }
+
+        // Fetch the gradeitem instance.
+        $gradeitem = gradeitem::instance($component, $context, $itemname);
+
+        if (RUBRIC !== $gradeitem->get_advanced_grading_method()) {
+            throw new moodle_exception(
+                "The {$itemname} item in {$component}/{$contextid} is not configured for advanced grading with a rubric"
+            );
+        }
+
+        // Fetch the actual data.
+        $gradeduser = \core_user::get_user($gradeduserid);
+
+        return self::get_fetch_data($gradeitem, $gradeduser);
+    }
+
+    /**
+     * Get the data to be fetched and create the structure ready for Mustache.
+     *
+     * @param gradeitem $gradeitem
+     * @param stdClass $gradeduser
+     * @return array
+     */
+    public static function get_fetch_data(gradeitem $gradeitem, stdClass $gradeduser): array {
+        global $USER;
+
+        // Set up all the controllers etc that we'll be needing.
+        $hasgrade = $gradeitem->user_has_grade($gradeduser);
+        $grade = $gradeitem->get_grade_for_user($gradeduser, $USER);
+        $instance = $gradeitem->get_advanced_grading_instance($USER, $grade);
+        $controller = $instance->get_controller();
+        $definition = $controller->get_definition();
+        $fillings = $instance->get_rubric_filling();
+        $context = $controller->get_context();
+        $definitionid = (int) $definition->id;
+        $maxgrade = max(array_keys($controller->get_grade_range()));
+        $teacherdescription = self::get_formatted_text(
+            $context,
+            $definitionid,
+            'description',
+            $definition->description,
+            (int) $definition->descriptionformat
+        );
+
+        $criterion = [];
+        if ($definition->rubric_criteria) {
+            // Iterate over the defined criterion in the rubric and map out what we need to render each item.
+            $criterion = array_map(function($criterion) use ($definitionid, $fillings, $context, $hasgrade) {
+                // The general structure we'll be returning, we still need to get the remark (if any) and the levels associated.
+                $result = [
+                    'id' => $criterion['id'],
+                    'description' => self::get_formatted_text(
+                        $context,
+                        $definitionid,
+                        'description',
+                        $criterion['description'],
+                        (int) $criterion['descriptionformat']
+                    ),
+                ];
+
+                // Do we have an existing grade filling? if so lets get the remark associated to this criteria.
+                $filling = [];
+                if (array_key_exists($criterion['id'], $fillings['criteria'])) {
+                    $filling = $fillings['criteria'][$criterion['id']];
+                    $result['remark'] = self::get_formatted_text($context,
+                        $definitionid,
+                        'remark',
+                        $filling['remark'],
+                        (int) $filling['remarkformat']
+                    );
+                }
+
+                // Lets build the levels within a criteria and figure out what needs to go where.
+                $result['levels'] = array_map(function($level) use ($criterion, $filling, $context, $definitionid) {
+                    // The bulk of what'll be returned can be defined easily we'll add to this further down.
+                    $result = [
+                        'id' => $level['id'],
+                        'criterionid' => $criterion['id'],
+                        'score' => $level['score'],
+                        'definition' => self::get_formatted_text(
+                            $context,
+                            $definitionid,
+                            'definition',
+                            $level['definition'],
+                            (int) $level['definitionformat']
+                        ),
+                        'checked' => null,
+                    ];
+
+                    // Consult the grade filling to see if a level has been selected and if it is the current level.
+                    if (array_key_exists('levelid', $filling) && $filling['levelid'] == $level['id']) {
+                        $result['checked'] = true;
+                    }
+
+                    return $result;
+                }, $criterion['levels']);
+
+                $nulllevel = [
+                    'id' => null,
+                    'criterionid' => $criterion['id'],
+                    'score' => '-',
+                    'definition' => get_string('notset', 'gradingform_rubric'),
+                    'checked' => !$hasgrade,
+                ];
+                // Consult the grade filling to see if a level has been selected and if it is the current level.
+                if (array_key_exists('levelid', $filling) && $filling['levelid'] == 0) {
+                    $nulllevel['checked'] = true;
+                }
+
+                array_unshift($result['levels'], $nulllevel);
+
+                return $result;
+            }, $definition->rubric_criteria);
+        }
+
+        return [
+            'templatename' => 'gradingform_rubric/grades/grader/gradingpanel',
+            'hasgrade' => $hasgrade,
+            'grade' => [
+                'instanceid' => $instance->get_id(),
+                'criteria' => $criterion,
+                'rubricmode' => 'evaluate editable',
+                'teacherdescription' => $teacherdescription,
+                'canedit' => false,
+                'usergrade' => $grade->grade,
+                'maxgrade' => $maxgrade,
+                'timecreated' => $grade->timecreated,
+                'timemodified' => $grade->timemodified,
+            ],
+            'warnings' => [],
+        ];
+    }
+
+    /**
+     * Describes the data returned from the external function.
+     *
+     * @return external_single_structure
+     * @since Moodle 3.8
+     */
+    public static function execute_returns(): external_single_structure {
+        return new external_single_structure([
+            'templatename' => new external_value(PARAM_SAFEPATH, 'The template to use when rendering this data'),
+            'hasgrade' => new external_value(PARAM_BOOL, 'Does the user have a grade?'),
+            'grade' => new external_single_structure([
+                'instanceid' => new external_value(PARAM_INT, 'The id of the current grading instance'),
+                'rubricmode' => new external_value(PARAM_RAW, 'The mode i.e. evaluate editable'),
+                'canedit' => new external_value(PARAM_BOOL, 'Can the user edit this'),
+                'criteria' => new external_multiple_structure(
+                    new external_single_structure([
+                        'id' => new external_value(PARAM_INT, 'ID of the Criteria'),
+                        'description' => new external_value(PARAM_RAW, 'Description of the Criteria'),
+                        'remark' => new external_value(PARAM_RAW, 'Any remarks for this criterion for the user being assessed', VALUE_OPTIONAL),
+                        'levels' => new external_multiple_structure(new external_single_structure([
+                            'id' => new external_value(PARAM_INT, 'ID of level'),
+                            'criterionid' => new external_value(PARAM_INT, 'ID of the criterion this matches to'),
+                            'score' => new external_value(PARAM_RAW, 'What this level is worth'),
+                            'definition' => new external_value(PARAM_RAW, 'Definition of the level'),
+                            'checked' => new external_value(PARAM_BOOL, 'Selected flag'),
+                        ])),
+                    ])
+                ),
+                'timecreated' => new external_value(PARAM_INT, 'The time that the grade was created'),
+                'usergrade' => new external_value(PARAM_RAW, 'Current user grade'),
+                'maxgrade' => new external_value(PARAM_RAW, 'Max possible grade'),
+=======
         global $CFG;
         require_once("{$CFG->libdir}/gradelib.php");
         [
@@ -285,6 +471,7 @@ class fetch extends external_api {
                 'usergrade' => new external_value(PARAM_RAW, 'Current user grade'),
                 'maxgrade' => new external_value(PARAM_RAW, 'Max possible grade'),
                 'gradedby' => new external_value(PARAM_RAW, 'The assumed grader of this grading instance'),
+>>>>>>> THEIRS
                 'timemodified' => new external_value(PARAM_INT, 'The time that the grade was last updated'),
             ]),
             'warnings' => new external_warnings(),

@@ -128,6 +128,43 @@ function cron_run_scheduled_tasks(int $timenow) {
  * Execute all queued adhoc tasks, applying necessary concurrency limits and time limits.
  *
  * @param   int     $timenow The time this process started.
+<<<<<<< OURS
+ */
+function cron_run_adhoc_tasks(int $timenow) {
+    // Allow a restriction on the number of adhoc task runners at once.
+    $cronlockfactory = \core\lock\lock_config::get_lock_factory('cron');
+    $maxruns = get_config('core', 'task_adhoc_concurrency_limit');
+    $maxruntime = get_config('core', 'task_adhoc_max_runtime');
+
+    $adhoclock = null;
+    for ($run = 0; $run < $maxruns; $run++) {
+        if ($adhoclock = $cronlockfactory->get_lock("adhoc_task_runner_{$run}", 1)) {
+            break;
+        }
+    }
+
+    if (!$adhoclock) {
+        mtrace("Skipping processing of adhoc tasks. Concurrency limit reached.");
+        return;
+    }
+
+    $starttime = time();
+
+    // Run all adhoc tasks.
+    while (!\core\task\manager::static_caches_cleared_since($timenow) &&
+            $task = \core\task\manager::get_next_adhoc_task(time())) {
+        cron_run_inner_adhoc_task($task);
+        unset($task);
+
+        if ((time() - $starttime) > $maxruntime) {
+            mtrace("Stopping processing of adhoc tasks as time limit has been reached.");
+            break;
+        }
+    }
+
+    // Release the adhoc task runner lock.
+    $adhoclock->release();
+=======
  * @param   int     $keepalive Keep this function alive for N seconds and poll for new adhoc tasks.
  * @param   bool    $checklimits Should we check limits?
  */
@@ -202,6 +239,7 @@ function cron_run_adhoc_tasks(int $timenow, $keepalive = 0, $checklimits = true)
         // Release the adhoc task runner lock.
         $adhoclock->release();
     }
+>>>>>>> THEIRS
 }
 
 /**

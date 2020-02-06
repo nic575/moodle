@@ -54,7 +54,11 @@ if ($ADMIN->fulltree) {
     $choices['default.scss'] = 'default.scss';
     $choices['plain.scss'] = 'plain.scss';
 
+<<<<<<< OURS
+    $setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
+=======
     $setting = new admin_setting_configthemepreset($name, $title, $description, $default, $choices, 'classic');
+>>>>>>> THEIRS
     $setting->set_updatedcallback('theme_reset_all_caches');
     $page->add($setting);
 

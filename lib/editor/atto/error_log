@@ -1,0 +1,33 @@
+[13-Jan-2020 16:27:35 Africa/Johannesburg] Default exception handler: Course or activity not accessible. Debug: You are not logged in
+Error code: requireloginerror
+* line 2711 of /lib/moodlelib.php: require_login_exception thrown
+* line 69 of /lib/editor/atto/autosave-ajax.php: call to require_login()
+
+[14-Jan-2020 09:56:08 Africa/Johannesburg] Default exception handler: Course or activity not accessible. Debug: You are not logged in
+Error code: requireloginerror
+* line 2711 of /lib/moodlelib.php: require_login_exception thrown
+* line 69 of /lib/editor/atto/autosave-ajax.php: call to require_login()
+
+[16-Jan-2020 19:44:58 Africa/Johannesburg] Default exception handler: Course or activity not accessible. Debug: You are not logged in
+Error code: requireloginerror
+* line 2711 of /lib/moodlelib.php: require_login_exception thrown
+* line 69 of /lib/editor/atto/autosave-ajax.php: call to require_login()
+
+[20-Jan-2020 10:20:27 Africa/Johannesburg] Default exception handler: Course or activity not accessible. Debug: You are not logged in
+Error code: requireloginerror
+* line 2711 of /lib/moodlelib.php: require_login_exception thrown
+* line 69 of /lib/editor/atto/autosave-ajax.php: call to require_login()
+
+[27-Jan-2020 08:38:51 Africa/Johannesburg] Default exception handler: Course or activity not accessible. Debug: You are not logged in
+Error code: requireloginerror
+* line 2711 of /lib/moodlelib.php: require_login_exception thrown
+* line 69 of /lib/editor/atto/autosave-ajax.php: call to require_login()
+
+[27-Jan-2020 08:39:04 Africa/Johannesburg] Default exception handler: Unknown exception related to local files (Invalid itemid) Debug: 
+Error code: storedfileproblem
+* line 1102 of /lib/filestorage/file_storage.php: file_exception thrown
+* line 1019 of /lib/filelib.php: call to file_storage->create_file_from_storedfile()
+* line 932 of /lib/filelib.php: call to file_copy_file_to_file_area()
+* line 1077 of /lib/filelib.php: call to file_merge_draft_areas()
+* line 180 of /lib/editor/atto/autosave-ajax.php: call to file_save_draft_area_files()
+

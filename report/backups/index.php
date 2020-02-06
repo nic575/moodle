@@ -45,6 +45,115 @@ $strunfinished = get_string('unfinished');
 $strskipped = get_string('skipped');
 $strwarning = get_string('warning');
 $strnotyetrun = get_string('backupnotyetrun');
+<<<<<<< OURS
+
+if ($courseid) {
+    $course = $DB->get_record('course', array('id' => $courseid), 'id, fullname', MUST_EXIST);
+
+    // Get the automated backups that have been performed for this course.
+    $params = array('operation' => backup::OPERATION_BACKUP,
+                    'type' => backup::TYPE_1COURSE,
+                    'itemid' => $course->id,
+                    'interactive' => backup::INTERACTIVE_NO);
+    if ($backups = $DB->get_records('backup_controllers', $params, 'timecreated DESC',
+        'id, backupid, status, timecreated', $page, 1)) {
+        // Get the backup we want to use.
+        $backup = reset($backups);
+
+        // Get the backup status.
+        if ($backup->status == backup::STATUS_FINISHED_OK) {
+            $status = $strok;
+            $statusclass = 'backup-ok'; // Green.
+        } else if ($backup->status == backup::STATUS_AWAITING || $backup->status == backup::STATUS_EXECUTING) {
+            $status = $strunfinished;
+            $statusclass = 'backup-unfinished'; // Red.
+        } else { // Else show error.
+            $status = $strerror;
+            $statusclass = 'backup-error'; // Red.
+        }
+
+        $table = new html_table();
+        $table->head = array('');
+        $table->data = array();
+        $statusrow = get_string('status') . ' - ' . html_writer::tag('span', $status, array('class' => $statusclass));
+        $table->data[] = array($statusrow);
+
+        // Get the individual logs for this backup.
+        if ($logs = $DB->get_records('backup_logs', array('backupid' => $backup->backupid), 'timecreated ASC',
+            'id, message, timecreated')) {
+            foreach ($logs as $log) {
+                $table->data[] = array(userdate($log->timecreated, get_string('strftimetime', 'report_backups')) .
+                    ' - ' . $log->message);
+            }
+        } else {
+            $table->data[] = array(get_string('nologsfound', 'report_backups'));
+        }
+    }
+
+    // Set the course name to display.
+    $coursename = format_string($course->fullname, true, array('context' => context_course::instance($course->id)));
+
+    echo $OUTPUT->header();
+    echo $OUTPUT->heading(get_string('backupofcourselogs', 'report_backups', $coursename));
+    if (isset($backup)) {
+        // We put this logic down here as we may be viewing a backup that was performed which there were no logs
+        // recorded for. We still want to display the pagination so the user can still navigate to other backups,
+        // and we also display a message so they are aware that the backup happened but there were no logs.
+        $baseurl = new moodle_url('/report/backups/index.php', array('courseid' => $courseid));
+        $numberofbackups = $DB->count_records('backup_controllers', $params);
+        $pagingbar = new paging_bar($numberofbackups, $page, 1, $baseurl);
+
+        echo $OUTPUT->render($pagingbar);
+        echo $OUTPUT->heading(get_string('logsofbackupexecutedon', 'report_backups', userdate($backup->timecreated)), 3);
+        echo html_writer::table($table);
+        echo $OUTPUT->render($pagingbar);
+    } else {
+        echo $OUTPUT->box(get_string('nobackupsfound', 'report_backups'), 'center');
+    }
+    echo $OUTPUT->footer();
+    exit();
+}
+
+$table = new html_table;
+$table->head = array(
+    get_string("course"),
+    get_string("timetaken", "backup"),
+    get_string("status"),
+    get_string("backupnext")
+);
+$table->headspan = array(1, 3, 1, 1);
+$table->attributes = array('class' => 'generaltable backup-report');
+$table->data = array();
+
+$select = ', ' . context_helper::get_preload_record_columns_sql('ctx');
+$join = "LEFT JOIN {context} ctx ON (ctx.instanceid = c.id AND ctx.contextlevel = :contextlevel)";
+$sql = "SELECT bc.*, c.id as courseid, c.fullname $select
+          FROM {backup_courses} bc
+          JOIN {course} c ON c.id = bc.courseid
+               $join";
+$rs = $DB->get_recordset_sql($sql, array('contextlevel' => CONTEXT_COURSE));
+foreach ($rs as $backuprow) {
+
+    // Cache the course context
+    context_helper::preload_from_record($backuprow);
+
+    // Prepare a cell to display the status of the entry.
+    if ($backuprow->laststatus == backup_cron_automated_helper::BACKUP_STATUS_OK) {
+        $status = $strok;
+        $statusclass = 'backup-ok'; // Green.
+    } else if ($backuprow->laststatus == backup_cron_automated_helper::BACKUP_STATUS_UNFINISHED) {
+        $status = $strunfinished;
+        $statusclass = 'backup-unfinished'; // Red.
+    } else if ($backuprow->laststatus == backup_cron_automated_helper::BACKUP_STATUS_SKIPPED) {
+        $status = $strskipped;
+        $statusclass = 'backup-skipped'; // Green.
+    } else if ($backuprow->laststatus == backup_cron_automated_helper::BACKUP_STATUS_WARNING) {
+        $status = $strwarning;
+        $statusclass = 'backup-warning'; // Orange.
+    } else if ($backuprow->laststatus == backup_cron_automated_helper::BACKUP_STATUS_NOTYETRUN) {
+        $status = $strnotyetrun;
+        $statusclass = 'backup-notyetrun';
+=======
 $strqueued = get_string('queued');
 
 if ($courseid) {
@@ -156,6 +265,7 @@ foreach ($rs as $backuprow) {
     } else if ($backuprow->laststatus == backup_cron_automated_helper::BACKUP_STATUS_QUEUED) {
         $status = $strqueued;
         $statusclass = 'backup-queued';
+>>>>>>> THEIRS
     } else {
         $status = $strerror;
         $statusclass = 'backup-error'; // Red.

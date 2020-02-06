@@ -32,6 +32,91 @@ list($options, $unrecognized) = cli_get_params(
     [
         'execute' => false,
         'help' => false,
+<<<<<<< OURS
+        'showsql' => false,
+        'showdebugging' => false,
+    ], [
+        'h' => 'help',
+    ]
+);
+
+if ($unrecognized) {
+    $unrecognized = implode("\n  ", $unrecognized);
+    cli_error(get_string('cliunknowoption', 'admin', $unrecognized));
+}
+
+if ($options['help'] or empty($options['execute'])) {
+    $help =
+"Scheduled cron tasks.
+
+Options:
+--showsql             Show sql queries before they are executed
+--showdebugging       Show developer level debugging information
+--execute             Run all queued adhoc tasks
+-h, --help            Print out this help
+
+Example:
+\$sudo -u www-data /usr/bin/php admin/tool/task/cli/adhoc_task.php --execute
+
+";
+
+    echo $help;
+    die;
+}
+
+if ($options['showdebugging']) {
+    set_debugging(DEBUG_DEVELOPER, true);
+}
+
+if ($options['showsql']) {
+    $DB->set_debug(true);
+}
+
+if (CLI_MAINTENANCE) {
+    echo "CLI maintenance mode active, cron execution suspended.\n";
+    exit(1);
+}
+
+if (moodle_needs_upgrading()) {
+    echo "Moodle upgrade pending, cron execution suspended.\n";
+    exit(1);
+}
+
+if (empty($options['execute'])) {
+    exit(0);
+}
+
+if (!empty($CFG->showcronsql)) {
+    $DB->set_debug(true);
+}
+if (!empty($CFG->showcrondebugging)) {
+    set_debugging(DEBUG_DEVELOPER, true);
+}
+
+core_php_time_limit::raise();
+$starttime = microtime();
+
+// Increase memory limit.
+raise_memory_limit(MEMORY_EXTRA);
+
+// Emulate normal session - we use admin accoutn by default.
+cron_setup_user();
+
+// Start output log.
+$timenow = time();
+$humantimenow = date('r', $timenow);
+mtrace("Server Time: {$humantimenow}\n");
+
+// Run all adhoc tasks.
+$taskcount = 0;
+while (!\core\task\manager::static_caches_cleared_since($timenow) &&
+        $task = \core\task\manager::get_next_adhoc_task($timenow)) {
+    cron_run_inner_adhoc_task($task);
+    $taskcount++;
+    unset($task);
+}
+mtrace("Ran {$taskcount} adhoc tasks found at {$humantimenow}");
+=======
         'keep-alive' => 0,
         'showsql' => false,
         'showdebugging' => false,
@@ -117,3 +202,4 @@ $keepalive = (int)$options['keep-alive'];
 
 mtrace("Server Time: {$humantimenow}\n");
 cron_run_adhoc_tasks(time(), $keepalive, $checklimits);
+>>>>>>> THEIRS

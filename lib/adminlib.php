@@ -11094,6 +11094,8 @@ class admin_settings_sitepolicy_handler_select extends admin_setting_configselec
         return true;
     }
 }
+<<<<<<< OURS
+=======
 
 /**
  * Used to validate theme presets code and ensuring they compile well.
@@ -11186,3 +11188,4 @@ class admin_setting_configthemepreset extends admin_setting_configselect {
         return true;
     }
 }
+>>>>>>> THEIRS

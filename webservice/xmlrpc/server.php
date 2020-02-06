@@ -43,6 +43,8 @@ $server = new webservice_xmlrpc_server(WEBSERVICE_AUTHMETHOD_PERMANENT_TOKEN);
 $server->run();
 die;
 
+<<<<<<< OURS
+=======
 /**
  * Raises Early WS Exception in XMLRPC format.
  *
@@ -55,3 +57,4 @@ function raise_early_ws_exception(Exception $ex): void {
     $server->exception_handler($ex);
 }
 
+>>>>>>> THEIRS

@@ -1,0 +1,116 @@
+[15-Jan-2020 10:59:41 Africa/Johannesburg] Default exception handler: Sorry, but you do not currently have permissions to do that (access question edit tab editq). Debug: 
+Error code: nopermissions
+* line 494 of /lib/setuplib.php: moodle_exception thrown
+* line 2026 of /lib/questionlib.php: call to print_error()
+* line 440 of /question/editlib.php: call to question_edit_contexts->require_one_edit_tab_cap()
+* line 328 of /question/editlib.php: call to question_build_edit_resources()
+* line 55 of /mod/quiz/edit.php: call to question_edit_setup()
+
+[17-Jan-2020 10:50:46 Africa/Johannesburg] Default exception handler: There are not enough questions in category 24 to create the question Random (General and subcategories) (33). Debug: 
+Error code: notenoughrandomquestions
+* line 228 of /mod/quiz/locallib.php: moodle_exception thrown
+* line 2459 of /mod/quiz/locallib.php: call to quiz_start_new_attempt()
+* line 111 of /mod/quiz/startattempt.php: call to quiz_prepare_and_start_new_attempt()
+
+[20-Jan-2020 11:53:20 Africa/Johannesburg] Default exception handler: There are not enough questions in category 24 to create the question Random (General and subcategories) (33). Debug: 
+Error code: notenoughrandomquestions
+* line 228 of /mod/quiz/locallib.php: moodle_exception thrown
+* line 2459 of /mod/quiz/locallib.php: call to quiz_start_new_attempt()
+* line 111 of /mod/quiz/startattempt.php: call to quiz_prepare_and_start_new_attempt()
+
+[20-Jan-2020 11:53:30 Africa/Johannesburg] Default exception handler: There are not enough questions in category 24 to create the question Random (General and subcategories) (33). Debug: 
+Error code: notenoughrandomquestions
+* line 228 of /mod/quiz/locallib.php: moodle_exception thrown
+* line 2459 of /mod/quiz/locallib.php: call to quiz_start_new_attempt()
+* line 111 of /mod/quiz/startattempt.php: call to quiz_prepare_and_start_new_attempt()
+
+[21-Jan-2020 08:20:01 Africa/Johannesburg] Default exception handler: There are not enough questions in category 24 to create the question Random (General and subcategories) (33). Debug: 
+Error code: notenoughrandomquestions
+* line 228 of /mod/quiz/locallib.php: moodle_exception thrown
+* line 2459 of /mod/quiz/locallib.php: call to quiz_start_new_attempt()
+* line 111 of /mod/quiz/startattempt.php: call to quiz_prepare_and_start_new_attempt()
+
+[21-Jan-2020 08:22:32 Africa/Johannesburg] Default exception handler: There are not enough questions in category 24 to create the question Random (General and subcategories) (33). Debug: 
+Error code: notenoughrandomquestions
+* line 228 of /mod/quiz/locallib.php: moodle_exception thrown
+* line 2459 of /mod/quiz/locallib.php: call to quiz_start_new_attempt()
+* line 111 of /mod/quiz/startattempt.php: call to quiz_prepare_and_start_new_attempt()
+
+[21-Jan-2020 08:23:12 Africa/Johannesburg] Default exception handler: There are not enough questions in category 24 to create the question Random (General and subcategories) (33). Debug: 
+Error code: notenoughrandomquestions
+* line 228 of /mod/quiz/locallib.php: moodle_exception thrown
+* line 2459 of /mod/quiz/locallib.php: call to quiz_start_new_attempt()
+* line 111 of /mod/quiz/startattempt.php: call to quiz_prepare_and_start_new_attempt()
+
+[22-Jan-2020 09:57:59 Africa/Johannesburg] Default exception handler: There are not enough questions in category 50 to create the question Random (All Risk) (133). Debug: 
+Error code: notenoughrandomquestions
+* line 228 of /mod/quiz/locallib.php: moodle_exception thrown
+* line 2459 of /mod/quiz/locallib.php: call to quiz_start_new_attempt()
+* line 111 of /mod/quiz/startattempt.php: call to quiz_prepare_and_start_new_attempt()
+
+[22-Jan-2020 10:02:41 Africa/Johannesburg] Default exception handler: There are not enough questions in category 50 to create the question Random (All Risk) (133). Debug: 
+Error code: notenoughrandomquestions
+* line 228 of /mod/quiz/locallib.php: moodle_exception thrown
+* line 2459 of /mod/quiz/locallib.php: call to quiz_start_new_attempt()
+* line 111 of /mod/quiz/startattempt.php: call to quiz_prepare_and_start_new_attempt()
+
+[23-Jan-2020 08:06:25 Africa/Johannesburg] Default exception handler: There are not enough questions in category 50 to create the question Random (All Risk) (133). Debug: 
+Error code: notenoughrandomquestions
+* line 228 of /mod/quiz/locallib.php: moodle_exception thrown
+* line 2459 of /mod/quiz/locallib.php: call to quiz_start_new_attempt()
+* line 111 of /mod/quiz/startattempt.php: call to quiz_prepare_and_start_new_attempt()
+
+[23-Jan-2020 13:40:42 Africa/Johannesburg] Default exception handler: There are not enough questions in category 50 to create the question Random (All Risk) (133). Debug: 
+Error code: notenoughrandomquestions
+* line 228 of /mod/quiz/locallib.php: moodle_exception thrown
+* line 2459 of /mod/quiz/locallib.php: call to quiz_start_new_attempt()
+* line 111 of /mod/quiz/startattempt.php: call to quiz_prepare_and_start_new_attempt()
+
+[27-Jan-2020 12:37:54 Africa/Johannesburg] Default exception handler: There are not enough questions in category 50 to create the question Random (All Risk) (133). Debug: 
+Error code: notenoughrandomquestions
+* line 228 of /mod/quiz/locallib.php: moodle_exception thrown
+* line 2459 of /mod/quiz/locallib.php: call to quiz_start_new_attempt()
+* line 111 of /mod/quiz/startattempt.php: call to quiz_prepare_and_start_new_attempt()
+
+[27-Jan-2020 12:48:49 Africa/Johannesburg] Default exception handler: There are not enough questions in category 50 to create the question Random (All Risk) (133). Debug: 
+Error code: notenoughrandomquestions
+* line 228 of /mod/quiz/locallib.php: moodle_exception thrown
+* line 2459 of /mod/quiz/locallib.php: call to quiz_start_new_attempt()
+* line 111 of /mod/quiz/startattempt.php: call to quiz_prepare_and_start_new_attempt()
+
+[28-Jan-2020 08:22:52 Africa/Johannesburg] Default exception handler: There are not enough questions in category 50 to create the question Random (All Risk) (133). Debug: 
+Error code: notenoughrandomquestions
+* line 228 of /mod/quiz/locallib.php: moodle_exception thrown
+* line 2459 of /mod/quiz/locallib.php: call to quiz_start_new_attempt()
+* line 111 of /mod/quiz/startattempt.php: call to quiz_prepare_and_start_new_attempt()
+
+[29-Jan-2020 10:03:08 Africa/Johannesburg] Default exception handler: There are not enough questions in category 50 to create the question Random (All Risk) (133). Debug: 
+Error code: notenoughrandomquestions
+* line 228 of /mod/quiz/locallib.php: moodle_exception thrown
+* line 2459 of /mod/quiz/locallib.php: call to quiz_start_new_attempt()
+* line 111 of /mod/quiz/startattempt.php: call to quiz_prepare_and_start_new_attempt()
+
+[29-Jan-2020 10:03:29 Africa/Johannesburg] Default exception handler: There are not enough questions in category 50 to create the question Random (All Risk) (133). Debug: 
+Error code: notenoughrandomquestions
+* line 228 of /mod/quiz/locallib.php: moodle_exception thrown
+* line 2459 of /mod/quiz/locallib.php: call to quiz_start_new_attempt()
+* line 111 of /mod/quiz/startattempt.php: call to quiz_prepare_and_start_new_attempt()
+
+[29-Jan-2020 10:07:37 Africa/Johannesburg] Default exception handler: There are not enough questions in category 50 to create the question Random (All Risk) (133). Debug: 
+Error code: notenoughrandomquestions
+* line 228 of /mod/quiz/locallib.php: moodle_exception thrown
+* line 2459 of /mod/quiz/locallib.php: call to quiz_start_new_attempt()
+* line 111 of /mod/quiz/startattempt.php: call to quiz_prepare_and_start_new_attempt()
+
+[29-Jan-2020 11:06:25 Africa/Johannesburg] Default exception handler: A required parameter (attempt) was missing Debug: 
+Error code: missingparam
+* line 494 of /lib/setuplib.php: moodle_exception thrown
+* line 562 of /lib/moodlelib.php: call to print_error()
+* line 39 of /mod/quiz/processattempt.php: call to required_param()
+
+[29-Jan-2020 11:38:27 Africa/Johannesburg] Default exception handler: There are not enough questions in category 54 to create the question Random (Personal Accident) (143). Debug: 
+Error code: notenoughrandomquestions
+* line 228 of /mod/quiz/locallib.php: moodle_exception thrown
+* line 2459 of /mod/quiz/locallib.php: call to quiz_start_new_attempt()
+* line 111 of /mod/quiz/startattempt.php: call to quiz_prepare_and_start_new_attempt()
+

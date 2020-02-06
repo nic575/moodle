@@ -49,6 +49,28 @@ class webservice_rest_server extends webservice_base_server {
     }
 
     /**
+<<<<<<< OURS
+     * This method parses the $_POST and $_GET superglobals and looks for
+     * the following information:
+     *  1/ user authentication - username+password or token (wsusername, wspassword and wstoken parameters)
+     *  2/ function name (wsfunction parameter)
+     *  3/ function parameters (all other parameters except those above)
+     *  4/ text format parameters
+     *  5/ return rest format xml/json
+     */
+    protected function parse_request() {
+
+        // Retrieve and clean the POST/GET parameters from the parameters specific to the server.
+        parent::set_web_service_call_settings();
+
+        // Get GET and POST parameters.
+        $methodvariables = array_merge($_GET, $_POST);
+
+        // Retrieve REST format parameter - 'xml' (default) or 'json'.
+        $restformatisset = isset($methodvariables['moodlewsrestformat'])
+                && (($methodvariables['moodlewsrestformat'] == 'xml' || $methodvariables['moodlewsrestformat'] == 'json'));
+        $this->restformat = $restformatisset ? $methodvariables['moodlewsrestformat'] : 'xml';
+=======
      * Set the request format to.
      */
     public function set_rest_format(): void {
@@ -78,6 +100,7 @@ class webservice_rest_server extends webservice_base_server {
         // Get GET and POST parameters.
         $methodvariables = array_merge($_GET, $_POST);
         $this->set_rest_format();
+>>>>>>> THEIRS
         unset($methodvariables['moodlewsrestformat']);
 
         if ($this->authmethod == WEBSERVICE_AUTHMETHOD_USERNAME) {

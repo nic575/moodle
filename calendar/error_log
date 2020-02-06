@@ -1,0 +1,10 @@
+[13-Jan-2020 20:13:37 Africa/Johannesburg] Default exception handler: The given iCal URL is invalid. Debug: 
+Error code: errorinvalidicalurl
+* line 494 of /lib/setuplib.php: moodle_exception thrown
+* line 104 of /calendar/managesubscriptions.php: call to print_error()
+
+[13-Jan-2020 20:21:27 Africa/Johannesburg] Default exception handler: The given iCal URL is invalid. Debug: 
+Error code: errorinvalidicalurl
+* line 494 of /lib/setuplib.php: moodle_exception thrown
+* line 104 of /calendar/managesubscriptions.php: call to print_error()
+

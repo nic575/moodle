@@ -1,0 +1,5 @@
+[20-Jan-2020 11:37:40 Africa/Johannesburg] PHP Notice:  Undefined property: stdClass::$profile in /home/insuran3/public_html/training/user/lib.php on line 906
+[20-Jan-2020 11:39:13 Africa/Johannesburg] PHP Notice:  Undefined property: stdClass::$profile in /home/insuran3/public_html/training/user/lib.php on line 906
+[20-Jan-2020 11:39:17 Africa/Johannesburg] PHP Notice:  Undefined property: stdClass::$profile in /home/insuran3/public_html/training/user/lib.php on line 906
+[20-Jan-2020 11:39:21 Africa/Johannesburg] PHP Notice:  Undefined property: stdClass::$profile in /home/insuran3/public_html/training/user/lib.php on line 906
+[20-Jan-2020 11:39:27 Africa/Johannesburg] PHP Notice:  Undefined property: stdClass::$profile in /home/insuran3/public_html/training/user/lib.php on line 906

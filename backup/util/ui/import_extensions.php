@@ -34,6 +34,93 @@
 class import_ui extends backup_ui {
 
     /**
+<<<<<<< OURS
+     * Customises the backup progress bar
+     *
+     * @global moodle_page $PAGE
+     * @return array[] An array of arrays
+     */
+    public function get_progress_bar() {
+        global $PAGE;
+        $stage = self::STAGE_COMPLETE;
+        $currentstage = $this->stage->get_stage();
+        $items = array();
+        while ($stage > 0) {
+            $classes = array('backup_stage');
+            if (floor($stage / 2) == $currentstage) {
+                $classes[] = 'backup_stage_next';
+            } else if ($stage == $currentstage) {
+                $classes[] = 'backup_stage_current';
+            } else if ($stage < $currentstage) {
+                $classes[] = 'backup_stage_complete';
+            }
+            $item = array(
+                'text' => strlen(decbin($stage * 2)).'. '.get_string('importcurrentstage'.$stage, 'backup'),
+                'class' => join(' ', $classes)
+            );
+            if ($stage < $currentstage && $currentstage < self::STAGE_COMPLETE && (!self::$skipcurrentstage || $stage * 2 != $currentstage)) {
+                $item['link'] = new moodle_url(
+                    $PAGE->url,
+                    $this->stage->get_params() + array('backup' => $this->get_backupid(), 'stage' => $stage)
+                );
+            }
+            array_unshift($items, $item);
+            $stage = floor($stage / 2);
+        }
+        $selectorlink = new moodle_url($PAGE->url, $this->stage->get_params());
+        $selectorlink->remove_params('importid');
+        array_unshift($items, array(
+                'text' => '1. '.get_string('importcurrentstage0', 'backup'),
+                'class' => join(' ', $classes),
+                'link' => $selectorlink));
+        return $items;
+    }
+
+    /**
+     * Intialises what ever stage is requested. If none are requested we check
+     * params for 'stage' and default to initial
+     *
+     * @param int|null $stage The desired stage to intialise or null for the default
+     * @param array $params
+     * @return backup_ui_stage_initial|backup_ui_stage_schema|backup_ui_stage_confirmation|backup_ui_stage_final
+     */
+    protected function initialise_stage($stage = null, array $params = null) {
+        if ($stage == null) {
+            $stage = optional_param('stage', self::STAGE_INITIAL, PARAM_INT);
+        }
+        if (self::$skipcurrentstage) {
+            $stage *= 2;
+        }
+        switch ($stage) {
+            case backup_ui::STAGE_INITIAL:
+                $stage = new import_ui_stage_inital($this, $params);
+                break;
+            case backup_ui::STAGE_SCHEMA:
+                $stage = new import_ui_stage_schema($this, $params);
+                break;
+            case backup_ui::STAGE_CONFIRMATION:
+                $stage = new import_ui_stage_confirmation($this, $params);
+                break;
+            case backup_ui::STAGE_FINAL:
+                $stage = new import_ui_stage_final($this, $params);
+                break;
+            default:
+                $stage = false;
+                break;
+        }
+        return $stage;
+    }
+}
+
+/**
+ * Extends the initial stage
+ *
+ * @package   core_backup
+ * @copyright 2010 Sam Hemelryk
+ * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+class import_ui_stage_inital extends backup_ui_stage_initial {}
+=======
      * The stages of the backup user interface
      * The precheck/selection stage of the backup - here you choose the initial settings.
      */
@@ -183,6 +270,7 @@ class import_ui_stage_precheck extends backup_ui_stage {
         // Dummy functions. We don't have to do anything here.
     }
 }
+>>>>>>> THEIRS
 
 /**
  * Extends the schema stage

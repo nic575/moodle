@@ -43,6 +43,25 @@
         "datepublished": "12 January 2016, 9:12 pm"
     }
 }}
+<<<<<<< OURS
+<li class="p-y-0">
+    {{$title}}
+        <div class="link">
+            <small class="date text-muted">{{{datepublished}}}</small>
+            <a href="{{{link}}}" onclick='this.target="_blank"'>{{title}}</a>
+            
+        </div>
+    {{/title}}
+
+    {{$content}}
+        {{#description}}
+            <!--div class="date text-muted muted mb-1">
+                <small>{{{datepublished}}}</small>
+            </div>
+            <div class="description">
+                {{{description}}}
+            </div-->
+=======
 <li class="p-y-1">
     {{$title}}
         <div class="link">
@@ -58,6 +77,7 @@
             <div class="description">
                 {{{description}}}
             </div>
+>>>>>>> THEIRS
         {{/description}}
     {{/content}}
 </li>

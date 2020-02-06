@@ -472,6 +472,26 @@ class manager {
     }
 
     /**
+<<<<<<< OURS
+     * This function will dispatch the next adhoc task in the queue. The task will be handed out
+     * with an open lock - possibly on the entire cron process. Make sure you call either
+     * {@link adhoc_task_failed} or {@link adhoc_task_complete} to release the lock and reschedule the task.
+     *
+     * @param int $timestart
+     * @return \core\task\adhoc_task or null if not found
+     */
+    public static function get_next_adhoc_task($timestart) {
+        global $DB;
+        $cronlockfactory = \core\lock\lock_config::get_lock_factory('cron');
+
+        if (!$cronlock = $cronlockfactory->get_lock('core_cron', 10)) {
+            throw new \moodle_exception('locktimeout');
+        }
+
+        $where = '(nextruntime IS NULL OR nextruntime < :timestart1)';
+        $params = array('timestart1' => $timestart);
+        $records = $DB->get_records_select('task_adhoc', $where, $params);
+=======
      * Ensure quality of service for the ad hoc task queue.
      *
      * This reshuffles the adhoc tasks queue to balance by type to ensure a
@@ -567,6 +587,7 @@ class manager {
         if (!$cronlock = $cronlockfactory->get_lock('core_cron', 10)) {
             throw new \moodle_exception('locktimeout');
         }
+>>>>>>> THEIRS
 
         foreach ($records as $record) {
 

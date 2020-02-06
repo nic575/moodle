@@ -1,0 +1,14 @@
+[29-Jan-2020 13:12:01 Africa/Johannesburg] Default exception handler: You have entered data outside the normal sequence. This can occur if you use your browser's Back or Forward buttons; please don't use these during the test. It can also happen if you click on something while a page is loading. Click <strong>Continue</strong> to resume. Debug: coding_exception: Coding error detected, it must be fixed by a programmer: Failed to load questions_usage_by_activity 65 in [dirroot]/question/engine/datalib.php:478
+Stack trace:
+#0 [dirroot]/question/engine/lib.php(84): question_engine_data_mapper->load_questions_usage_by_activity(65)
+#1 [dirroot]/question/preview.php(83): question_engine::load_questions_usage_by_activity(65)
+#2 {main}
+Error code: submissionoutofsequencefriendlymessage
+* line 494 of /lib/setuplib.php: moodle_exception thrown
+* line 90 of /question/preview.php: call to print_error()
+
+[31-Jan-2020 03:36:00 Africa/Johannesburg] Default exception handler: Need to provide courseid or cmid to print_question. Debug: 
+Error code: missingcourseorcmid
+* line 494 of /lib/setuplib.php: moodle_exception thrown
+* line 110 of /question/question.php: call to print_error()
+

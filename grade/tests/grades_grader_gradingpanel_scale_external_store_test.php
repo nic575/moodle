@@ -147,6 +147,201 @@ class store_test extends advanced_testcase {
 
         $this->assertEquals('core_grades/grades/grader/gradingpanel/scale', $result['templatename']);
 
+<<<<<<< OURS
+        $this->assertArrayHasKey('grade', $result);
+        $this->assertIsArray($result['grade']);
+        $this->assertArrayHasKey('options', $result['grade']);
+        $this->assertCount(count($options), $result['grade']['options']);
+        rsort($options);
+        foreach ($options as $index => $option) {
+            $this->assertArrayHasKey($index, $result['grade']['options']);
+
+            $returnedoption = $result['grade']['options'][$index];
+            $this->assertArrayHasKey('value', $returnedoption);
+            $this->assertEquals(3 - $index, $returnedoption['value']);
+
+            $this->assertArrayHasKey('title', $returnedoption);
+            $this->assertEquals($option, $returnedoption['title']);
+
+            $this->assertArrayHasKey('selected', $returnedoption);
+            $this->assertFalse($returnedoption['selected']);
+        }
+
+        $this->assertIsInt($result['grade']['timecreated']);
+        $this->assertArrayHasKey('timemodified', $result['grade']);
+        $this->assertIsInt($result['grade']['timemodified']);
+
+        $this->assertArrayHasKey('warnings', $result);
+        $this->assertIsArray($result['warnings']);
+        $this->assertEmpty($result['warnings']);
+
+        // Compare against the grade stored in the database.
+        $storedgradeitem = grade_item::fetch([
+            'courseid' => $forum->get_course_id(),
+            'itemtype' => 'mod',
+            'itemmodule' => 'forum',
+            'iteminstance' => $forum->get_id(),
+            'itemnumber' => $gradeitem->get_grade_itemid(),
+        ]);
+        $storedgrade = grade_grade::fetch([
+            'userid' => $student->id,
+            'itemid' => $storedgradeitem->id,
+        ]);
+
+        $this->assertEmpty($storedgrade->rawgrade);
+    }
+
+    /**
+     * Ensure that an execute against the correct grading method returns the current state of the user.
+     */
+    public function test_execute_store_not_selected(): void {
+        [
+            'forum' => $forum,
+            'options' => $options,
+            'student' => $student,
+            'teacher' => $teacher,
+        ] = $this->get_test_data();
+
+        $this->setUser($teacher);
+
+        $formdata = [
+            'grade' => -1,
+        ];
+
+        $gradeitem = component_gradeitem::instance('mod_forum', $forum->get_context(), 'forum');
+
+        $result = store::execute('mod_forum', (int) $forum->get_context()->id, 'forum',
+                (int) $student->id, false, http_build_query($formdata));
+        $result = external_api::clean_returnvalue(store::execute_returns(), $result);
+
+        // The result should still be empty.
+        $this->assertIsArray($result);
+        $this->assertArrayHasKey('templatename', $result);
+
+        $this->assertEquals('core_grades/grades/grader/gradingpanel/scale', $result['templatename']);
+
+        $this->assertArrayHasKey('grade', $result);
+        $this->assertIsArray($result['grade']);
+        $this->assertArrayHasKey('options', $result['grade']);
+        $this->assertCount(count($options), $result['grade']['options']);
+        rsort($options);
+        foreach ($options as $index => $option) {
+            $this->assertArrayHasKey($index, $result['grade']['options']);
+
+            $returnedoption = $result['grade']['options'][$index];
+            $this->assertArrayHasKey('value', $returnedoption);
+            $this->assertEquals(3 - $index, $returnedoption['value']);
+
+            $this->assertArrayHasKey('title', $returnedoption);
+            $this->assertEquals($option, $returnedoption['title']);
+
+            $this->assertArrayHasKey('selected', $returnedoption);
+            $this->assertFalse($returnedoption['selected']);
+        }
+
+        $this->assertIsInt($result['grade']['timecreated']);
+        $this->assertArrayHasKey('timemodified', $result['grade']);
+        $this->assertIsInt($result['grade']['timemodified']);
+
+        $this->assertArrayHasKey('warnings', $result);
+        $this->assertIsArray($result['warnings']);
+        $this->assertEmpty($result['warnings']);
+
+        // Compare against the grade stored in the database.
+        $storedgradeitem = grade_item::fetch([
+            'courseid' => $forum->get_course_id(),
+            'itemtype' => 'mod',
+            'itemmodule' => 'forum',
+            'iteminstance' => $forum->get_id(),
+            'itemnumber' => $gradeitem->get_grade_itemid(),
+        ]);
+        $storedgrade = grade_grade::fetch([
+            'userid' => $student->id,
+            'itemid' => $storedgradeitem->id,
+        ]);
+
+        // No grade will have been saved.
+        $this->assertFalse($storedgrade);
+    }
+
+    /**
+     * Ensure that an execute against the correct grading method returns the current state of the user.
+     */
+    public function test_execute_store_graded(): void {
+        [
+            'scale' => $scale,
+            'forum' => $forum,
+            'options' => $options,
+            'student' => $student,
+            'teacher' => $teacher,
+        ] = $this->get_test_data();
+
+        $this->setUser($teacher);
+
+        $formdata = [
+            'grade' => 2,
+        ];
+        $formattedvalue = grade_floatval(unformat_float($formdata['grade']));
+
+        $gradeitem = component_gradeitem::instance('mod_forum', $forum->get_context(), 'forum');
+
+        $result = store::execute('mod_forum', (int) $forum->get_context()->id, 'forum',
+                (int) $student->id, false, http_build_query($formdata));
+        $result = external_api::clean_returnvalue(store::execute_returns(), $result);
+
+        // The result should still be empty.
+        $this->assertIsArray($result);
+        $this->assertArrayHasKey('templatename', $result);
+
+        $this->assertEquals('core_grades/grades/grader/gradingpanel/scale', $result['templatename']);
+
+        $this->assertArrayHasKey('grade', $result);
+        $this->assertIsArray($result['grade']);
+        $this->assertArrayHasKey('options', $result['grade']);
+        $this->assertCount(count($options), $result['grade']['options']);
+        rsort($options);
+        foreach ($options as $index => $option) {
+            $this->assertArrayHasKey($index, $result['grade']['options']);
+
+            $returnedoption = $result['grade']['options'][$index];
+            $this->assertArrayHasKey('value', $returnedoption);
+            $this->assertEquals(3 - $index, $returnedoption['value']);
+
+            $this->assertArrayHasKey('title', $returnedoption);
+            $this->assertEquals($option, $returnedoption['title']);
+
+            $this->assertArrayHasKey('selected', $returnedoption);
+        }
+
+        // The grade was 2, which relates to the middle option.
+        $this->assertFalse($result['grade']['options'][0]['selected']);
+        $this->assertTrue($result['grade']['options'][1]['selected']);
+        $this->assertFalse($result['grade']['options'][2]['selected']);
+
+        $this->assertIsInt($result['grade']['timecreated']);
+        $this->assertArrayHasKey('timemodified', $result['grade']);
+        $this->assertIsInt($result['grade']['timemodified']);
+
+        $this->assertArrayHasKey('warnings', $result);
+        $this->assertIsArray($result['warnings']);
+        $this->assertEmpty($result['warnings']);
+
+        // Compare against the grade stored in the database.
+        $storedgradeitem = grade_item::fetch([
+            'courseid' => $forum->get_course_id(),
+            'itemtype' => 'mod',
+            'itemmodule' => 'forum',
+            'iteminstance' => $forum->get_id(),
+            'itemnumber' => $gradeitem->get_grade_itemid(),
+        ]);
+        $storedgrade = grade_grade::fetch([
+            'userid' => $student->id,
+            'itemid' => $storedgradeitem->id,
+        ]);
+
+        $this->assertEquals($formattedvalue, $storedgrade->rawgrade);
+        $this->assertEquals($scale->id, $storedgrade->rawscaleid);
+=======
         $this->assertArrayHasKey('warnings', $result);
         $this->assertIsArray($result['warnings']);
         $this->assertEmpty($result['warnings']);
@@ -376,6 +571,7 @@ class store_test extends advanced_testcase {
         $this->assertFalse($result['grade']['options'][0]['selected']);
         $this->assertTrue($result['grade']['options'][1]['selected']);
         $this->assertFalse($result['grade']['options'][2]['selected']);
+>>>>>>> THEIRS
     }
 
     /**

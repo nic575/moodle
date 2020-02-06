@@ -1753,6 +1753,8 @@ EOD;
         return $methodbody;
     }
 }
+<<<<<<< OURS
+=======
 
 /**
  * Early WS exception handler.
@@ -1770,3 +1772,4 @@ function early_ws_exception_handler(Exception $ex): void {
 
     throw $ex;
 }
+>>>>>>> THEIRS

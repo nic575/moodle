@@ -84,6 +84,64 @@ class converter implements \core_files\converter_interface {
 
         if (!self::are_requirements_met()) {
             $conversion->set('status', conversion::STATUS_FAILED);
+<<<<<<< OURS
+
+            return $this;
+        }
+
+        $file = $conversion->get_sourcefile();
+
+        // Sanity check that the conversion is supported.
+        $fromformat = pathinfo($file->get_filename(), PATHINFO_EXTENSION);
+        if (!self::is_format_supported($fromformat)) {
+            $conversion->set('status', conversion::STATUS_FAILED);
+
+            return $this;
+        }
+
+        $format = $conversion->get('targetformat');
+        if (!self::is_format_supported($format)) {
+            $conversion->set('status', conversion::STATUS_FAILED);
+
+            return $this;
+        }
+
+        // Copy the file to the tmp dir.
+        $uniqdir = make_unique_writable_directory(make_temp_directory('core_file/conversions'));
+        \core_shutdown_manager::register_function('remove_dir', array($uniqdir));
+        $localfilename = $file->get_id() . '.' . $fromformat;
+
+        $filename = $uniqdir . '/' . $localfilename;
+        try {
+            // This function can either return false, or throw an exception so we need to handle both.
+            if ($file->copy_content_to($filename) === false) {
+                throw new \file_exception('storedfileproblem', 'Could not copy file contents to temp file.');
+            }
+        } catch (\file_exception $fe) {
+            throw $fe;
+        }
+
+        // The temporary file to copy into.
+        $newtmpfile = pathinfo($filename, PATHINFO_FILENAME) . '.' . $format;
+        $newtmpfile = $uniqdir . '/' . clean_param($newtmpfile, PARAM_FILE);
+
+        $cmd = escapeshellcmd(trim($CFG->pathtounoconv)) . ' ' .
+               escapeshellarg('-f') . ' ' .
+               escapeshellarg($format) . ' ' .
+               escapeshellarg('-o') . ' ' .
+               escapeshellarg($newtmpfile) . ' ' .
+               escapeshellarg($filename);
+
+        $output = null;
+        $currentdir = getcwd();
+        chdir($uniqdir);
+        $result = exec($cmd, $output);
+        chdir($currentdir);
+        touch($newtmpfile);
+        if (filesize($newtmpfile) === 0) {
+            $conversion->set('status', conversion::STATUS_FAILED);
+
+=======
             error_log(
                 "Unoconv conversion failed to verify the configuraton meets the minimum requirements. " .
                 "Please check the unoconv installation configuration."
@@ -179,6 +237,7 @@ class converter implements \core_files\converter_interface {
                 "was unsuccessful; the output file size has 0 bytes in '" . $newtmpfile . "'. Please check the " .
                 "conversion file content / format with the command: [ " . $cmd . " ]"
             );
+>>>>>>> THEIRS
             return $this;
         }
 
