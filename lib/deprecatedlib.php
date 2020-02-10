@@ -2620,7 +2620,6 @@ function allow_switch() {
 }
 
 /**
-<<<<<<< OURS
  * Organise categories into a single parent category (called the 'Top' category) per context.
  *
  * @param array $categories List of question categories in the format of ["$categoryid,$contextid" => $category].
@@ -2843,71 +2842,6 @@ function message_delete_message($message, $userid) {
         DEBUG_DEVELOPER);
 
     return \core_message\api::delete_message($userid, $message->id);
-=======
- * @deprecated since Moodle 3.5. MDL-61132
- */
-function question_add_tops() {
-    throw new coding_exception(
-        'question_add_tops() has been removed. You may want to pass $top = true to get_categories_for_contexts().'
-    );
-}
-
-/**
- * @deprecated since Moodle 3.5. MDL-61132
- */
-function question_is_only_toplevel_category_in_context() {
-    throw new coding_exception('question_is_only_toplevel_category_in_context() has been removed. '
-            . 'Please update your code to use question_is_only_child_of_top_category_in_context() instead.');
-}
-
-/**
- * @deprecated since Moodle 3.5
- */
-function message_move_userfrom_unread2read() {
-    throw new coding_exception('message_move_userfrom_unread2read() has been removed.');
-}
-
-/**
- * @deprecated since Moodle 3.5
- */
-function message_get_blocked_users() {
-    throw new coding_exception(
-        'message_get_blocked_users() has been removed, please use \core_message\api::get_blocked_users() instead.'
-    );
-}
-
-/**
- * @deprecated since Moodle 3.5
- */
-function message_get_contacts() {
-    throw new coding_exception('message_get_contacts() has been removed.');
-}
-
-/**
- * @deprecated since Moodle 3.5
- */
-function message_mark_message_read() {
-    throw new coding_exception('message_mark_message_read() has been removed, please use \core_message\api::mark_message_as_read()
-        or \core_message\api::mark_notification_as_read().');
-}
-
-/**
- * @deprecated since Moodle 3.5
- */
-function message_can_delete_message() {
-    throw new coding_exception(
-        'message_can_delete_message() has been removed, please use \core_message\api::can_delete_message() instead.'
-    );
-}
-
-/**
- * @deprecated since Moodle 3.5
- */
-function message_delete_message() {
-    throw new coding_exception(
-        'message_delete_message() has been removed, please use \core_message\api::delete_message() instead.'
-    );
->>>>>>> THEIRS
 }
 
 /**

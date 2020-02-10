@@ -110,7 +110,6 @@ class store extends external_api {
      */
     public static function execute(string $component, int $contextid, string $itemname, int $gradeduserid,
             bool $notifyuser, string $formdata): array {
-<<<<<<< OURS
         global $USER;
 
         [
@@ -174,75 +173,6 @@ class store extends external_api {
         $grade = $gradeitem->get_grade_for_user($gradeduser, $USER);
 
         return fetch::get_fetch_data($grade, $hasgrade, 0);
-=======
-        global $USER, $CFG;
-        require_once("{$CFG->libdir}/gradelib.php");
-        [
-            'component' => $component,
-            'contextid' => $contextid,
-            'itemname' => $itemname,
-            'gradeduserid' => $gradeduserid,
-            'notifyuser' => $notifyuser,
-            'formdata' => $formdata,
-        ] = self::validate_parameters(self::execute_parameters(), [
-            'component' => $component,
-            'contextid' => $contextid,
-            'itemname' => $itemname,
-            'gradeduserid' => $gradeduserid,
-            'notifyuser' => $notifyuser,
-            'formdata' => $formdata,
-        ]);
-
-        // Validate the context.
-        $context = context::instance_by_id($contextid);
-        self::validate_context($context);
-
-        // Validate that the supplied itemname is a gradable item.
-        if (!component_gradeitems::is_valid_itemname($component, $itemname)) {
-            throw new coding_exception("The '{$itemname}' item is not valid for the '{$component}' component");
-        }
-
-        // Fetch the gradeitem instance.
-        $gradeitem = gradeitem::instance($component, $context, $itemname);
-
-        // Validate that this gradeitem is actually enabled.
-        if (!$gradeitem->is_grading_enabled()) {
-            throw new moodle_exception("Grading is not enabled for {$itemname} in this context");
-        }
-
-        // Fetch the record for the graded user.
-        $gradeduser = \core_user::get_user($gradeduserid);
-
-        // Require that this user can save grades.
-        $gradeitem->require_user_can_grade($gradeduser, $USER);
-
-        if (!$gradeitem->is_using_direct_grading()) {
-            throw new moodle_exception("The {$itemname} item in {$component}/{$contextid} is not configured for direct grading");
-        }
-
-        // Parse the serialised string into an object.
-        $data = [];
-        parse_str($formdata, $data);
-
-        // Grade.
-        $gradeitem->store_grade_from_formdata($gradeduser, $USER, (object) $data);
-        $hasgrade = $gradeitem->user_has_grade($gradeduser);
-
-        // Notify.
-        if ($notifyuser) {
-            // Send notification.
-            $gradeitem->send_student_notification($gradeduser, $USER);
-        }
-
-        // Fetch the updated grade back out.
-        $grade = $gradeitem->get_grade_for_user($gradeduser, $USER);
-
-        $gradegrade = \grade_grade::fetch(['itemid' => $gradeitem->get_grade_item()->id, 'userid' => $gradeduser->id]);
-        $gradername = $gradegrade ? fullname(\core_user::get_user($gradegrade->usermodified)) : null;
-        $maxgrade = (int) $gradeitem->get_grade_item()->grademax;
-
-        return fetch::get_fetch_data($grade, $hasgrade, $maxgrade, $gradername);
->>>>>>> THEIRS
     }
 
     /**

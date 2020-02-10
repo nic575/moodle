@@ -1409,7 +1409,6 @@ class theme_config {
         raise_memory_limit(MEMORY_EXTRA);
         core_php_time_limit::raise(300);
 
-<<<<<<< OURS
         // Set-up the compiler.
         $compiler = new core_scss();
         $compiler->prepend_raw_scss($this->get_pre_scss_code());
@@ -1517,118 +1516,6 @@ class theme_config {
      * @return string The SCSS code to inject.
      */
     protected function get_pre_scss_code() {
-=======
-        // TODO: MDL-62757 When changing anything in this method please do not forget to check
-        // if the validate() method in class admin_setting_configthemepreset needs updating too.
-
-        // Set-up the compiler.
-        $compiler = new core_scss();
-        $compiler->prepend_raw_scss($this->get_pre_scss_code());
-        if (is_string($scss)) {
-            $compiler->set_file($scss);
-        } else {
-            $compiler->append_raw_scss($scss($this));
-            $compiler->setImportPaths($paths);
-        }
-        $compiler->append_raw_scss($this->get_extra_scss_code());
-
-        try {
-            // Compile!
-            $compiled = $compiler->to_css();
-
-        } catch (\Exception $e) {
-            $compiled = false;
-            debugging('Error while compiling SCSS: ' . $e->getMessage(), DEBUG_DEVELOPER);
-        }
-
-        // Try to save memory.
-        $compiler = null;
-        unset($compiler);
-
-        return $compiled;
-    }
-
-    /**
-     * Return the precompiled CSS if the precompiledcsscallback exists.
-     *
-     * @return string Return compiled css.
-     */
-    public function get_precompiled_css_content() {
-        $configs = array_reverse($this->parent_configs) + [$this];
-        $css = '';
-
-        foreach ($configs as $config) {
-            if (isset($config->precompiledcsscallback)) {
-                $function = $config->precompiledcsscallback;
-                if (function_exists($function)) {
-                    $css .= $function($this);
-                }
-            }
-        }
-        return $css;
-    }
-
-    /**
-     * Get the icon system to use.
-     *
-     * @return string
-     */
-    public function get_icon_system() {
-
-        // Getting all the candidate functions.
-        $system = false;
-        if (isset($this->iconsystem) && \core\output\icon_system::is_valid_system($this->iconsystem)) {
-            return $this->iconsystem;
-        }
-        foreach ($this->parent_configs as $parent_config) {
-            if (isset($parent_config->iconsystem) && \core\output\icon_system::is_valid_system($parent_config->iconsystem)) {
-                return $parent_config->iconsystem;
-            }
-        }
-        return \core\output\icon_system::STANDARD;
-    }
-
-    /**
-     * Return extra SCSS code to add when compiling.
-     *
-     * This is intended to be used by themes to inject some SCSS code
-     * before it gets compiled. If you want to inject variables you
-     * should use {@link self::get_scss_variables()}.
-     *
-     * @return string The SCSS code to inject.
-     */
-    public function get_extra_scss_code() {
-        $content = '';
-
-        // Getting all the candidate functions.
-        $candidates = array();
-        foreach ($this->parent_configs as $parent_config) {
-            if (!isset($parent_config->extrascsscallback)) {
-                continue;
-            }
-            $candidates[] = $parent_config->extrascsscallback;
-        }
-        $candidates[] = $this->extrascsscallback;
-
-        // Calling the functions.
-        foreach ($candidates as $function) {
-            if (function_exists($function)) {
-                $content .= "\n/** Extra SCSS from $function **/\n" . $function($this) . "\n";
-            }
-        }
-
-        return $content;
-    }
-
-    /**
-     * SCSS code to prepend when compiling.
-     *
-     * This is intended to be used by themes to inject SCSS code before it gets compiled.
-     *
-     * @return string The SCSS code to inject.
-     */
-    public function get_pre_scss_code() {
->>>>>>> THEIRS
         $content = '';
 
         // Getting all the candidate functions.

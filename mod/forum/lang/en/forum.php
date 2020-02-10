@@ -745,11 +745,6 @@ $string['grade_forum_title'] = 'Grade';
 $string['grade_rating_name'] = 'Rating';
 $string['gradeusers'] = 'Grade users';
 $string['graded'] = 'Graded';
-<<<<<<< OURS
-=======
-$string['gradedby'] = 'Graded by';
-$string['notgraded'] = 'Not graded';
->>>>>>> THEIRS
 $string['gradeforrating'] = 'Grade for rating: {$a->str_long_grade}';
 $string['gradeforratinghidden'] = 'Grade for rating hidden';
 $string['gradeforwholeforum'] = 'Grade for forum: {$a->str_long_grade}';

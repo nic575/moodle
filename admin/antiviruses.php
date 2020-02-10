@@ -98,18 +98,8 @@ switch ($action) {
     default:
         break;
 }
-<<<<<<< OURS
 
 set_config('antiviruses', implode(',', $activeantiviruses));
 core_plugin_manager::reset_caches();
 
 redirect ($returnurl);
-=======
-$new = implode(',', $activeantiviruses);
-add_to_config_log('antiviruses', $CFG->antiviruses, $new, 'core');
-set_config('antiviruses', $new);
-
-core_plugin_manager::reset_caches();
-
-redirect ($returnurl);
->>>>>>> THEIRS

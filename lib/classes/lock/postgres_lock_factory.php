@@ -33,7 +33,6 @@ defined('MOODLE_INTERNAL') || die();
  * Postgres locking implementation using advisory locks. Some important points. Postgres has
  * 2 different forms of lock functions, some accepting a single int, and some accepting 2 ints. This implementation
  * uses the 2 int version so that it uses a separate namespace from the session locking. The second note,
-<<<<<<< OURS
  * is because postgres uses integer keys for locks, we first need to map strings to a unique integer. This is
  * done by storing the strings in the lock_db table and using the auto-id returned. There is a static cache for
  * id's in this function.
@@ -166,115 +165,6 @@ class postgres_lock_factory implements lock_factory {
         }
 
         self::$lockidcache[$key] = $index;
-=======
- * is because postgres uses integer keys for locks, we first need to map strings to a unique integer. This is done
- * using a prefix of a sha1 hash converted to an integer.
- *
- * @package   core
- * @category  lock
- * @copyright Damyon Wiese 2013
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- */
-class postgres_lock_factory implements lock_factory {
-
-    /** @var int $dblockid - used as a namespace for these types of locks (separate from session locks) */
-    protected $dblockid = -1;
-
-    /** @var array $lockidcache - static cache for string -> int conversions required for pg advisory locks. */
-    protected static $lockidcache = array();
-
-    /** @var \moodle_database $db Hold a reference to the global $DB */
-    protected $db;
-
-    /** @var string $type Used to prefix lock keys */
-    protected $type;
-
-    /** @var array $openlocks - List of held locks - used by auto-release */
-    protected $openlocks = array();
-
-    /**
-     * Calculate a unique instance id based on the database name and prefix.
-     * @return int.
-     */
-    protected function get_unique_db_instance_id() {
-        global $CFG;
-
-        $strkey = $CFG->dbname . ':' . $CFG->prefix;
-        $intkey = crc32($strkey);
-        // Normalize between 64 bit unsigned int and 32 bit signed ints. Php could return either from crc32.
-        if (PHP_INT_SIZE == 8) {
-            if ($intkey > 0x7FFFFFFF) {
-                $intkey -= 0x100000000;
-            }
-        }
-
-        return $intkey;
-    }
-
-    /**
-     * Almighty constructor.
-     * @param string $type - Used to prefix lock keys.
-     */
-    public function __construct($type) {
-        global $DB;
-
-        $this->type = $type;
-        $this->dblockid = $this->get_unique_db_instance_id();
-        // Save a reference to the global $DB so it will not be released while we still have open locks.
-        $this->db = $DB;
-
-        \core_shutdown_manager::register_function(array($this, 'auto_release'));
-    }
-
-    /**
-     * Is available.
-     * @return boolean - True if this lock type is available in this environment.
-     */
-    public function is_available() {
-        return $this->db->get_dbfamily() === 'postgres';
-    }
-
-    /**
-     * Return information about the blocking behaviour of the lock type on this platform.
-     * @return boolean - Defer to the DB driver.
-     */
-    public function supports_timeout() {
-        return true;
-    }
-
-    /**
-     * Will this lock type will be automatically released when a process ends.
-     *
-     * @return boolean - Via shutdown handler.
-     */
-    public function supports_auto_release() {
-        return true;
-    }
-
-    /**
-     * Multiple locks for the same resource can be held by a single process.
-     * @return boolean - Defer to the DB driver.
-     */
-    public function supports_recursion() {
-        return true;
-    }
-
-    /**
-     * This function generates the unique index for a specific lock key using
-     * a sha1 prefix converted to decimal.
-     *
-     * @param string $key
-     * @return int
-     * @throws \moodle_exception
-     */
-    protected function get_index_from_key($key) {
-
-        // A prefix of 7 hex chars is chosen as fffffff is the largest hex code
-        // which when converted to decimal (268435455) fits inside a 4 byte int
-        // which is the second param to pg_try_advisory_lock().
-        $hash = substr(sha1($key), 0, 7);
-        $index = hexdec($hash);
->>>>>>> THEIRS
         return $index;
     }
 

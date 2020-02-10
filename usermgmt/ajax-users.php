@@ -4,9 +4,12 @@ require_once(__DIR__ . '/../config.php');
 
 require __DIR__ . DIRECTORY_SEPARATOR . "lib" . DIRECTORY_SEPARATOR . "config.php";
 
+
 // INIT
 require PATH_LIB . "lib-users.php";
+
 $usrLib = new Users();
+
 
 // HANDLE AJAX REQUEST
 switch ($_POST['req']) {
@@ -78,7 +81,7 @@ switch ($_POST['req']) {
       <input type="text" class="col-12 form-control" id="institution" disabled value="<?=$USER->institution?>"/></td></tr><tr><td>
       <label for="department">Department:</label><td></td></td><td>
       <input type="text" class="col-12 form-control" id="department" required value="<?=$user['department']?>"/></td></tr></table>
-      <input type="submit" class="btn btn-primary" value="Save" onclick="usr.save()"/>
+      <input type="submit" class="btn btn-primary" value="Save" onclick="if(!usr.checkUser(function() { usr.save(); })) return false;"/>
       <input type="button" class="btn btn-danger" value="Cancel" onclick="usr.list()"/>
     </form>
     <?php break;
@@ -87,6 +90,8 @@ switch ($_POST['req']) {
   case "add":
    // if(get_complete_user_data('idnumber',$_POST['username'])->id === 1){
 
+
+      
       echo $usrLib->add($_POST['username'],$_POST['firstname'],$_POST['lastname'], $_POST['institution'],$USER->profile['institution_id'],$USER->profile['cohorts'],$_POST['department'],$_POST['email'],$USER->id) ? "OK" : "ERR" ;
           error_log("Passing through ajax-users add option", 0);
     //    }
@@ -108,5 +113,9 @@ switch ($_POST['req']) {
       error_log("Passing through del in ajax-users", 0);
     echo $usrLib->del($_POST['id']) ? "OK" : "ERR" ;
     break;
+
+  case "check":
+        error_log("Passing through check in ajax-users", 0);
+      echo $usrLib->userExists($_POST['username']) ? "ERR" : "OK" ;
+      
 }
-?>

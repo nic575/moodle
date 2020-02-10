@@ -1122,7 +1122,6 @@ class core_useragent {
     public static function supports_html5($extension) {
         $extension = strtolower($extension);
 
-<<<<<<< OURS
         $supportedvideo = array('m4v', 'webm', 'ogv', 'mp4', 'mov');
         $supportedaudio = array('ogg', 'oga', 'aac', 'm4a', 'mp3', 'wav', 'flac');
 
@@ -1173,58 +1172,6 @@ class core_useragent {
         }
         // Mpeg is not supported in IE below 10.0.
         $ismpeg = in_array($extension, ['m4a', 'mp3', 'm4v', 'mp4']);
-=======
-        $supportedvideo = array('m4v', 'webm', 'ogv', 'mp4', 'mov', 'fmp4');
-        $supportedaudio = array('ogg', 'oga', 'aac', 'm4a', 'mp3', 'wav', 'flac');
-
-        // Basic extension support.
-        if (!in_array($extension, $supportedvideo) && !in_array($extension, $supportedaudio)) {
-            return false;
-        }
-
-        // MS IE support - version 9.0 or later.
-        if (self::is_ie() && !self::check_ie_version('9.0')) {
-            return false;
-        }
-
-        // MS Edge support - version 12.0 for desktop and 13.0 for mobile.
-        if (self::is_edge()) {
-            if (!self::check_edge_version('12.0')) {
-                return false;
-            }
-            if (self::instance()->is_useragent_mobile() && !self::check_edge_version('13.0')) {
-                return false;
-            }
-        }
-
-        // Different exceptions.
-
-        // Webm is not supported in IE, Edge and in Safari.
-        if ($extension === 'webm' &&
-                (self::is_ie() || self::is_edge() || self::is_safari() || self::is_safari_ios())) {
-            return false;
-        }
-        // Ogg is not supported in IE, Edge and Safari.
-        $isogg = in_array($extension, ['ogg', 'oga', 'ogv']);
-        if ($isogg && (self::is_ie() || self::is_edge() || self::is_safari() || self::is_safari_ios())) {
-            return false;
-        }
-        // FLAC is not supported in IE and Edge (below 16.0).
-        if ($extension === 'flac' &&
-                (self::is_ie() || (self::is_edge() && !self::check_edge_version('16.0')))) {
-            return false;
-        }
-        // Wave is not supported in IE.
-        if ($extension === 'wav' && self::is_ie()) {
-            return false;
-        }
-        // Aac is not supported in IE below 11.0.
-        if ($extension === 'aac' && (self::is_ie() && !self::check_ie_version('11.0'))) {
-            return false;
-        }
-        // Mpeg is not supported in IE below 10.0.
-        $ismpeg = in_array($extension, ['m4a', 'mp3', 'm4v', 'mp4', 'fmp4']);
->>>>>>> THEIRS
         if ($ismpeg && (self::is_ie() && !self::check_ie_version('10.0'))) {
             return false;
         }

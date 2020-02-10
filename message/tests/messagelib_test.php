@@ -122,7 +122,6 @@ class core_message_messagelib_testcase extends advanced_testcase {
     }
 
     /**
-<<<<<<< OURS
      * Test message_get_blocked_users.
      */
     public function test_message_get_blocked_users() {
@@ -218,25 +217,6 @@ class core_message_messagelib_testcase extends advanced_testcase {
         $this->assertCount(0, $onlinecontacts);
         $this->assertCount(0, $offlinecontacts);
         $this->assertCount(1, $strangers);
-=======
-     * Test message_get_blocked_users throws an exception because has been removed.
-     */
-    public function test_message_get_blocked_users() {
-        $this->expectException('coding_exception');
-        $this->expectExceptionMessage(
-            'message_get_blocked_users() has been removed, please use \core_message\api::get_blocked_users() instead.'
-        );
-        message_get_blocked_users();
-    }
-
-    /**
-     * Test message_get_contacts throws an exception because has been removed.
-     */
-    public function test_message_get_contacts() {
-        $this->expectException('coding_exception');
-        $this->expectExceptionMessage('message_get_contacts() has been removed.');
-        message_get_contacts();
->>>>>>> THEIRS
     }
 
     /**

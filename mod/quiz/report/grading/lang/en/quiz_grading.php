@@ -48,10 +48,7 @@ $string['graded'] = '(graded)';
 $string['gradenextungraded'] = 'Grade next {$a} ungraded attempts';
 $string['gradeungraded'] = 'Grade all {$a} ungraded attempts';
 $string['grading'] = 'Manual grading';
-<<<<<<< OURS
 $string['grading:componentname'] = 'Manual grading report';
-=======
->>>>>>> THEIRS
 $string['grading:viewidnumber'] = 'See student ID numbers while grading';
 $string['grading:viewstudentnames'] = 'See student names while grading';
 $string['gradingall'] = 'All {$a} attempts on this question.';

@@ -472,7 +472,6 @@ class manager {
     }
 
     /**
-<<<<<<< OURS
      * This function will dispatch the next adhoc task in the queue. The task will be handed out
      * with an open lock - possibly on the entire cron process. Make sure you call either
      * {@link adhoc_task_failed} or {@link adhoc_task_complete} to release the lock and reschedule the task.
@@ -491,103 +490,6 @@ class manager {
         $where = '(nextruntime IS NULL OR nextruntime < :timestart1)';
         $params = array('timestart1' => $timestart);
         $records = $DB->get_records_select('task_adhoc', $where, $params);
-=======
-     * Ensure quality of service for the ad hoc task queue.
-     *
-     * This reshuffles the adhoc tasks queue to balance by type to ensure a
-     * level of quality of service per type, while still maintaining the
-     * relative order of tasks queued by timestamp.
-     *
-     * @param array $records array of task records
-     * @param array $records array of same task records shuffled
-     */
-    public static function ensure_adhoc_task_qos(array $records): array {
-
-        $count = count($records);
-        if ($count == 0) {
-            return $records;
-        }
-
-        $queues = []; // This holds a queue for each type of adhoc task.
-        $limits = []; // The relative limits of each type of task.
-        $limittotal = 0;
-
-        // Split the single queue up into queues per type.
-        foreach ($records as $record) {
-            $type = $record->classname;
-            if (!array_key_exists($type, $queues)) {
-                $queues[$type] = [];
-            }
-            if (!array_key_exists($type, $limits)) {
-                $limits[$type] = 1;
-                $limittotal += 1;
-            }
-            $queues[$type][] = $record;
-        }
-
-        $qos = []; // Our new queue with ensured quality of service.
-        $seed = $count % $limittotal; // Which task queue to shuffle from first?
-
-        $move = 1; // How many tasks to shuffle at a time.
-        do {
-            $shuffled = 0;
-
-            // Now cycle through task type queues and interleaving the tasks
-            // back into a single queue.
-            foreach ($limits as $type => $limit) {
-
-                // Just interleaving the queue is not enough, because after
-                // any task is processed the whole queue is rebuilt again. So
-                // we need to deterministically start on different types of
-                // tasks so that *on average* we rotate through each type of task.
-                //
-                // We achieve this by using a $seed to start moving tasks off a
-                // different queue each time. The seed is based on the task count
-                // modulo the number of types of tasks on the queue. As we count
-                // down this naturally cycles through each type of record.
-                if ($seed < 1) {
-                    $shuffled = 1;
-                    $seed += 1;
-                    continue;
-                }
-                $tasks = array_splice($queues[$type], 0, $move);
-                $qos = array_merge($qos, $tasks);
-
-                // Stop if we didn't move any tasks onto the main queue.
-                $shuffled += count($tasks);
-            }
-            // Generally the only tasks that matter are those that are near the start so
-            // after we have shuffled the first few 1 by 1, start shuffling larger groups.
-            if (count($qos) >= (4 * count($limits))) {
-                $move *= 2;
-            }
-        } while ($shuffled > 0);
-
-        return $qos;
-    }
-
-    /**
-     * This function will dispatch the next adhoc task in the queue. The task will be handed out
-     * with an open lock - possibly on the entire cron process. Make sure you call either
-     * {@link adhoc_task_failed} or {@link adhoc_task_complete} to release the lock and reschedule the task.
-     *
-     * @param int $timestart
-     * @return \core\task\adhoc_task or null if not found
-     */
-    public static function get_next_adhoc_task($timestart) {
-        global $DB;
-
-        $where = '(nextruntime IS NULL OR nextruntime < :timestart1)';
-        $params = array('timestart1' => $timestart);
-        $records = $DB->get_records_select('task_adhoc', $where, $params);
-
-        $records = self::ensure_adhoc_task_qos($records);
-
-        $cronlockfactory = \core\lock\lock_config::get_lock_factory('cron');
-        if (!$cronlock = $cronlockfactory->get_lock('core_cron', 10)) {
-            throw new \moodle_exception('locktimeout');
-        }
->>>>>>> THEIRS
 
         foreach ($records as $record) {
 

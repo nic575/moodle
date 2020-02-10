@@ -66,7 +66,6 @@ $capabilities = array();
 $rolestoshow = array();
 $roleids = array('0');
 $cleanedroleids = array();
-<<<<<<< OURS
 if ($data = $form->get_data()) {
 
     $roleids = array();
@@ -105,51 +104,6 @@ $form->display();
 if (count($capabilities) && count($rolestoshow)) {
     /* @var tool_capability_renderer $renderer */
     echo $renderer->capability_comparison_table($capabilities, $context->id, $rolestoshow);
-=======
-$onlydiff = false;
-if ($data = $form->get_data()) {
-
-    $roleids = array();
-    if (!empty($data->roles)) {
-        $roleids = $data->roles;
-    }
-
-    $capabilities = array();
-    if (!empty($data->capability)) {
-        $capabilities = $data->capability;
-    }
-
-    if (in_array('0', $roleids)) {
-        $rolestoshow = $allroles;
-    } else {
-        $cleanedroleids = array_intersect(array_keys($allroles), $roleids);
-        if (count($cleanedroleids) === 0) {
-            $rolestoshow = $allroles;
-        } else {
-            foreach ($cleanedroleids as $id) {
-                $rolestoshow[$id] = $allroles[$id];
-            }
-        }
-    }
-
-    if (isset($data->onlydiff)) {
-        $onlydiff = $data->onlydiff;
-    }
-}
-
-\tool_capability\event\report_viewed::create()->trigger();
-
-$renderer = $PAGE->get_renderer('tool_capability');
-
-echo $OUTPUT->header();
-
-$form->display();
-
-// If we have a capability, generate the report.
-if (count($capabilities) && count($rolestoshow)) {
-    /* @var tool_capability_renderer $renderer */
-    echo $renderer->capability_comparison_table($capabilities, $context->id, $rolestoshow, $onlydiff);
->>>>>>> THEIRS
 }
 
 // Footer.

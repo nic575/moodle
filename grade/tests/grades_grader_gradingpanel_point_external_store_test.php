@@ -162,7 +162,6 @@ class store_test extends advanced_testcase {
         $this->assertIsArray($result['warnings']);
         $this->assertEmpty($result['warnings']);
 
-<<<<<<< OURS
         // Compare against the grade stored in the database.
         $storedgradeitem = grade_item::fetch([
             'courseid' => $forum->get_course_id(),
@@ -223,101 +222,6 @@ class store_test extends advanced_testcase {
         $this->assertArrayHasKey('warnings', $result);
         $this->assertIsArray($result['warnings']);
         $this->assertEmpty($result['warnings']);
-=======
-        // Test the grade array items.
-        $this->assertArrayHasKey('grade', $result);
-        $this->assertIsArray($result['grade']);
-
-        $this->assertArrayHasKey('grade', $result['grade']);
-        $this->assertEquals(null, $result['grade']['grade']);
-
-        $this->assertIsInt($result['grade']['timecreated']);
-        $this->assertArrayHasKey('timemodified', $result['grade']);
-        $this->assertIsInt($result['grade']['timemodified']);
-
-        $this->assertArrayHasKey('usergrade', $result['grade']);
-        $this->assertEquals(null, $result['grade']['usergrade']);
-
-        $this->assertArrayHasKey('maxgrade', $result['grade']);
-        $this->assertIsInt($result['grade']['maxgrade']);
-        $this->assertEquals(5, $result['grade']['maxgrade']);
-
-        $this->assertArrayHasKey('gradedby', $result['grade']);
-        $this->assertEquals(fullname($teacher), $result['grade']['gradedby']);
-
-        // Compare against the grade stored in the database.
-        $storedgradeitem = grade_item::fetch([
-            'courseid' => $forum->get_course_id(),
-            'itemtype' => 'mod',
-            'itemmodule' => 'forum',
-            'iteminstance' => $forum->get_id(),
-            'itemnumber' => $gradeitem->get_grade_itemid(),
-        ]);
-        $storedgrade = grade_grade::fetch([
-            'userid' => $student->id,
-            'itemid' => $storedgradeitem->id,
-        ]);
-
-        $this->assertEmpty($storedgrade->rawgrade);
-    }
-
-    /**
-     * Ensure that an execute against the correct grading method returns the current state of the user.
-     */
-    public function test_execute_store_graded(): void {
-        $this->resetAfterTest();
-
-        $forum = $this->get_forum_instance([
-            // Negative numbers mean a scale.
-            'grade_forum' => 5,
-        ]);
-        $course = $forum->get_course_record();
-        $teacher = $this->getDataGenerator()->create_and_enrol($course, 'teacher');
-        $student = $this->getDataGenerator()->create_and_enrol($course, 'student');
-        $this->setUser($teacher);
-
-        $formdata = [
-            'grade' => 4,
-        ];
-        $formattedvalue = grade_floatval(unformat_float(4));
-
-        $gradeitem = component_gradeitem::instance('mod_forum', $forum->get_context(), 'forum');
-
-        $result = store::execute('mod_forum', (int) $forum->get_context()->id, 'forum',
-                (int) $student->id, false, http_build_query($formdata));
-        $result = external_api::clean_returnvalue(store::execute_returns(), $result);
-
-        // The result should still be empty.
-        $this->assertIsArray($result);
-        $this->assertArrayHasKey('templatename', $result);
-
-        $this->assertEquals('core_grades/grades/grader/gradingpanel/point', $result['templatename']);
-
-        $this->assertArrayHasKey('warnings', $result);
-        $this->assertIsArray($result['warnings']);
-        $this->assertEmpty($result['warnings']);
-
-        // Test the grade array items.
-        $this->assertArrayHasKey('grade', $result);
-        $this->assertIsArray($result['grade']);
-
-        $this->assertArrayHasKey('grade', $result['grade']);
-        $this->assertEquals($formattedvalue, $result['grade']['grade']);
-
-        $this->assertIsInt($result['grade']['timecreated']);
-        $this->assertArrayHasKey('timemodified', $result['grade']);
-        $this->assertIsInt($result['grade']['timemodified']);
-
-        $this->assertArrayHasKey('usergrade', $result['grade']);
-        $this->assertEquals($formattedvalue, $result['grade']['usergrade']);
-
-        $this->assertArrayHasKey('maxgrade', $result['grade']);
-        $this->assertIsInt($result['grade']['maxgrade']);
-        $this->assertEquals(5, $result['grade']['maxgrade']);
-
-        $this->assertArrayHasKey('gradedby', $result['grade']);
-        $this->assertEquals(fullname($teacher), $result['grade']['gradedby']);
->>>>>>> THEIRS
 
         // Compare against the grade stored in the database.
         $storedgradeitem = grade_item::fetch([

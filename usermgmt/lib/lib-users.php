@@ -17,6 +17,9 @@ class Users {
       );
       return true;
     } catch (Exception $ex) {
+        
+        die($ex->getMessage());
+        
       $this->CB->verbose(0, "DB",$ex->getMessage() , "", 1); 
     }
   }
@@ -64,6 +67,30 @@ class Users {
     return count($entry)==0 ? false : $entry ;
   }
 
+  // Justus Meyer, 2020/02/07:
+  function userExists($userName) {
+      
+      $sql = "SELECT `username` FROM `users` WHERE `username` = :userName";
+
+      try {
+          
+          $this->stmt = $this->pdo->prepare($sql);
+          $this->stmt->execute([ ':userName' => $userName ]);
+          
+          if($this->stmt->rowCount() > 0) {
+              
+              return true;
+          }
+          
+      } catch (Exception $ex) {
+
+          error_log($ex->getMessage(), $ex->getCode());
+          throw $ex;
+      }
+      
+      return false;
+  }
+  
   function add ($username, $firstname, $lastname, $institution, $institution_id, $cohorts, $department, $email,$kiuserid) {
   // add() : add a new user
   // PARAM $email - email

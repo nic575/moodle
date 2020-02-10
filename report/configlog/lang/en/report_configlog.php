@@ -24,25 +24,10 @@
  */
 
 $string['configlog'] = 'Config changes';
-<<<<<<< OURS
 $string['oldvalue'] = 'Original value';
 $string['plugin'] = 'Plugin';
 $string['pluginname'] = 'Config changes';
 $string['setting'] = 'Setting';
 $string['timemodified'] = 'Date';
 $string['value'] = 'New value';
-=======
-$string['datefrom'] = 'Date from';
-$string['dateto'] = 'Date to';
-$string['plugin'] = 'Plugin';
-$string['pluginname'] = 'Config changes';
-$string['setting'] = 'Setting';
-$string['timemodified'] = 'Date';
-$string['user'] = 'User';
-$string['user_help'] = 'Search by user first name or surname';
-$string['value'] = 'Value';
-$string['value_help'] = 'Search by new or original value of the configuration';
-$string['valuenew'] = 'New value';
-$string['valueold'] = 'Original value';
->>>>>>> THEIRS
 $string['privacy:metadata'] = 'The Config changes plugin does not store any personal data.';

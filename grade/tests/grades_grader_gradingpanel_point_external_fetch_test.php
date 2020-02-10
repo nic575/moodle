@@ -122,7 +122,6 @@ class fetch_test extends advanced_testcase {
 
         $this->assertEquals('core_grades/grades/grader/gradingpanel/point', $result['templatename']);
 
-<<<<<<< OURS
         $this->assertArrayHasKey('grade', $result);
         $this->assertIsArray($result['grade']);
         $this->assertArrayHasKey('grade', $result['grade']);
@@ -178,87 +177,6 @@ class fetch_test extends advanced_testcase {
         $this->assertArrayHasKey('warnings', $result);
         $this->assertIsArray($result['warnings']);
         $this->assertEmpty($result['warnings']);
-=======
-        $this->assertArrayHasKey('warnings', $result);
-        $this->assertIsArray($result['warnings']);
-        $this->assertEmpty($result['warnings']);
-
-        // Test the grade array items.
-        $this->assertArrayHasKey('grade', $result);
-        $this->assertIsArray($result['grade']);
-
-        $this->assertArrayHasKey('grade', $result['grade']);
-        $this->assertEmpty($result['grade']['grade']);
-
-        $this->assertIsInt($result['grade']['timecreated']);
-        $this->assertArrayHasKey('timemodified', $result['grade']);
-        $this->assertIsInt($result['grade']['timemodified']);
-
-        $this->assertArrayHasKey('usergrade', $result['grade']);
-        $this->assertEquals(0, $result['grade']['usergrade']);
-
-        $this->assertArrayHasKey('maxgrade', $result['grade']);
-        $this->assertIsInt($result['grade']['maxgrade']);
-        $this->assertEquals(5, $result['grade']['maxgrade']);
-
-        $this->assertArrayHasKey('gradedby', $result['grade']);
-        $this->assertEquals(null, $result['grade']['gradedby']);
-    }
-
-    /**
-     * Ensure that an execute against the correct grading method returns the current state of the user.
-     */
-    public function test_execute_fetch_graded(): void {
-        $this->resetAfterTest();
-
-        $forum = $this->get_forum_instance([
-            // Negative numbers mean a scale.
-            'grade_forum' => 5,
-        ]);
-        $course = $forum->get_course_record();
-        $teacher = $this->getDataGenerator()->create_and_enrol($course, 'teacher');
-        $student = $this->getDataGenerator()->create_and_enrol($course, 'student');
-        $this->setUser($teacher);
-
-        $gradeitem = component_gradeitem::instance('mod_forum', $forum->get_context(), 'forum');
-        $gradeitem->store_grade_from_formdata($student, $teacher, (object) [
-            'grade' => 4,
-        ]);
-
-        $result = fetch::execute('mod_forum', (int) $forum->get_context()->id, 'forum', (int) $student->id);
-        $result = external_api::clean_returnvalue(fetch::execute_returns(), $result);
-
-        $this->assertIsArray($result);
-        $this->assertArrayHasKey('templatename', $result);
-
-        $this->assertEquals('core_grades/grades/grader/gradingpanel/point', $result['templatename']);
-
-        $this->assertArrayHasKey('warnings', $result);
-        $this->assertIsArray($result['warnings']);
-        $this->assertEmpty($result['warnings']);
-
-        // Test the grade array items.
-        $this->assertArrayHasKey('grade', $result);
-        $this->assertIsArray($result['grade']);
-
-        $this->assertArrayHasKey('grade', $result['grade']);
-        $this->assertIsFloat($result['grade']['grade']);
-        $this->assertEquals(grade_floatval(unformat_float(4)), $result['grade']['grade']);
-
-        $this->assertIsInt($result['grade']['timecreated']);
-        $this->assertArrayHasKey('timemodified', $result['grade']);
-        $this->assertIsInt($result['grade']['timemodified']);
-
-        $this->assertArrayHasKey('usergrade', $result['grade']);
-        $this->assertEquals(4, $result['grade']['usergrade']);
-
-        $this->assertArrayHasKey('maxgrade', $result['grade']);
-        $this->assertIsInt($result['grade']['maxgrade']);
-        $this->assertEquals(5, $result['grade']['maxgrade']);
-
-        $this->assertArrayHasKey('gradedby', $result['grade']);
-        $this->assertEquals(fullname($teacher), $result['grade']['gradedby']);
->>>>>>> THEIRS
     }
 
     /**

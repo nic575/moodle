@@ -24,6 +24,28 @@ var usr = {
       },
     });
   },
+  
+  checkUser : function(onDone) {
+    
+        var userName = document.getElementById("username").value;
+    
+      adm.ajax({
+          url : 'ajax-users.php',
+          data : {
+             req : 'check',
+             username : userName
+          },
+          ok : function(response) {
+              
+              if(onDone)
+                  onDone();
+          },
+          error : function(response) {
+              
+              alert('The username "' + userName + '" already exists.');              
+          }
+      });
+  },
 
   save : function () {
   // save() : save user

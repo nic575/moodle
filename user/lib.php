@@ -900,7 +900,6 @@ function user_get_user_navigation_info($user, $page, $options = array()) {
     $myhome->pix = "i/dashboard";
     $returnobject->navitems[] = $myhome;
 
-<<<<<<< OURS
    // 20191214 - nicholas - adding link to manage other users if user is a KI (under other fields)
 
  //file_put_contents('php://stderr',var_export($user->profile['KI_user'], TRUE));
@@ -915,8 +914,6 @@ if ($user->profile['KI_user'] == '1') {
     $returnobject->navitems[] = $myotheruserupdate;
 };
 
-=======
->>>>>>> THEIRS
     // Links: My Profile.
     $myprofile = new stdClass();
     $myprofile->itemtype = 'link';

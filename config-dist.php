@@ -38,7 +38,6 @@ $CFG = new stdClass();
 // will be stored.  This database must already have been created         //
 // and a username/password created to access it.                         //
 
-<<<<<<< OURS
 $CFG->dbtype    = 'mariadb';      // 'pgsql', 'mariadb', 'mysqli', 'sqlsrv' or 'oci'
 $CFG->dblibrary = 'native';     // 'native' only at the moment
 $CFG->dbhost    = 'localhost';  // eg 'localhost' or 'db.isp.com' or IP
@@ -111,80 +110,6 @@ $CFG->wwwroot   = 'https://training.insuranceportal.co.za';
 // - On Windows systems you might specify something like 'c:\moodledata'
 
 $CFG->dataroot  = '/home/insuran3/public_html/moodledata';
-=======
-$CFG->dbtype    = 'pgsql';      // 'pgsql', 'mariadb', 'mysqli', 'sqlsrv' or 'oci'
-$CFG->dblibrary = 'native';     // 'native' only at the moment
-$CFG->dbhost    = 'localhost';  // eg 'localhost' or 'db.isp.com' or IP
-$CFG->dbname    = 'moodle';     // database name, eg moodle
-$CFG->dbuser    = 'username';   // your database username
-$CFG->dbpass    = 'password';   // your database password
-$CFG->prefix    = 'mdl_';       // prefix to use for all table names
-$CFG->dboptions = array(
-    'dbpersist' => false,       // should persistent database connections be
-                                //  used? set to 'false' for the most stable
-                                //  setting, 'true' can improve performance
-                                //  sometimes
-    'dbsocket'  => false,       // should connection via UNIX socket be used?
-                                //  if you set it to 'true' or custom path
-                                //  here set dbhost to 'localhost',
-                                //  (please note mysql is always using socket
-                                //  if dbhost is 'localhost' - if you need
-                                //  local port connection use '127.0.0.1')
-    'dbport'    => '',          // the TCP port number to use when connecting
-                                //  to the server. keep empty string for the
-                                //  default port
-    'dbhandlesoptions' => false,// On PostgreSQL poolers like pgbouncer don't
-                                // support advanced options on connection.
-                                // If you set those in the database then
-                                // the advanced settings will not be sent.
-    'dbcollation' => 'utf8mb4_unicode_ci', // MySQL has partial and full UTF-8
-                                // support. If you wish to use partial UTF-8
-                                // (three bytes) then set this option to
-                                // 'utf8_unicode_ci', otherwise this option
-                                // can be removed for MySQL (by default it will
-                                // use 'utf8mb4_unicode_ci'. This option should
-                                // be removed for all other databases.
-    // 'fetchbuffersize' => 100000, // On PostgreSQL, this option sets a limit
-                                // on the number of rows that are fetched into
-                                // memory when doing a large recordset query
-                                // (e.g. search indexing). Default is 100000.
-                                // Uncomment and set to a value to change it,
-                                // or zero to turn off the limit. You need to
-                                // set to zero if you are using pg_bouncer in
-                                // 'transaction' mode (it is fine in 'session'
-                                // mode).
-);
-
-
-//=========================================================================
-// 2. WEB SITE LOCATION
-//=========================================================================
-// Now you need to tell Moodle where it is located. Specify the full
-// web address to where moodle has been installed.  If your web site
-// is accessible via multiple URLs then choose the most natural one
-// that your students would use.  Do not include a trailing slash
-//
-// If you need both intranet and Internet access please read
-// http://docs.moodle.org/en/masquerading
-
-$CFG->wwwroot   = 'http://example.com/moodle';
-
-
-//=========================================================================
-// 3. DATA FILES LOCATION
-//=========================================================================
-// Now you need a place where Moodle can save uploaded files.  This
-// directory should be readable AND WRITEABLE by the web server user
-// (usually 'nobody' or 'apache'), but it should not be accessible
-// directly via the web.
-//
-// - On hosting systems you might need to make sure that your "group" has
-//   no permissions at all, but that "others" have full permissions.
-//
-// - On Windows systems you might specify something like 'c:\moodledata'
-
-$CFG->dataroot  = '/home/example/moodledata';
->>>>>>> THEIRS
 
 
 //=========================================================================

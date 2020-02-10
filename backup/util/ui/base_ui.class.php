@@ -90,15 +90,8 @@ abstract class base_ui {
         $this->controller = $controller;
         $this->progress = self::PROGRESS_INTIAL;
         $this->stage = $this->initialise_stage(null, $params);
-<<<<<<< OURS
         // Process UI event before to be safe.
         $this->controller->process_ui_event();
-=======
-        if ($this->controller) {
-            // Process UI event before to be safe.
-            $this->controller->process_ui_event();
-        }
->>>>>>> THEIRS
     }
 
     /**
