@@ -338,7 +338,13 @@ SELECT
 
 `names`,
 `surname`,
-'-' AS `ki_of_rep`
+`category`,
+`subcategory`,
+`category_desc`,
+`advice`,
+`intermediary_scripted`,
+`intermediary_other`,
+`services_under_supervision`
               
 FROM `representatives`
 
