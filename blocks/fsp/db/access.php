@@ -4,6 +4,8 @@
  * See license information at the package root in LICENSE.md
  */
 
+defined('MOODLE_INTERNAL') || die();
+
 $capabilities = array(
     'block/simplehtml:myaddinstance' => array(
         'captype' => 'write',
