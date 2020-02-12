@@ -91,6 +91,284 @@ class Users {
       return false;
   }
   
+  // Justus Meyer, 2020/02/11:
+  function getFSP($institutionId) {
+      
+      $data = [
+          
+          'institution' => $this->getInstitution($institutionId),
+          'compliance_officers' => $this->getComplianceOfficers($institutionId),
+          'approved_products' => $this->getApprovedProducts($institutionId),
+          'approved_product_providers' => $this->getApprovedProductProviders($institutionId),
+          'key_individuals' => $this->getKeyIndividuals($institutionId),
+          'representatives' => $this->getRepresentatives($institutionId)
+      ];
+      
+      return $data;
+  }  
+  
+  // Justus Meyer, 2020/02/11:
+  function getInstitution($institutionId) {
+      
+      $result = [];
+      
+      $sql = <<<SQL
+
+SELECT
+              
+`date_updated`,
+`licence_no` AS `fsp_no`,
+`name` AS `fsp_name`,
+`desc_institution_types`.`institution_desc` AS `fsp_type`,              
+`registration_number`,
+`date_authorised`,
+`physical_address`,
+'-' AS `telephone_no`,
+'-' AS `contact_person`,
+'-' AS `contact_person_telephone_no`,
+'-' AS `status`
+
+FROM `institutions`
+
+LEFT JOIN `desc_institution_types`
+ON `institutions`.`institution_type_id` = `desc_institution_types`.`id`
+
+WHERE 1 = 1
+
+AND `institutions`.`institution_id` = :institutionId;
+
+SQL;
+
+
+      try {
+          
+          $this->stmt = $this->pdo->prepare($sql);
+          $this->stmt->execute([ ':institutionId' => $institutionId ]);
+          
+          if($this->stmt->rowCount() > 0) {
+              
+              $result = $this->stmt->fetchAll()[0];
+          }
+          
+      } catch (Exception $ex) {
+
+          error_log($ex->getMessage(), $ex->getCode());
+          throw $ex;
+      }
+      
+      return $result;
+  }  
+  
+  // Justus Meyer, 2020/02/11:
+  function getComplianceOfficers($institutionId) {
+      
+      $result = [];
+      
+      $sql = <<<SQL
+
+SELECT
+
+`name`,
+`phone number` AS `telephone_no`
+
+FROM `compliance_officers`
+
+WHERE 1 = 1
+              
+AND `institution_id` = :institutionId;
+              
+SQL;
+
+//      var_dump($institutionId);
+
+      try {
+          
+          $this->stmt = $this->pdo->prepare($sql);
+          $this->stmt->execute([ ':institutionId' => $institutionId ]);
+          
+          if($this->stmt->rowCount() > 0) {
+              
+              $result = $this->stmt->fetchAll();
+          }
+          
+      } catch (Exception $ex) {
+
+          error_log($ex->getMessage(), $ex->getCode());
+          throw $ex;
+      }
+      
+      return $result;
+  }    
+  
+  // Justus Meyer, 2020/02/11:
+  function getApprovedProducts($institutionId) {
+      
+      $result = [];
+      
+      $sql = <<<SQL
+
+SELECT
+
+`category`,
+`advice_automated`,
+`advice_nonautomated`,
+`intermediary_scripted`,
+`intermediary_other`
+
+FROM `fsp_approved_products`
+
+WHERE 1 = 1
+              
+AND `fsp_id` = :institutionId;
+              
+SQL;
+
+
+      try {
+          
+          $this->stmt = $this->pdo->prepare($sql);
+          $this->stmt->execute([ ':institutionId' => $institutionId ]);
+          
+          if($this->stmt->rowCount() > 0) {
+              
+              $result = $this->stmt->fetchAll();        
+          }
+          
+      } catch (Exception $ex) {
+
+          error_log($ex->getMessage(), $ex->getCode());
+          throw $ex;
+      }
+      
+      return $result;
+  }    
+  
+  // Justus Meyer, 2020/02/11:
+  function getApprovedProductProviders($institutionId) {
+      
+      $result = [];
+      
+      $sql = <<<SQL
+
+SELECT DISTINCT
+
+`licence_no` AS `fsp_no`,
+`name` AS `fsp_name`
+
+FROM `institutions`
+
+INNER JOIN `fsp_approved_products`
+ON `institutions`.`institution_id` = `fsp_approved_products`.`fsp_id`
+
+WHERE 1 = 1
+              
+AND `fsp_id` = :institutionId;
+              
+SQL;
+
+
+      try {
+          
+          $this->stmt = $this->pdo->prepare($sql);
+          $this->stmt->execute([ ':institutionId' => $institutionId ]);
+          
+          if($this->stmt->rowCount() > 0) {
+                            
+              $result = $this->stmt->fetchAll();        
+          }
+          
+      } catch (Exception $ex) {
+
+          error_log($ex->getMessage(), $ex->getCode());
+          throw $ex;
+      }
+      
+      return $result;
+  }      
+  
+  // Justus Meyer, 2020/02/11:
+  function getKeyIndividuals($institutionId) {
+      
+      $result = [];
+      
+      $sql = <<<SQL
+
+SELECT
+
+`names`,
+`surname`,
+`conditions_apply` AS `ki_of_rep`
+              
+FROM `key_individuals`
+
+WHERE 1 = 1
+              
+AND `institution_id` = :institutionId;
+              
+SQL;
+
+
+      try {
+          
+          $this->stmt = $this->pdo->prepare($sql);
+          $this->stmt->execute([ ':institutionId' => $institutionId ]);
+          
+          if($this->stmt->rowCount() > 0) {
+              
+              $result = $this->stmt->fetchAll();        
+          }
+          
+      } catch (Exception $ex) {
+
+          error_log($ex->getMessage(), $ex->getCode());
+          throw $ex;
+      }
+      
+      return $result;
+  }    
+  
+  // Justus Meyer, 2020/02/11:
+  function getRepresentatives($institutionId) {
+      
+      $result = [];
+      
+      $sql = <<<SQL
+
+SELECT
+
+`names`,
+`surname`,
+'-' AS `ki_of_rep`
+              
+FROM `representatives`
+
+WHERE 1 = 1
+              
+AND `institution_id` = :institutionId;
+              
+SQL;
+
+
+      try {
+          
+          $this->stmt = $this->pdo->prepare($sql);
+          $this->stmt->execute([ ':institutionId' => $institutionId ]);
+          
+          if($this->stmt->rowCount() > 0) {
+              
+              $result = $this->stmt->fetchAll();        
+          }
+          
+      } catch (Exception $ex) {
+
+          error_log($ex->getMessage(), $ex->getCode());
+          throw $ex;
+      }
+      
+      return $result;
+  }    
+  
+  
   function add ($username, $firstname, $lastname, $institution, $institution_id, $cohorts, $department, $email,$kiuserid) {
   // add() : add a new user
   // PARAM $email - email
