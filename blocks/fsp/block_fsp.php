@@ -211,8 +211,14 @@ class block_fsp extends block_base {
     <thead>
         <tr>
             <th>Full Names</th>
-            <th>Surname</th>        
-            <th>KI of Rep</th> 
+            <th>Surname</th> 
+            <th>Category</th>
+            <th>Sub Category</th> 
+            <th>Category Description</th> 
+            <th>Advice</th> 
+            <th>Intermediary - Scripted</th> 
+            <th>Intermediary - Other</th> 
+            <th>Services Under Supervision</th> 
         </tr>
     </thead>
     <tbody>
@@ -220,7 +226,13 @@ class block_fsp extends block_base {
         <tr>
             <td><?php echo $this->format($item, 'names', null); ?></td>
             <td><?php echo $this->format($item, 'surname', null); ?></td>
-            <td><?php echo $this->format($item, 'ki_of_rep', null); ?></td>
+            <td><?php echo $this->format($item, 'category', null); ?></td>
+            <td><?php echo $this->format($item, 'subcategory', null); ?></td>
+            <td><?php echo $this->format($item, 'category_desc', null); ?></td>
+            <td><?php echo $this->format($item, 'advice', 'bool'); ?></td>
+            <td><?php echo $this->format($item, 'intermediary_scripted', 'bool'); ?></td>
+            <td><?php echo $this->format($item, 'intermediary_other', 'bool'); ?></td>
+            <td><?php echo $this->format($item, 'services_under_supervision', 'bool'); ?></td>
         </tr>
         <?php endforeach; ?>
     </tbody>
