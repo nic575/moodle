@@ -161,10 +161,10 @@ class block_fsp extends block_base {
                 <?php foreach($data['approved_products'] as $item): ?>
                 <tr>
                     <td><?php echo $this->format($item, 'category', null); ?></td>
-                    <td><?php echo $this->format($item, 'advice_automated', 'bool'); ?></td>
-                    <td><?php echo $this->format($item, 'advice_nonautomated', 'bool'); ?></td>
-                    <td><?php echo $this->format($item, 'intermediary_scripted', 'bool'); ?></td>
-                    <td><?php echo $this->format($item, 'intermediary_other', 'bool'); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'advice_automated', 'bool'); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'advice_nonautomated', 'bool'); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'intermediary_scripted', 'bool'); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'intermediary_other', 'bool'); ?></td>
                 </tr>
                 <?php endforeach; ?>
             </tbody>
@@ -178,7 +178,11 @@ class block_fsp extends block_base {
                     <th>Full Names</th>
                     <th>Surname</th>        
                     <th>KI of Rep</th>
-                    <th>View Products</th>  
+                    <th>Class of Business</th>
+                    <th>Category I</th>
+                    <th>Category II</th>
+                    <th>Category IIA</th>
+                    <th>Category III</th>
                 </tr>
             </thead>
             <tbody>
@@ -187,7 +191,11 @@ class block_fsp extends block_base {
                     <td><?php echo $this->format($item, 'names', null); ?></td>
                     <td><?php echo $this->format($item, 'surname', null); ?></td>
                     <td><?php echo $this->format($item, 'ki_of_rep', null); ?></td>
-                    <td>-</td>
+                    <td><?php echo $this->format($item, 'ClassOfBusiness', null); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'categoryI', null); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'categoryII', null); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'categoryIIA', null); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'categoryIII', null); ?></td>
                 </tr>
                 <?php endforeach; ?>
             </tbody>
@@ -199,7 +207,13 @@ class block_fsp extends block_base {
                 <tr>
                     <th>Full Names</th>
                     <th>Surname</th>        
-                    <th>KI of Rep</th> 
+                    <th>Category</th>
+                    <th>Sub-Category</th>
+                    <th>Description</th>
+                    <th>Advice</th>
+                    <th>Intermediary-scripted</th>        
+                    <th>Intermediary-other</th> 
+                    <th>Services under supervision</th>
                 </tr>
             </thead>
             <tbody>
@@ -207,7 +221,14 @@ class block_fsp extends block_base {
                 <tr>
                     <td><?php echo $this->format($item, 'names', null); ?></td>
                     <td><?php echo $this->format($item, 'surname', null); ?></td>
-                    <td><?php echo $this->format($item, 'ki_of_rep', null); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'category', null); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'subcategory', null); ?></td>
+                    <td><?php echo $this->format($item, 'category_desc', null); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'advice', null); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'intermediary_scripted', null); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'intermediary_other', null); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'services_under_supervision', null); ?></td>
+
                 </tr>
                 <?php endforeach; ?>
             </tbody>
@@ -218,15 +239,21 @@ class block_fsp extends block_base {
         <table class="admintable generaltable table-sm">
             <thead>
                 <tr>
-                    <th>FSP No</th>
-                    <th>Name</th>        
+                    <th>Category</th>
+                    <th>Advice automated</th>
+                    <th>Advice non-automated</th>
+                    <th>Intermediary - scripted</th>
+                    <th>Intermediary - other</th>      
                 </tr>
             </thead>
             <tbody>
                 <?php foreach($data['approved_product_providers'] as $item): ?>
                 <tr>
-                    <td><?php echo $this->format($item, 'fsp_no', null); ?></td>
-                    <td><?php echo $this->format($item, 'fsp_name', null); ?></td>
+                    <td><?php echo $this->format($item, 'category', null); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'advice_automated', null); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'advice_nonautomated', null); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'intermediary_scripted', null); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'intermediary_other', null); ?></td>
                 </tr>
                 <?php endforeach; ?>
             </tbody>
