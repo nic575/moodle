@@ -25,21 +25,7 @@ switch ($_POST['req']) {
 
     
 
-<?php 
-    
-// Justus Meyer, 11 Feb 2020:
 
-$bm = $PAGE->blocks;
-$bm->load_blocks(true);    
-
-if ($bm->is_known_block_type('fsp')) {
-
-    $blk = block_instance('fsp', null, $PAGE);
-    echo (!empty($blk->get_content()->text) ? $blk->get_content()->text : '<!-- FSP block content placeholder -->');
-    echo (!empty($blk->get_content()->footer) ? $blk->get_content()->footer : '<!-- FSP block footer placeholder -->');
-}
-    
-?>
 
     <h3>Manage <?php echo $USER->institution ?> users</h3>
     <input type="button" class="btn btn-primary" value="Add User" onclick="usr.addEdit()"/>
@@ -69,7 +55,24 @@ if ($bm->is_known_block_type('fsp')) {
     } else {
       echo "<div>No users found.</div>";
     }
+
+echo "<br><hr>";    
+// Justus Meyer, 11 Feb 2020:
+
+$bm = $PAGE->blocks;
+$bm->load_blocks(true);    
+
+if ($bm->is_known_block_type('fsp')) {
+
+    $blk = block_instance('fsp', null, $PAGE);
+    echo (!empty($blk->get_content()->text) ? $blk->get_content()->text : '<!-- FSP block content placeholder -->');
+    echo (!empty($blk->get_content()->footer) ? $blk->get_content()->footer : '<!-- FSP block footer placeholder -->');
+}
     break;
+?><?php
+
+
+
 
   /* [ADD/EDIT USER DOCKET] */
   case "addEdit":

@@ -120,7 +120,7 @@ SELECT
 `FSPno` AS `fsp_no`,
 `name` AS `fsp_name`,
 `desc_institution_types`.`institution_desc` AS `company_type`,
-`FSPtype` as `FSP Type`,
+`FSPtype` as `FSPType`,
 `registration_number`,
 `date_authorised`,
 `physical_address`,

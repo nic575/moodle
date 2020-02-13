@@ -66,19 +66,19 @@ class block_fsp extends block_base {
         
         ob_start();
 ?>
-<div class="container">
+
     <ul class="nav nav-pills">
       <li class="active btn-lg"><a data-toggle="pill" href="#myfsp">My FSP</a></li>
       <li class="button btn-lg"><a  data-toggle="pill" href="#compliance">Compliance</a></li>
       <li class="button btn-lg"><a data-toggle="pill" href="#kisReps">Reps & KIs</a></li>
-      <li class="button btn-lg"><a data-toggle="pill" href="#approveduwrs">Product providers</a></li>
-      <li class="button btn-lg"><a data-toggle="pill" href="#manageUsers">Manage Users</a></li>
+      <!--li class="button btn-lg"><a data-toggle="pill" href="#approveduwrs">Product providers</a></li>
+      <li class="button btn-lg"><a data-toggle="pill" href="#manageUsers">Manage Users</a></li-->
     </ul>
     <br>
     <div class="tab-content">
       <div id="myfsp" class="tab-pane fade in active">
       <h3>My FSP</h3>
-      <table class="admintable generaltable table-sm">
+      <table class="admintable generaltable table-sm col-md-6">
         <tbody>
             <tr>
                 <th>Date Updated</th>
@@ -94,7 +94,7 @@ class block_fsp extends block_base {
             </tr>
             <tr>
                 <th>FSP Type</th>
-                <td><?php echo $this->format($data['institution'], 'fsp_type', null); ?></td>
+                <td><?php echo $this->format($data['institution'], 'FSPType', null); ?></td>
             </tr>
             <tr>
                 <th>Registration Number</th>
@@ -129,7 +129,7 @@ class block_fsp extends block_base {
       </div>
       <div id="compliance" class="tab-pane fade">
         <h3>Compliance Officer(s)</h3>
-        <table class="admintable generaltable table-sm">
+        <table class="admintable generaltable table-sm col-md-6">
             <thead>
                 <tr>
                     <th>Name</th>
@@ -209,7 +209,7 @@ class block_fsp extends block_base {
                     <th>Surname</th>        
                     <th>Category</th>
                     <th>Sub-Category</th>
-                    <th>Description</th>
+                    <th class="col-3">Description</th>
                     <th>Advice</th>
                     <th>Intermediary-scripted</th>        
                     <th>Intermediary-other</th> 
@@ -260,7 +260,7 @@ class block_fsp extends block_base {
         </table>
       </div>
     </div>
-</div>
+
 
 
 <?php      
