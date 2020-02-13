@@ -70,11 +70,16 @@ $PAGE->set_title($pagetitle);
 $PAGE->set_heading($header);
 
 echo $OUTPUT->header();
+
+
 require __DIR__ . DIRECTORY_SEPARATOR . "lib" . DIRECTORY_SEPARATOR . "config.php";
 require PATH_LIB . "page-top.php"; ?>
 <script src="public/users.js"></script>
 <div id="container"></div>
 <!--?php echo print_r(get_complete_user_data('idnumber','1111111111111')->id); ?-->
+
+
+
 
 <?php require PATH_LIB . "page-bottom.php"; 
 

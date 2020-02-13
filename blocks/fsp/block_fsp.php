@@ -67,106 +67,202 @@ class block_fsp extends block_base {
         ob_start();
 ?>
 
-<table>
-<!--    <thead>
-        <tr>
-            <th class="header c0 centeralign" style="" scope="col">Name</th>
-            <th class="header c1 centeralign" style="" scope="col">Department</th>
-            <th class="header c2 centeralign" style="" scope="col">Email</th>
-            <th class="header c3 centeralign" style="" scope="col"></th>
-        </tr>
-    </thead>-->
-    <tbody>
-        <tr>
-            <th>Date Updated</th>
-            <td><?php echo $this->format($data['institution'], 'date_updated', 'date'); ?></td>
-        </tr>
-        <tr>
-            <th>FSP No</th>
-            <td><?php echo $this->format($data['institution'], 'fsp_no', null); ?></td>
-        </tr>
-        <tr>
-            <th>FSP Name</th>
-            <td><?php echo $this->format($data['institution'], 'fsp_name', null); ?></td>
-        </tr>
-        <tr>
-            <th>FSP Type</th>
-            <td><?php echo $this->format($data['institution'], 'fsp_type', null); ?></td>
-        </tr>
-        <tr>
-            <th>Registration Number</th>
-            <td><?php echo $this->format($data['institution'], 'registration_number', null); ?></td>
-        </tr>
-        <tr>
-            <th>Date Authorised</th>
-            <td><?php echo $this->format($data['institution'], 'date_authorised', 'date'); ?></td>
-        </tr>
-        <tr>
-            <th>Physical Address</th>
-            <td><?php echo $this->format($data['institution'], 'physical_address', null); ?></td>
-        </tr>
-        <tr>
-            <th>Telephone No</th>
-            <td><?php echo $this->format($data['institution'], 'telephone_no', null); ?></td>
-        </tr>
-        <tr>
-            <th>Contact Person</th>
-            <td><?php echo $this->format($data['institution'], 'contact_person', null); ?></td>
-        </tr>
-        <tr>
-            <th>Contact Person Tel No</th>
-            <td><?php echo $this->format($data['institution'], 'contact_person_telephone_no', null); ?></td>
-        </tr>
-        <tr>
-            <th>Status</th>
-            <td><?php echo $this->format($data['institution'], 'status', null); ?></td>
-        </tr>        
-    </tbody>
-</table>
+    <ul class="nav nav-pills">
+      <li class="active btn-lg"><a data-toggle="pill" href="#myfsp">My FSP</a></li>
+      <li class="button btn-lg"><a  data-toggle="pill" href="#compliance">Compliance</a></li>
+      <li class="button btn-lg"><a data-toggle="pill" href="#kisReps">Reps & KIs</a></li>
+      <!--li class="button btn-lg"><a data-toggle="pill" href="#approveduwrs">Product providers</a></li>
+      <li class="button btn-lg"><a data-toggle="pill" href="#manageUsers">Manage Users</a></li-->
+    </ul>
+    <br>
+    <div class="tab-content">
+      <div id="myfsp" class="tab-pane fade in active">
+      <h3>My FSP</h3>
+      <table class="admintable generaltable table-sm col-md-6">
+        <tbody>
+            <tr>
+                <th>Date Updated</th>
+                <td><?php echo $this->format($data['institution'], 'date_updated', 'date'); ?></td>
+            </tr>
+            <tr>
+                <th>FSP No</th>
+                <td><?php echo $this->format($data['institution'], 'fsp_no', null); ?></td>
+            </tr>
+            <tr>
+                <th>FSP Name</th>
+                <td><?php echo $this->format($data['institution'], 'fsp_name', null); ?></td>
+            </tr>
+            <tr>
+                <th>FSP Type</th>
+                <td><?php echo $this->format($data['institution'], 'FSPType', null); ?></td>
+            </tr>
+            <tr>
+                <th>Registration Number</th>
+                <td><?php echo $this->format($data['institution'], 'registration_number', null); ?></td>
+            </tr>
+            <tr>
+                <th>Date Authorised</th>
+                <td><?php echo $this->format($data['institution'], 'date_authorised', 'date'); ?></td>
+            </tr>
+            <tr>
+                <th>Physical Address</th>
+                <td><?php echo $this->format($data['institution'], 'physical_address', null); ?></td>
+            </tr>
+            <tr>
+                <th>Telephone No</th>
+                <td><?php echo $this->format($data['institution'], 'telephone_no', null); ?></td>
+            </tr>
+            <tr>
+                <th>Contact Person</th>
+                <td><?php echo $this->format($data['institution'], 'contact_person', null); ?></td>
+            </tr>
+            <tr>
+                <th>Contact Person Tel No</th>
+                <td><?php echo $this->format($data['institution'], 'contact_person_telephone_no', null); ?></td>
+            </tr>
+            <tr>
+                <th>Status</th>
+                <td><?php echo $this->format($data['institution'], 'status', null); ?></td>
+            </tr>        
+        </tbody>
+        </table>
+      </div>
+      <div id="compliance" class="tab-pane fade">
+        <h3>Compliance Officer(s)</h3>
+        <table class="admintable generaltable table-sm col-md-6">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Tel No</th>        
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach($data['compliance_officers'] as $item): ?>
+                <tr>
+                    <td><?php echo $this->format($item, 'name', null); ?></td>
+                    <td><?php echo $this->format($item, 'telephone_no', null); ?></td>
+                </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+        <br>
+        <h3>Approved Products</h3>
+        <table class="admintable generaltable table-sm">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Advice Automated</th>
+                    <th>Advice Non-automated</th> 
+                    <th>Intermediary Scripted</th> 
+                    <th>Intermediary Other</th> 
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach($data['approved_products'] as $item): ?>
+                <tr>
+                    <td><?php echo $this->format($item, 'category', null); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'advice_automated', 'bool'); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'advice_nonautomated', 'bool'); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'intermediary_scripted', 'bool'); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'intermediary_other', 'bool'); ?></td>
+                </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+      </div>
+      <div id="kisReps" class="tab-pane fade">
+        <h3>Key Individuals</h3>
+        <table class="admintable generaltable table-sm"> 
+            <thead>
+                <tr>
+                    <th>Full Names</th>
+                    <th>Surname</th>        
+                    <th>KI of Rep</th>
+                    <th>Class of Business</th>
+                    <th>Category I</th>
+                    <th>Category II</th>
+                    <th>Category IIA</th>
+                    <th>Category III</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach($data['key_individuals'] as $item): ?>
+                <tr>
+                    <td><?php echo $this->format($item, 'names', null); ?></td>
+                    <td><?php echo $this->format($item, 'surname', null); ?></td>
+                    <td><?php echo $this->format($item, 'ki_of_rep', null); ?></td>
+                    <td><?php echo $this->format($item, 'ClassOfBusiness', null); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'categoryI', null); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'categoryII', null); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'categoryIIA', null); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'categoryIII', null); ?></td>
+                </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+        <br>
+        <h3>Representatives</h3>
+        <table class="admintable generaltable table-sm">
+            <thead>
+                <tr>
+                    <th>Full Names</th>
+                    <th>Surname</th>        
+                    <th>Category</th>
+                    <th>Sub-Category</th>
+                    <th class="col-3">Description</th>
+                    <th>Advice</th>
+                    <th>Intermediary-scripted</th>        
+                    <th>Intermediary-other</th> 
+                    <th>Services under supervision</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach($data['representatives'] as $item): ?>
+                <tr>
+                    <td><?php echo $this->format($item, 'names', null); ?></td>
+                    <td><?php echo $this->format($item, 'surname', null); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'category', null); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'subcategory', null); ?></td>
+                    <td><?php echo $this->format($item, 'category_desc', null); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'advice', null); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'intermediary_scripted', null); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'intermediary_other', null); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'services_under_supervision', null); ?></td>
 
-<h3>Compliance Officer(s)</h3>
-<table>
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Tel No</th>        
-        </tr>
-    </thead>
-    <tbody>
-        <?php foreach($data['compliance_officers'] as $item): ?>
-        <tr>
-            <td><?php echo $this->format($item, 'name', null); ?></td>
-            <td><?php echo $this->format($item, 'telephone_no', null); ?></td>
-        </tr>
-        <?php endforeach; ?>
-    </tbody>
-</table>
+                </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+      </div>
+      <div id="approveduwrs" class="tab-pane fade">
+        <h3>Approved Product Providers on Platform</h3>
+        <table class="admintable generaltable table-sm">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Advice automated</th>
+                    <th>Advice non-automated</th>
+                    <th>Intermediary - scripted</th>
+                    <th>Intermediary - other</th>      
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach($data['approved_product_providers'] as $item): ?>
+                <tr>
+                    <td><?php echo $this->format($item, 'category', null); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'advice_automated', null); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'advice_nonautomated', null); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'intermediary_scripted', null); ?></td>
+                    <td class="text-center"><?php echo $this->format($item, 'intermediary_other', null); ?></td>
+                </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+      </div>
+    </div>
 
-<h3>Approved Products</h3>
-<table>
-    <thead>
-        <tr>
-            <th>Category</th>
-            <th>Advice Automated</th>
-            <th>Advice Non-automated</th> 
-            <th>Intermediary Scripted</th> 
-            <th>Intermediary Other</th> 
-        </tr>
-    </thead>
-    <tbody>
-        <?php foreach($data['approved_products'] as $item): ?>
-        <tr>
-            <td><?php echo $this->format($item, 'category', null); ?></td>
-            <td><?php echo $this->format($item, 'advice_automated', 'bool'); ?></td>
-            <td><?php echo $this->format($item, 'advice_nonautomated', 'bool'); ?></td>
-            <td><?php echo $this->format($item, 'intermediary_scripted', 'bool'); ?></td>
-            <td><?php echo $this->format($item, 'intermediary_other', 'bool'); ?></td>
-        </tr>
-        <?php endforeach; ?>
-    </tbody>
-</table>
 
-<h3>Approved Product Providers on Platform</h3>
+<!--<h3>Approved Product Providers on Platform</h3>
 <table>
     <thead>
         <tr>
@@ -236,7 +332,7 @@ class block_fsp extends block_base {
         </tr>
         <?php endforeach; ?>
     </tbody>
-</table>
+</table>-->
 
 <?php      
         $this->content->text = ob_get_clean();                

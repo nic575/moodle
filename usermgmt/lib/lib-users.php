@@ -117,16 +117,17 @@ class Users {
 SELECT
               
 `date_updated`,
-`licence_no` AS `fsp_no`,
+`FSPno` AS `fsp_no`,
 `name` AS `fsp_name`,
-`desc_institution_types`.`institution_desc` AS `fsp_type`,              
+`desc_institution_types`.`institution_desc` AS `company_type`,
+`FSPtype` as `FSPType`,
 `registration_number`,
 `date_authorised`,
 `physical_address`,
-'-' AS `telephone_no`,
-'-' AS `contact_person`,
-'-' AS `contact_person_telephone_no`,
-'-' AS `status`
+`telNo` AS `telephone_no`,
+`contactPerson` AS `contact_person`,
+`contactPersonTelNo` AS `contact_person_telephone_no`,
+`FSPStatus` AS `status`
 
 FROM `institutions`
 
@@ -252,9 +253,11 @@ SQL;
 
 SELECT DISTINCT
 
-`licence_no` AS `fsp_no`,
-`name` AS `fsp_name`
-
+`category`,
+`advice_automated`,
+`advice_nonautomated`,
+`intermediary_scripted`,
+`intermediary_other`
 FROM `institutions`
 
 INNER JOIN `fsp_approved_products`
@@ -297,7 +300,12 @@ SELECT
 
 `names`,
 `surname`,
-`conditions_apply` AS `ki_of_rep`
+`conditions_apply` AS `ki_of_rep`,
+`ClassOfBusiness`,
+case when `categoryI` = 1 then 'X' else '' end as categoryI,
+case when `categoryII` = 1 then 'X' else '' end as categoryII,
+case when `categoryIIA` = 1 then 'X' else '' end as categoryIIA,
+case when `categoryIII` = 1 then 'X' else '' end as categoryIII
               
 FROM `key_individuals`
 

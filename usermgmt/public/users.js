@@ -27,6 +27,17 @@ var usr = {
   
   checkUser : function(onDone) {
     
+        var id = document.getElementById("id").value;
+        
+        if(id) {
+            
+            if(onDone)
+                onDone();
+            
+            return;
+        }
+            
+    
         var userName = document.getElementById("username").value;
     
       adm.ajax({
